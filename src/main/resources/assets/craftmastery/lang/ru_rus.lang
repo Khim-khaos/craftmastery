@@ -1,0 +1,40 @@
+# Специализации
+specialization.craftmastery.technical=Техническая
+specialization.craftmastery.magical=Магическая
+specialization.craftmastery.magtechnical=МагТехническая
+
+# GUI
+gui.craftmastery.specializations=Специализации
+gui.craftmastery.current_specialization=Текущая специализация: %s
+gui.craftmastery.level=Уровень: %d
+gui.craftmastery.experience=Опыт: %.2f
+gui.craftmastery.unlock_recipes=Разблокировать рецепты
+gui.craftmastery.not_enough_experience=Недостаточно опыта
+gui.craftmastery.recipe_unlocked=Рецепт разблокирован: %s
+gui.craftmastery.all_recipes_unlocked=Все рецепты этого типа уже разблокированы
+
+# Предметы
+item.craftmastery.knowledge_book.technical.name=Книга технических знаний
+item.craftmastery.knowledge_book.magical.name=Книга магических знаний
+item.craftmastery.knowledge_book.magtechnical.name=Книга магТехнических знаний
+
+# Сообщения
+message.craftmastery.specialization_changed=Ваша специализация была изменена на %s
+message.craftmastery.cant_understand_book=Вы не можете понять содержание этой книги
+message.craftmastery.learned_new_recipe=Вы изучили новый рецепт: %s
+
+# Команды
+command.craftmastery.usage=/craftmastery <give_points|remove_points|give_reset_points|reload> <игрок> <количество>
+command.craftmastery.points_given=Выдано %d очков игроку %s
+command.craftmastery.points_removed=Удалено %d очков у игрока %s
+command.craftmastery.reset_points_given=Выдано %d очков сброса игроку %s
+command.craftmastery.config_reloaded=Конфигурация CraftMastery перезагружена
+
+# Интеграция с JEI
+gui.craftmastery.jei.unlock_requirements=Требуется %s специализация уровня %d
+gui.craftmastery.jei.recipe_locked=Этот рецепт в данный момент заблокирован
+
+
+key.categories.craftmastery=Craft Mastery
+key.craftmastery.open_specialization=Open Specialization GUI
+key.craftmastery.open_recipe_unlock=Open Recipe Unlock GUI

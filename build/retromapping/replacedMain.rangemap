@@ -1,0 +1,263 @@
+Unsupposrted library path: D:\craftmastery\build\classes\java\api
+Unsupposrted library path: D:\craftmastery\build\resources\api
+Symbol range map extraction starting
+Processing 6 files
+startProcessing "com/example/craftmastery/CraftMastery.java" md5: 764c81783fc5e7b9cabc6fc558db91b3
+@|com/example/craftmastery/CraftMastery.java|8|32|com.example.craftmastery|package|com.example.craftmastery|(file)
+Class Start: com.example.craftmastery.CraftMastery
+   @|com/example/craftmastery/CraftMastery.java|403|406|Mod|class|net.minecraftforge.fml.common.Mod|false
+   @|com/example/craftmastery/CraftMastery.java|407|412|modid|method|net.minecraftforge.fml.common.Mod|modid|()Ljava/lang/String;
+   @|com/example/craftmastery/CraftMastery.java|415|427|CraftMastery|class|com.example.craftmastery.CraftMastery|false
+   @|com/example/craftmastery/CraftMastery.java|428|433|MODID|field|com.example.craftmastery.CraftMastery|MODID
+   @|com/example/craftmastery/CraftMastery.java|435|439|name|method|net.minecraftforge.fml.common.Mod|name|()Ljava/lang/String;
+   @|com/example/craftmastery/CraftMastery.java|442|454|CraftMastery|class|com.example.craftmastery.CraftMastery|false
+   @|com/example/craftmastery/CraftMastery.java|455|459|NAME|field|com.example.craftmastery.CraftMastery|NAME
+   @|com/example/craftmastery/CraftMastery.java|461|468|version|method|net.minecraftforge.fml.common.Mod|version|()Ljava/lang/String;
+   @|com/example/craftmastery/CraftMastery.java|471|483|CraftMastery|class|com.example.craftmastery.CraftMastery|false
+   @|com/example/craftmastery/CraftMastery.java|484|491|VERSION|field|com.example.craftmastery.CraftMastery|VERSION
+   @|com/example/craftmastery/CraftMastery.java|507|519|CraftMastery|class|com.example.craftmastery.CraftMastery|false
+   @|com/example/craftmastery/CraftMastery.java|547|553|String|class|java.lang.String|false
+   @|com/example/craftmastery/CraftMastery.java|547|553|String|class|java.lang.String|false
+   @|com/example/craftmastery/CraftMastery.java|554|559|MODID|field|com.example.craftmastery.CraftMastery|MODID|
+   @|com/example/craftmastery/CraftMastery.java|603|609|String|class|java.lang.String|false
+   @|com/example/craftmastery/CraftMastery.java|603|609|String|class|java.lang.String|false
+   @|com/example/craftmastery/CraftMastery.java|610|614|NAME|field|com.example.craftmastery.CraftMastery|NAME|
+   @|com/example/craftmastery/CraftMastery.java|658|664|String|class|java.lang.String|false
+   @|com/example/craftmastery/CraftMastery.java|658|664|String|class|java.lang.String|false
+   @|com/example/craftmastery/CraftMastery.java|665|672|VERSION|field|com.example.craftmastery.CraftMastery|VERSION|
+   @|com/example/craftmastery/CraftMastery.java|704|710|Logger|class|org.apache.logging.log4j.Logger|false
+   @|com/example/craftmastery/CraftMastery.java|704|710|Logger|class|org.apache.logging.log4j.Logger|false
+   @|com/example/craftmastery/CraftMastery.java|711|717|logger|field|com.example.craftmastery.CraftMastery|logger|
+   Method Start: preInit(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V
+      @|com/example/craftmastery/CraftMastery.java|795|800|event|param|com.example.craftmastery.CraftMastery|preInit|(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V|event|0
+      @|com/example/craftmastery/CraftMastery.java|727|743|Mod.EventHandler|class|net.minecraftforge.fml.common.Mod.EventHandler|false
+      @|com/example/craftmastery/CraftMastery.java|761|768|preInit|method|com.example.craftmastery.CraftMastery|preInit|(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V
+      @|com/example/craftmastery/CraftMastery.java|769|794|FMLPreInitializationEvent|class|net.minecraftforge.fml.common.event.FMLPreInitializationEvent|false
+      @|com/example/craftmastery/CraftMastery.java|813|819|logger|field|com.example.craftmastery.CraftMastery|logger
+      @|com/example/craftmastery/CraftMastery.java|822|827|event|param|com.example.craftmastery.CraftMastery|preInit|(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V|event|0
+      @|com/example/craftmastery/CraftMastery.java|828|837|getModLog|method|net.minecraftforge.fml.common.event.FMLPreInitializationEvent|getModLog|()Lorg/apache/logging/log4j/Logger;
+   Method End: preInit(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V
+   Method Start: init(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
+      @|com/example/craftmastery/CraftMastery.java|918|923|event|param|com.example.craftmastery.CraftMastery|init|(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V|event|0
+      @|com/example/craftmastery/CraftMastery.java|856|872|Mod.EventHandler|class|net.minecraftforge.fml.common.Mod.EventHandler|false
+      @|com/example/craftmastery/CraftMastery.java|890|894|init|method|com.example.craftmastery.CraftMastery|init|(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
+      @|com/example/craftmastery/CraftMastery.java|895|917|FMLInitializationEvent|class|net.minecraftforge.fml.common.event.FMLInitializationEvent|false
+   Method End: init(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
+   Method Start: postInit(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V
+      @|com/example/craftmastery/CraftMastery.java|1064|1069|event|param|com.example.craftmastery.CraftMastery|postInit|(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V|event|0
+      @|com/example/craftmastery/CraftMastery.java|994|1010|Mod.EventHandler|class|net.minecraftforge.fml.common.Mod.EventHandler|false
+      @|com/example/craftmastery/CraftMastery.java|1028|1036|postInit|method|com.example.craftmastery.CraftMastery|postInit|(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V
+      @|com/example/craftmastery/CraftMastery.java|1037|1063|FMLPostInitializationEvent|class|net.minecraftforge.fml.common.event.FMLPostInitializationEvent|false
+   Method End: postInit(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V
+   Method Start: serverStarting(Lnet/minecraftforge/fml/common/event/FMLServerStartingEvent;)V
+      @|com/example/craftmastery/CraftMastery.java|1208|1213|event|param|com.example.craftmastery.CraftMastery|serverStarting|(Lnet/minecraftforge/fml/common/event/FMLServerStartingEvent;)V|event|0
+      @|com/example/craftmastery/CraftMastery.java|1136|1152|Mod.EventHandler|class|net.minecraftforge.fml.common.Mod.EventHandler|false
+      @|com/example/craftmastery/CraftMastery.java|1170|1184|serverStarting|method|com.example.craftmastery.CraftMastery|serverStarting|(Lnet/minecraftforge/fml/common/event/FMLServerStartingEvent;)V
+      @|com/example/craftmastery/CraftMastery.java|1185|1207|FMLServerStartingEvent|class|net.minecraftforge.fml.common.event.FMLServerStartingEvent|false
+   Method End: serverStarting(Lnet/minecraftforge/fml/common/event/FMLServerStartingEvent;)V
+Class End  : com.example.craftmastery.CraftMastery
+endProcessing "com/example/craftmastery/CraftMastery.java"
+
+startProcessing "com/example/craftmastery/network/PacketHandler.java" md5: d41d8cd98f00b204e9800998ecf8427e
+endProcessing "com/example/craftmastery/network/PacketHandler.java"
+
+startProcessing "com/example/craftmastery/recipe/RecipeManager.java" md5: 830f442763d0d0cb3b910750acd6bb56
+@|com/example/craftmastery/recipe/RecipeManager.java|8|39|com.example.craftmastery.recipe|package|com.example.craftmastery.recipe|(file)
+Class Start: com.example.craftmastery.recipe.RecipeManager
+   @|com/example/craftmastery/recipe/RecipeManager.java|220|233|RecipeManager|class|com.example.craftmastery.recipe.RecipeManager|false
+   @|com/example/craftmastery/recipe/RecipeManager.java|262|275|RecipeManager|class|com.example.craftmastery.recipe.RecipeManager|false
+   @|com/example/craftmastery/recipe/RecipeManager.java|262|275|RecipeManager|class|com.example.craftmastery.recipe.RecipeManager|false
+   @|com/example/craftmastery/recipe/RecipeManager.java|276|284|INSTANCE|field|com.example.craftmastery.recipe.RecipeManager|INSTANCE|
+   @|com/example/craftmastery/recipe/RecipeManager.java|291|304|RecipeManager|class|com.example.craftmastery.recipe.RecipeManager|false
+   @|com/example/craftmastery/recipe/RecipeManager.java|325|331|String|class|java.lang.String|false
+   @|com/example/craftmastery/recipe/RecipeManager.java|333|346|RecipeWrapper|class|com.example.craftmastery.recipe.RecipeWrapper|false
+   @|com/example/craftmastery/recipe/RecipeManager.java|321|324|Map|class|java.util.Map|false
+   @|com/example/craftmastery/recipe/RecipeManager.java|321|324|Map|class|java.util.Map|false
+   @|com/example/craftmastery/recipe/RecipeManager.java|325|331|String|class|java.lang.String|false
+   @|com/example/craftmastery/recipe/RecipeManager.java|333|346|RecipeWrapper|class|com.example.craftmastery.recipe.RecipeWrapper|false
+   @|com/example/craftmastery/recipe/RecipeManager.java|348|355|recipes|field|com.example.craftmastery.recipe.RecipeManager|recipes|
+   Method Start: RecipeManager()V
+      @|com/example/craftmastery/recipe/RecipeManager.java|372|385|RecipeManager|method|com.example.craftmastery.recipe.RecipeManager|RecipeManager|()V
+      @|com/example/craftmastery/recipe/RecipeManager.java|399|406|recipes|field|com.example.craftmastery.recipe.RecipeManager|recipes
+      @|com/example/craftmastery/recipe/RecipeManager.java|413|420|HashMap|class|java.util.HashMap|false
+      @|com/example/craftmastery/recipe/RecipeManager.java|435|452|initializeRecipes|method|com.example.craftmastery.recipe.RecipeManager|initializeRecipes|()V
+   Method End: RecipeManager()V
+   Method Start: getInstance()Lcom/example/craftmastery/recipe/RecipeManager;
+      @|com/example/craftmastery/recipe/RecipeManager.java|484|497|RecipeManager|class|com.example.craftmastery.recipe.RecipeManager|false
+      @|com/example/craftmastery/recipe/RecipeManager.java|498|509|getInstance|method|com.example.craftmastery.recipe.RecipeManager|getInstance|()Lcom/example/craftmastery/recipe/RecipeManager;
+      @|com/example/craftmastery/recipe/RecipeManager.java|530|538|INSTANCE|field|com.example.craftmastery.recipe.RecipeManager|INSTANCE
+   Method End: getInstance()Lcom/example/craftmastery/recipe/RecipeManager;
+   Method Start: initializeRecipes()V
+      @|com/example/craftmastery/recipe/RecipeManager.java|567|584|initializeRecipes|method|com.example.craftmastery.recipe.RecipeManager|initializeRecipes|()V
+      @|com/example/craftmastery/recipe/RecipeManager.java|603|610|IRecipe|class|net.minecraft.item.crafting.IRecipe|false
+      @|com/example/craftmastery/recipe/RecipeManager.java|620|635|ForgeRegistries|class|net.minecraftforge.fml.common.registry.ForgeRegistries|false
+      @|com/example/craftmastery/recipe/RecipeManager.java|636|643|RECIPES|field|net.minecraftforge.fml.common.registry.ForgeRegistries|RECIPES
+      @|com/example/craftmastery/recipe/RecipeManager.java|660|666|String|class|java.lang.String|false
+      @|com/example/craftmastery/recipe/RecipeManager.java|687|702|getRegistryName|method|net.minecraftforge.registries.IForgeRegistryEntry|getRegistryName|()Lnet/minecraft/util/ResourceLocation;
+      @|com/example/craftmastery/recipe/RecipeManager.java|705|713|toString|method|java.lang.Object|toString|()Ljava/lang/String;
+      @|com/example/craftmastery/recipe/RecipeManager.java|730|737|recipes|field|com.example.craftmastery.recipe.RecipeManager|recipes
+      @|com/example/craftmastery/recipe/RecipeManager.java|738|741|put|method|java.util.Map|put|(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+      @|com/example/craftmastery/recipe/RecipeManager.java|758|771|RecipeWrapper|class|com.example.craftmastery.recipe.RecipeWrapper|false
+   Method End: initializeRecipes()V
+   Method Start: unlockRecipe(Ljava/lang/String;)V
+      @|com/example/craftmastery/recipe/RecipeManager.java|839|849|recipeName|param|com.example.craftmastery.recipe.RecipeManager|unlockRecipe|(Ljava/lang/String;)V|recipeName|0
+      @|com/example/craftmastery/recipe/RecipeManager.java|819|831|unlockRecipe|method|com.example.craftmastery.recipe.RecipeManager|unlockRecipe|(Ljava/lang/String;)V
+      @|com/example/craftmastery/recipe/RecipeManager.java|832|838|String|class|java.lang.String|false
+      @|com/example/craftmastery/recipe/RecipeManager.java|862|875|RecipeWrapper|class|com.example.craftmastery.recipe.RecipeWrapper|false
+      @|com/example/craftmastery/recipe/RecipeManager.java|886|893|recipes|field|com.example.craftmastery.recipe.RecipeManager|recipes
+      @|com/example/craftmastery/recipe/RecipeManager.java|894|897|get|method|java.util.Map|get|(Ljava/lang/Object;)Ljava/lang/Object;
+      @|com/example/craftmastery/recipe/RecipeManager.java|898|908|recipeName|param|com.example.craftmastery.recipe.RecipeManager|unlockRecipe|(Ljava/lang/String;)V|recipeName|0
+      @|com/example/craftmastery/recipe/RecipeManager.java|964|975|setUnlocked|method|com.example.craftmastery.recipe.RecipeWrapper|setUnlocked|(Z)V
+   Method End: unlockRecipe(Ljava/lang/String;)V
+   Method Start: isRecipeUnlocked(Ljava/lang/String;)Z
+      @|com/example/craftmastery/recipe/RecipeManager.java|1047|1057|recipeName|param|com.example.craftmastery.recipe.RecipeManager|isRecipeUnlocked|(Ljava/lang/String;)Z|recipeName|0
+      @|com/example/craftmastery/recipe/RecipeManager.java|1023|1039|isRecipeUnlocked|method|com.example.craftmastery.recipe.RecipeManager|isRecipeUnlocked|(Ljava/lang/String;)Z
+      @|com/example/craftmastery/recipe/RecipeManager.java|1040|1046|String|class|java.lang.String|false
+      @|com/example/craftmastery/recipe/RecipeManager.java|1070|1083|RecipeWrapper|class|com.example.craftmastery.recipe.RecipeWrapper|false
+      @|com/example/craftmastery/recipe/RecipeManager.java|1094|1101|recipes|field|com.example.craftmastery.recipe.RecipeManager|recipes
+      @|com/example/craftmastery/recipe/RecipeManager.java|1102|1105|get|method|java.util.Map|get|(Ljava/lang/Object;)Ljava/lang/Object;
+      @|com/example/craftmastery/recipe/RecipeManager.java|1106|1116|recipeName|param|com.example.craftmastery.recipe.RecipeManager|isRecipeUnlocked|(Ljava/lang/String;)Z|recipeName|0
+      @|com/example/craftmastery/recipe/RecipeManager.java|1162|1172|isUnlocked|method|com.example.craftmastery.recipe.RecipeWrapper|isUnlocked|()Z
+   Method End: isRecipeUnlocked(Ljava/lang/String;)Z
+Class End  : com.example.craftmastery.recipe.RecipeManager
+endProcessing "com/example/craftmastery/recipe/RecipeManager.java"
+
+startProcessing "com/example/craftmastery/recipe/RecipeWrapper.java" md5: ec096e35300a652322913593f0c66655
+@|com/example/craftmastery/recipe/RecipeWrapper.java|8|39|com.example.craftmastery.recipe|package|com.example.craftmastery.recipe|(file)
+Class Start: com.example.craftmastery.recipe.RecipeWrapper
+   @|com/example/craftmastery/recipe/RecipeWrapper.java|104|117|RecipeWrapper|class|com.example.craftmastery.recipe.RecipeWrapper|false
+   @|com/example/craftmastery/recipe/RecipeWrapper.java|133|140|IRecipe|class|net.minecraft.item.crafting.IRecipe|false
+   @|com/example/craftmastery/recipe/RecipeWrapper.java|133|140|IRecipe|class|net.minecraft.item.crafting.IRecipe|false
+   @|com/example/craftmastery/recipe/RecipeWrapper.java|141|147|recipe|field|com.example.craftmastery.recipe.RecipeWrapper|recipe|
+   @|com/example/craftmastery/recipe/RecipeWrapper.java|170|178|unlocked|field|com.example.craftmastery.recipe.RecipeWrapper|unlocked|
+   Method Start: RecipeWrapper(Lnet/minecraft/item/crafting/IRecipe;)V
+      @|com/example/craftmastery/recipe/RecipeWrapper.java|216|222|recipe|param|com.example.craftmastery.recipe.RecipeWrapper|RecipeWrapper|(Lnet/minecraft/item/crafting/IRecipe;)V|recipe|0
+      @|com/example/craftmastery/recipe/RecipeWrapper.java|194|207|RecipeWrapper|method|com.example.craftmastery.recipe.RecipeWrapper|RecipeWrapper|(Lnet/minecraft/item/crafting/IRecipe;)V
+      @|com/example/craftmastery/recipe/RecipeWrapper.java|208|215|IRecipe|class|net.minecraft.item.crafting.IRecipe|false
+      @|com/example/craftmastery/recipe/RecipeWrapper.java|240|246|recipe|field|com.example.craftmastery.recipe.RecipeWrapper|recipe
+      @|com/example/craftmastery/recipe/RecipeWrapper.java|249|255|recipe|param|com.example.craftmastery.recipe.RecipeWrapper|RecipeWrapper|(Lnet/minecraft/item/crafting/IRecipe;)V|recipe|0
+      @|com/example/craftmastery/recipe/RecipeWrapper.java|271|279|unlocked|field|com.example.craftmastery.recipe.RecipeWrapper|unlocked
+   Method End: RecipeWrapper(Lnet/minecraft/item/crafting/IRecipe;)V
+   Method Start: getRecipe()Lnet/minecraft/item/crafting/IRecipe;
+      @|com/example/craftmastery/recipe/RecipeWrapper.java|310|317|IRecipe|class|net.minecraft.item.crafting.IRecipe|false
+      @|com/example/craftmastery/recipe/RecipeWrapper.java|318|327|getRecipe|method|com.example.craftmastery.recipe.RecipeWrapper|getRecipe|()Lnet/minecraft/item/crafting/IRecipe;
+      @|com/example/craftmastery/recipe/RecipeWrapper.java|348|354|recipe|field|com.example.craftmastery.recipe.RecipeWrapper|recipe
+   Method End: getRecipe()Lnet/minecraft/item/crafting/IRecipe;
+   Method Start: isUnlocked()Z
+      @|com/example/craftmastery/recipe/RecipeWrapper.java|385|395|isUnlocked|method|com.example.craftmastery.recipe.RecipeWrapper|isUnlocked|()Z
+      @|com/example/craftmastery/recipe/RecipeWrapper.java|416|424|unlocked|field|com.example.craftmastery.recipe.RecipeWrapper|unlocked
+   Method End: isUnlocked()Z
+   Method Start: setUnlocked(Z)V
+      @|com/example/craftmastery/recipe/RecipeWrapper.java|472|480|unlocked|param|com.example.craftmastery.recipe.RecipeWrapper|setUnlocked|(Z)V|unlocked|0
+      @|com/example/craftmastery/recipe/RecipeWrapper.java|452|463|setUnlocked|method|com.example.craftmastery.recipe.RecipeWrapper|setUnlocked|(Z)V
+      @|com/example/craftmastery/recipe/RecipeWrapper.java|498|506|unlocked|field|com.example.craftmastery.recipe.RecipeWrapper|unlocked
+      @|com/example/craftmastery/recipe/RecipeWrapper.java|509|517|unlocked|param|com.example.craftmastery.recipe.RecipeWrapper|setUnlocked|(Z)V|unlocked|0
+   Method End: setUnlocked(Z)V
+Class End  : com.example.craftmastery.recipe.RecipeWrapper
+endProcessing "com/example/craftmastery/recipe/RecipeWrapper.java"
+
+startProcessing "com/example/craftmastery/specialization/Specialization.java" md5: a540907bdc27299b30914bee7c8a8fb6
+@|com/example/craftmastery/specialization/Specialization.java|8|47|com.example.craftmastery.specialization|package|com.example.craftmastery.specialization|(file)
+Class Start: com.example.craftmastery.specialization.Specialization
+   @|com/example/craftmastery/specialization/Specialization.java|65|79|Specialization|class|com.example.craftmastery.specialization.Specialization|false
+   @|com/example/craftmastery/specialization/Specialization.java|95|101|String|class|java.lang.String|false
+   @|com/example/craftmastery/specialization/Specialization.java|95|101|String|class|java.lang.String|false
+   @|com/example/craftmastery/specialization/Specialization.java|102|106|name|field|com.example.craftmastery.specialization.Specialization|name|
+   @|com/example/craftmastery/specialization/Specialization.java|125|130|level|field|com.example.craftmastery.specialization.Specialization|level|
+   Method Start: Specialization(Ljava/lang/String;)V
+      @|com/example/craftmastery/specialization/Specialization.java|168|172|name|param|com.example.craftmastery.specialization.Specialization|Specialization|(Ljava/lang/String;)V|name|0
+      @|com/example/craftmastery/specialization/Specialization.java|146|160|Specialization|method|com.example.craftmastery.specialization.Specialization|Specialization|(Ljava/lang/String;)V
+      @|com/example/craftmastery/specialization/Specialization.java|161|167|String|class|java.lang.String|false
+      @|com/example/craftmastery/specialization/Specialization.java|190|194|name|field|com.example.craftmastery.specialization.Specialization|name
+      @|com/example/craftmastery/specialization/Specialization.java|197|201|name|param|com.example.craftmastery.specialization.Specialization|Specialization|(Ljava/lang/String;)V|name|0
+      @|com/example/craftmastery/specialization/Specialization.java|217|222|level|field|com.example.craftmastery.specialization.Specialization|level
+   Method End: Specialization(Ljava/lang/String;)V
+   Method Start: getName()Ljava/lang/String;
+      @|com/example/craftmastery/specialization/Specialization.java|249|255|String|class|java.lang.String|false
+      @|com/example/craftmastery/specialization/Specialization.java|256|263|getName|method|com.example.craftmastery.specialization.Specialization|getName|()Ljava/lang/String;
+      @|com/example/craftmastery/specialization/Specialization.java|284|288|name|field|com.example.craftmastery.specialization.Specialization|name
+   Method End: getName()Ljava/lang/String;
+   Method Start: setName(Ljava/lang/String;)V
+      @|com/example/craftmastery/specialization/Specialization.java|331|335|name|param|com.example.craftmastery.specialization.Specialization|setName|(Ljava/lang/String;)V|name|0
+      @|com/example/craftmastery/specialization/Specialization.java|316|323|setName|method|com.example.craftmastery.specialization.Specialization|setName|(Ljava/lang/String;)V
+      @|com/example/craftmastery/specialization/Specialization.java|324|330|String|class|java.lang.String|false
+      @|com/example/craftmastery/specialization/Specialization.java|353|357|name|field|com.example.craftmastery.specialization.Specialization|name
+      @|com/example/craftmastery/specialization/Specialization.java|360|364|name|param|com.example.craftmastery.specialization.Specialization|setName|(Ljava/lang/String;)V|name|0
+   Method End: setName(Ljava/lang/String;)V
+   Method Start: getLevel()I
+      @|com/example/craftmastery/specialization/Specialization.java|391|399|getLevel|method|com.example.craftmastery.specialization.Specialization|getLevel|()I
+      @|com/example/craftmastery/specialization/Specialization.java|420|425|level|field|com.example.craftmastery.specialization.Specialization|level
+   Method End: getLevel()I
+   Method Start: setLevel(I)V
+      @|com/example/craftmastery/specialization/Specialization.java|466|471|level|param|com.example.craftmastery.specialization.Specialization|setLevel|(I)V|level|0
+      @|com/example/craftmastery/specialization/Specialization.java|453|461|setLevel|method|com.example.craftmastery.specialization.Specialization|setLevel|(I)V
+      @|com/example/craftmastery/specialization/Specialization.java|489|494|level|field|com.example.craftmastery.specialization.Specialization|level
+      @|com/example/craftmastery/specialization/Specialization.java|497|502|level|param|com.example.craftmastery.specialization.Specialization|setLevel|(I)V|level|0
+   Method End: setLevel(I)V
+   Method Start: incrementLevel()V
+      @|com/example/craftmastery/specialization/Specialization.java|530|544|incrementLevel|method|com.example.craftmastery.specialization.Specialization|incrementLevel|()V
+      @|com/example/craftmastery/specialization/Specialization.java|563|568|level|field|com.example.craftmastery.specialization.Specialization|level
+   Method End: incrementLevel()V
+Class End  : com.example.craftmastery.specialization.Specialization
+endProcessing "com/example/craftmastery/specialization/Specialization.java"
+
+startProcessing "com/example/craftmastery/specialization/SpecializationManager.java" md5: db9c0c9c9b9ef9682e662f3a5c953a79
+@|com/example/craftmastery/specialization/SpecializationManager.java|8|47|com.example.craftmastery.specialization|package|com.example.craftmastery.specialization|(file)
+Class Start: com.example.craftmastery.specialization.SpecializationManager
+   @|com/example/craftmastery/specialization/SpecializationManager.java|117|138|SpecializationManager|class|com.example.craftmastery.specialization.SpecializationManager|false
+   @|com/example/craftmastery/specialization/SpecializationManager.java|167|188|SpecializationManager|class|com.example.craftmastery.specialization.SpecializationManager|false
+   @|com/example/craftmastery/specialization/SpecializationManager.java|167|188|SpecializationManager|class|com.example.craftmastery.specialization.SpecializationManager|false
+   @|com/example/craftmastery/specialization/SpecializationManager.java|189|197|INSTANCE|field|com.example.craftmastery.specialization.SpecializationManager|INSTANCE|
+   @|com/example/craftmastery/specialization/SpecializationManager.java|204|225|SpecializationManager|class|com.example.craftmastery.specialization.SpecializationManager|false
+   @|com/example/craftmastery/specialization/SpecializationManager.java|246|252|String|class|java.lang.String|false
+   @|com/example/craftmastery/specialization/SpecializationManager.java|254|268|Specialization|class|com.example.craftmastery.specialization.Specialization|false
+   @|com/example/craftmastery/specialization/SpecializationManager.java|242|245|Map|class|java.util.Map|false
+   @|com/example/craftmastery/specialization/SpecializationManager.java|242|245|Map|class|java.util.Map|false
+   @|com/example/craftmastery/specialization/SpecializationManager.java|246|252|String|class|java.lang.String|false
+   @|com/example/craftmastery/specialization/SpecializationManager.java|254|268|Specialization|class|com.example.craftmastery.specialization.Specialization|false
+   @|com/example/craftmastery/specialization/SpecializationManager.java|270|285|specializations|field|com.example.craftmastery.specialization.SpecializationManager|specializations|
+   Method Start: SpecializationManager()V
+      @|com/example/craftmastery/specialization/SpecializationManager.java|302|323|SpecializationManager|method|com.example.craftmastery.specialization.SpecializationManager|SpecializationManager|()V
+      @|com/example/craftmastery/specialization/SpecializationManager.java|337|352|specializations|field|com.example.craftmastery.specialization.SpecializationManager|specializations
+      @|com/example/craftmastery/specialization/SpecializationManager.java|359|366|HashMap|class|java.util.HashMap|false
+      @|com/example/craftmastery/specialization/SpecializationManager.java|428|445|addSpecialization|method|com.example.craftmastery.specialization.SpecializationManager|addSpecialization|(Lcom/example/craftmastery/specialization/Specialization;)V
+      @|com/example/craftmastery/specialization/SpecializationManager.java|450|464|Specialization|class|com.example.craftmastery.specialization.Specialization|false
+      @|com/example/craftmastery/specialization/SpecializationManager.java|495|512|addSpecialization|method|com.example.craftmastery.specialization.SpecializationManager|addSpecialization|(Lcom/example/craftmastery/specialization/Specialization;)V
+      @|com/example/craftmastery/specialization/SpecializationManager.java|517|531|Specialization|class|com.example.craftmastery.specialization.Specialization|false
+      @|com/example/craftmastery/specialization/SpecializationManager.java|562|579|addSpecialization|method|com.example.craftmastery.specialization.SpecializationManager|addSpecialization|(Lcom/example/craftmastery/specialization/Specialization;)V
+      @|com/example/craftmastery/specialization/SpecializationManager.java|584|598|Specialization|class|com.example.craftmastery.specialization.Specialization|false
+   Method End: SpecializationManager()V
+   Method Start: getInstance()Lcom/example/craftmastery/specialization/SpecializationManager;
+      @|com/example/craftmastery/specialization/SpecializationManager.java|648|669|SpecializationManager|class|com.example.craftmastery.specialization.SpecializationManager|false
+      @|com/example/craftmastery/specialization/SpecializationManager.java|670|681|getInstance|method|com.example.craftmastery.specialization.SpecializationManager|getInstance|()Lcom/example/craftmastery/specialization/SpecializationManager;
+      @|com/example/craftmastery/specialization/SpecializationManager.java|702|710|INSTANCE|field|com.example.craftmastery.specialization.SpecializationManager|INSTANCE
+   Method End: getInstance()Lcom/example/craftmastery/specialization/SpecializationManager;
+   Method Start: addSpecialization(Lcom/example/craftmastery/specialization/Specialization;)V
+      @|com/example/craftmastery/specialization/SpecializationManager.java|771|785|specialization|param|com.example.craftmastery.specialization.SpecializationManager|addSpecialization|(Lcom/example/craftmastery/specialization/Specialization;)V|specialization|0
+      @|com/example/craftmastery/specialization/SpecializationManager.java|738|755|addSpecialization|method|com.example.craftmastery.specialization.SpecializationManager|addSpecialization|(Lcom/example/craftmastery/specialization/Specialization;)V
+      @|com/example/craftmastery/specialization/SpecializationManager.java|756|770|Specialization|class|com.example.craftmastery.specialization.Specialization|false
+      @|com/example/craftmastery/specialization/SpecializationManager.java|798|813|specializations|field|com.example.craftmastery.specialization.SpecializationManager|specializations
+      @|com/example/craftmastery/specialization/SpecializationManager.java|814|817|put|method|java.util.Map|put|(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+      @|com/example/craftmastery/specialization/SpecializationManager.java|818|832|specialization|param|com.example.craftmastery.specialization.SpecializationManager|addSpecialization|(Lcom/example/craftmastery/specialization/Specialization;)V|specialization|0
+      @|com/example/craftmastery/specialization/SpecializationManager.java|833|840|getName|method|com.example.craftmastery.specialization.Specialization|getName|()Ljava/lang/String;
+      @|com/example/craftmastery/specialization/SpecializationManager.java|844|858|specialization|param|com.example.craftmastery.specialization.SpecializationManager|addSpecialization|(Lcom/example/craftmastery/specialization/Specialization;)V|specialization|0
+   Method End: addSpecialization(Lcom/example/craftmastery/specialization/Specialization;)V
+   Method Start: getSpecialization(Ljava/lang/String;)Lcom/example/craftmastery/specialization/Specialization;
+      @|com/example/craftmastery/specialization/SpecializationManager.java|922|926|name|param|com.example.craftmastery.specialization.SpecializationManager|getSpecialization|(Ljava/lang/String;)Lcom/example/craftmastery/specialization/Specialization;|name|0
+      @|com/example/craftmastery/specialization/SpecializationManager.java|882|896|Specialization|class|com.example.craftmastery.specialization.Specialization|false
+      @|com/example/craftmastery/specialization/SpecializationManager.java|897|914|getSpecialization|method|com.example.craftmastery.specialization.SpecializationManager|getSpecialization|(Ljava/lang/String;)Lcom/example/craftmastery/specialization/Specialization;
+      @|com/example/craftmastery/specialization/SpecializationManager.java|915|921|String|class|java.lang.String|false
+      @|com/example/craftmastery/specialization/SpecializationManager.java|946|961|specializations|field|com.example.craftmastery.specialization.SpecializationManager|specializations
+      @|com/example/craftmastery/specialization/SpecializationManager.java|962|965|get|method|java.util.Map|get|(Ljava/lang/Object;)Ljava/lang/Object;
+      @|com/example/craftmastery/specialization/SpecializationManager.java|966|970|name|param|com.example.craftmastery.specialization.SpecializationManager|getSpecialization|(Ljava/lang/String;)Lcom/example/craftmastery/specialization/Specialization;|name|0
+   Method End: getSpecialization(Ljava/lang/String;)Lcom/example/craftmastery/specialization/Specialization;
+   Method Start: getAllSpecializations()Ljava/util/Map;
+      @|com/example/craftmastery/specialization/SpecializationManager.java|994|997|Map|class|java.util.Map|false
+      @|com/example/craftmastery/specialization/SpecializationManager.java|998|1004|String|class|java.lang.String|false
+      @|com/example/craftmastery/specialization/SpecializationManager.java|1006|1020|Specialization|class|com.example.craftmastery.specialization.Specialization|false
+      @|com/example/craftmastery/specialization/SpecializationManager.java|1022|1043|getAllSpecializations|method|com.example.craftmastery.specialization.SpecializationManager|getAllSpecializations|()Ljava/util/Map;
+      @|com/example/craftmastery/specialization/SpecializationManager.java|1064|1079|specializations|field|com.example.craftmastery.specialization.SpecializationManager|specializations
+   Method End: getAllSpecializations()Ljava/util/Map;
+Class End  : com.example.craftmastery.specialization.SpecializationManager
+endProcessing "com/example/craftmastery/specialization/SpecializationManager.java"
+

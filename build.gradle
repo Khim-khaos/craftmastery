@@ -1,0 +1,88 @@
+buildscript {
+    repositories {
+        mavenCentral()
+        maven { url = "https://maven.minecraftforge.net" }
+        maven { url = "https://maven.daporkchop.net" }
+        maven { url = "https://www.cursemaven.com" }
+        maven { url = "https://maven.outlands.top/releases/" }
+        maven { url = "https://maven.shedaniel.me/" }
+        maven { url = "https://maven.terraformersmc.com/releases/" }
+        maven { url = "https://github.com/juanmuscaria/maven/raw/master" }
+    }
+    dependencies {
+        classpath "com.anatawa12.forge:ForgeGradle:2.3-1.0.+" // ForgeGradle для 1.12.2
+    }
+}
+
+apply plugin: 'eclipse'
+apply plugin: 'maven-publish'
+apply plugin: 'net.minecraftforge.gradle.forge'
+
+group = 'com.example.civilization'
+version = '1.0'
+archivesBaseName = 'civilization'
+
+ext {
+    mod_version = version
+    mod_description = 'Integrating GrandEconomy for faction management, taxes, and land claims.'
+}
+
+minecraft {
+    version = "1.12.2-14.23.5.2815" // Версия Forge для Minecraft 1.12.2
+    mappings = "stable_39" // Стабильные маппинги для версии Minecraft 1.12.2
+    runDir = "run" // Рабочая директория для запуска Minecraft клиента
+}
+
+repositories {
+    mavenCentral()
+    maven { url = "https://maven.minecraftforge.net" }
+    maven { url = "https://maven.daporkchop.net" }
+    maven { url = "https://www.cursemaven.com" }
+    maven { url = "https://maven.shedaniel.me/" }
+    maven { url = "https://maven.terraformersmc.com/releases/" }
+}
+
+dependencies {
+    // Зависимости для Forge и других модов
+    implementation 'org.jetbrains:annotations:20.1.0' // Forge Annotations
+    runtimeOnly 'net.minecraftforge:forge:1.12.2-14.23.5.2815' // Forge для 1.12.2
+    implementation 'curse.maven:had-enough-items-557549:5726160' // Had Enough Items
+    implementation 'curse.maven:crafttweaker-239197:5486112' // CraftTweaker
+    implementation 'curse.maven:thermal-expansion-69163:2926431' // Thermal Expansion
+    implementation 'curse.maven:tinkers-construct-74072:2902483' // Tinkers Construct
+    implementation 'curse.maven:cofh-core-69162:2920433' // CoFH Core
+    implementation 'curse.maven:thermal-foundation-222880:2926428'  // Thermal Foundation
+    implementation 'curse.maven:redstone-flux-270789:2920436' // Redstone Flux
+}
+
+processResources {
+    from(sourceSets.main.resources.srcDirs) {
+        include 'mcmod.info'
+        // Замена переменных в файлах ресурсов
+        expand 'version': project.version,
+                'mod_id': 'civilization',
+                'mod_name': 'Civilization Mod',
+                'mod_author': 'Khim_Khaosow',
+                'mod_description': mod_description,
+                'mc_version': '1.12.2'
+    }
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+task devJar(type: Jar) {
+    classifier = 'dev'
+    from sourceSets.main.output
+}
+
+task sourcesJar(type: Jar) {
+    classifier = 'sources'
+    from sourceSets.main.allSource
+}
+
+artifacts {
+    archives devJar
+    archives sourcesJar
+}
