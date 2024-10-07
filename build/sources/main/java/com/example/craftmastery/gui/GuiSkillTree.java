@@ -2,10 +2,9 @@ package com.example.craftmastery.gui;
 
 import com.example.craftmastery.CraftMastery;
 import com.example.craftmastery.player.PlayerProgress;
-import com.example.craftmastery.player.PlayerProgressManager;
+import com.example.craftmastery.player.PlayerProgressProvider;
 import com.example.craftmastery.recipe.CustomRecipe;
 import com.example.craftmastery.recipe.RecipeManager;
-import com.example.craftmastery.notification.NotificationManager;
 import net.minecraft.client.gui.GuiButton;
 import net.minecraft.client.gui.GuiScreen;
 import net.minecraft.client.renderer.GlStateManager;
@@ -26,7 +25,7 @@ public class GuiSkillTree extends GuiScreen {
 
     public GuiSkillTree(EntityPlayer player) {
         this.player = player;
-        this.playerProgress = PlayerProgressManager.get(player).getPlayerProgress(player);
+        this.playerProgress = player.getCapability(PlayerProgressProvider.PLAYER_PROGRESS_CAPABILITY, null);
         this.recipes = RecipeManager.getAllRecipes();
     }
 
@@ -39,7 +38,7 @@ public class GuiSkillTree extends GuiScreen {
         for (int i = 0; i < recipes.size(); i++) {
             CustomRecipe recipe = recipes.get(i);
             int x = guiLeft + 10 + (i % 5) * 50;
-            int y = guiTop + 30 + (i / 5) * 50;
+            int y = guiTop + 60 + (i / 5) * 50;
             buttonList.add(new GuiButton(i, x, y, 40, 40, ""));
         }
     }
@@ -53,9 +52,9 @@ public class GuiSkillTree extends GuiScreen {
         drawTexturedModalRect(guiLeft, guiTop, 0, 0, GUI_WIDTH, GUI_HEIGHT);
 
         fontRenderer.drawString("Skill Tree", guiLeft + 8, guiTop + 6, 4210752);
-        fontRenderer.drawString("Craft Points: " + playerProgress.getCraftPoints(), guiLeft + 8, guiTop + 18, 4210752);
-        fontRenderer.drawString("Level: " + playerProgress.getLevel(), guiLeft + 8, guiTop + 30, 4210752);
-        fontRenderer.drawString("XP: " + playerProgress.getExperience(), guiLeft + 8, guiTop + 42, 4210752);
+        fontRenderer.drawString("Level: " + playerProgress.getLevel(), guiLeft + 8, guiTop + 18, 4210752);
+        fontRenderer.drawString("XP: " + playerProgress.getExperience() + " / " + playerProgress.getExpNeededForNextLevel(), guiLeft + 8, guiTop + 30, 4210752);
+        fontRenderer.drawString("Craft Points: " + playerProgress.getCraftPoints(), guiLeft + 8, guiTop + 42, 4210752);
 
         for (int i = 0; i < recipes.size(); i++) {
             CustomRecipe recipe = recipes.get(i);
@@ -87,11 +86,10 @@ public class GuiSkillTree extends GuiScreen {
     protected void actionPerformed(GuiButton button) throws IOException {
         if (button.id >= 0 && button.id < recipes.size()) {
             CustomRecipe recipe = recipes.get(button.id);
-            if (playerProgress.getCraftPoints() >= recipe.getPointCost()) {
-                playerProgress.unlockRecipe(recipe, player);
+            if (playerProgress.getCraftPoints() >= recipe.getPointCost() && !playerProgress.isRecipeUnlocked(recipe)) {
+                playerProgress.unlockRecipe(recipe);
                 playerProgress.spendCraftPoints(recipe.getPointCost());
-                PlayerProgressManager.get(player).markDirty();
-                NotificationManager.addNotification("Unlocked recipe: " + recipe.getName());
+                button.enabled = false;
             }
         }
     }

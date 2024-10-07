@@ -18,7 +18,7 @@ import java.util.List;
 
 @Mod.EventBusSubscriber(Side.CLIENT)
 public class NotificationManager {
-    private static final ResourceLocation NOTIFICATION_TEXTURE = new ResourceLocation(CraftMastery.MODID, "textures/gui/notifications.png");
+    private static final ResourceLocation NOTIFICATION_TEXTURE = new ResourceLocation(CraftMastery.MODID, "textures/gui/notification.png");
     private static final int NOTIFICATION_WIDTH = 200;
     private static final int NOTIFICATION_HEIGHT = 20;
     private static final int DISPLAY_TIME = 200; // Ticks
@@ -44,6 +44,13 @@ public class NotificationManager {
         GlStateManager.pushMatrix();
         GlStateManager.enableBlend();
         GlStateManager.color(1.0F, 1.0F, 1.0F, 1.0F);
+
+        // Проверяем, существует ли текстура
+        if (mc.getTextureManager().getTexture(NOTIFICATION_TEXTURE) == null) {
+            CraftMastery.logger.error("Notification texture not found: " + NOTIFICATION_TEXTURE);
+            GlStateManager.popMatrix();
+            return;
+        }
 
         mc.getTextureManager().bindTexture(NOTIFICATION_TEXTURE);
 

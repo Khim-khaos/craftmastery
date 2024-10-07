@@ -1,5 +1,6 @@
 package com.example.craftmastery.event;
 
+import com.example.craftmastery.CraftMastery;
 import com.example.craftmastery.gui.GuiSkillTree;
 import com.example.craftmastery.keybinding.KeyBindings;
 import net.minecraft.client.Minecraft;
@@ -9,17 +10,14 @@ import net.minecraftforge.fml.common.gameevent.InputEvent;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-@Mod.EventBusSubscriber(Side.CLIENT)
+@Mod.EventBusSubscriber(modid = CraftMastery.MODID, value = Side.CLIENT)
 public class KeyInputHandler {
 
     @SubscribeEvent
     @SideOnly(Side.CLIENT)
     public static void onKeyInput(InputEvent.KeyInputEvent event) {
-        if (KeyBindings.openSkillTreeKey.isPressed()) {
-            Minecraft mc = Minecraft.getMinecraft();
-            if (mc.player != null) {
-                mc.displayGuiScreen(new GuiSkillTree(mc.player));
-            }
+        if (KeyBindings.openSkillTreeGui.isPressed()) {
+            Minecraft.getMinecraft().displayGuiScreen(new GuiSkillTree(Minecraft.getMinecraft().player));
         }
     }
 }

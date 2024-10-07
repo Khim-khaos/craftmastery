@@ -1,12 +1,9 @@
 package com.example.craftmastery.player;
 
 import com.example.craftmastery.recipe.CustomRecipe;
-import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.nbt.NBTTagList;
 import net.minecraft.nbt.NBTTagString;
-import net.minecraft.potion.Potion;
-import net.minecraft.potion.PotionEffect;
 import net.minecraftforge.common.util.Constants;
 
 import java.util.HashSet;
@@ -29,10 +26,8 @@ public class PlayerProgress {
         return unlockedRecipes.contains(recipe.getName());
     }
 
-    public void unlockRecipe(CustomRecipe recipe, EntityPlayer player) {
-        if (unlockedRecipes.add(recipe.getName())) {
-            applyRecipeUnlockEffect(player);
-        }
+    public void unlockRecipe(CustomRecipe recipe) {
+        unlockedRecipes.add(recipe.getName());
     }
 
     public void addCraftPoints(int points) {
@@ -47,38 +42,27 @@ public class PlayerProgress {
         return false;
     }
 
-    public void addExperience(int exp, EntityPlayer player) {
+    public void addExperience(int exp) {
         this.experience += exp;
-        checkLevelUp(player);
+        checkLevelUp();
     }
 
-    private void checkLevelUp(EntityPlayer player) {
+    private void checkLevelUp() {
         int expNeeded = getExpNeededForNextLevel();
         while (experience >= expNeeded) {
             level++;
             experience -= expNeeded;
             expNeeded = getExpNeededForNextLevel();
-            onLevelUp(player);
+            onLevelUp();
         }
     }
 
-    private int getExpNeededForNextLevel() {
-        return level * 100; // Простая формула, можно усложнить
+    public int getExpNeededForNextLevel() {
+        return level * 100; // Simple formula, can be adjusted
     }
 
-    private void onLevelUp(EntityPlayer player) {
-        craftPoints += 5; // Награда за повышение уровня
-        applyLevelUpEffect(player);
-    }
-
-    private void applyLevelUpEffect(EntityPlayer player) {
-        // Пример эффекта: Скорость на 30 секунд
-        player.addPotionEffect(new PotionEffect(Potion.getPotionById(1), 600, 1));
-    }
-
-    private void applyRecipeUnlockEffect(EntityPlayer player) {
-        // Пример эффекта: Регенерация на 10 секунд
-        player.addPotionEffect(new PotionEffect(Potion.getPotionById(10), 200, 0));
+    private void onLevelUp() {
+        craftPoints += 5; // Reward for leveling up
     }
 
     public int getCraftPoints() {
@@ -115,5 +99,27 @@ public class PlayerProgress {
         craftPoints = nbt.getInteger("CraftPoints");
         level = nbt.getInteger("Level");
         experience = nbt.getInteger("Experience");
+    }
+
+    public Set<String> getUnlockedRecipes() {
+        return new HashSet<>(unlockedRecipes);
+    }
+
+    public void setUnlockedRecipes(Set<String> recipes) {
+        this.unlockedRecipes.clear();
+        this.unlockedRecipes.addAll(recipes);
+    }
+
+    public void setCraftPoints(int points) {
+        this.craftPoints = points;
+    }
+
+    public void setLevel(int level) {
+        this.level = level;
+    }
+
+    public void setExperience(int experience) {
+        this.experience = experience;
+        checkLevelUp();
     }
 }
