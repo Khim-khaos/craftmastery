@@ -5,6 +5,7 @@ import com.example.craftmastery.player.PlayerProgress;
 import com.example.craftmastery.player.PlayerProgressManager;
 import com.example.craftmastery.recipe.CustomRecipe;
 import com.example.craftmastery.recipe.RecipeManager;
+import com.example.craftmastery.notification.NotificationManager;
 import net.minecraft.client.gui.GuiButton;
 import net.minecraft.client.gui.GuiScreen;
 import net.minecraft.client.renderer.GlStateManager;
@@ -35,7 +36,6 @@ public class GuiSkillTree extends GuiScreen {
         int guiLeft = (width - GUI_WIDTH) / 2;
         int guiTop = (height - GUI_HEIGHT) / 2;
 
-        // Add buttons for each recipe
         for (int i = 0; i < recipes.size(); i++) {
             CustomRecipe recipe = recipes.get(i);
             int x = guiLeft + 10 + (i % 5) * 50;
@@ -54,6 +54,8 @@ public class GuiSkillTree extends GuiScreen {
 
         fontRenderer.drawString("Skill Tree", guiLeft + 8, guiTop + 6, 4210752);
         fontRenderer.drawString("Craft Points: " + playerProgress.getCraftPoints(), guiLeft + 8, guiTop + 18, 4210752);
+        fontRenderer.drawString("Level: " + playerProgress.getLevel(), guiLeft + 8, guiTop + 30, 4210752);
+        fontRenderer.drawString("XP: " + playerProgress.getExperience(), guiLeft + 8, guiTop + 42, 4210752);
 
         for (int i = 0; i < recipes.size(); i++) {
             CustomRecipe recipe = recipes.get(i);
@@ -72,7 +74,6 @@ public class GuiSkillTree extends GuiScreen {
 
         super.drawScreen(mouseX, mouseY, partialTicks);
 
-        // Draw tooltips
         for (int i = 0; i < recipes.size(); i++) {
             CustomRecipe recipe = recipes.get(i);
             GuiButton button = buttonList.get(i);
@@ -87,9 +88,10 @@ public class GuiSkillTree extends GuiScreen {
         if (button.id >= 0 && button.id < recipes.size()) {
             CustomRecipe recipe = recipes.get(button.id);
             if (playerProgress.getCraftPoints() >= recipe.getPointCost()) {
-                playerProgress.unlockRecipe(recipe);
+                playerProgress.unlockRecipe(recipe, player);
                 playerProgress.spendCraftPoints(recipe.getPointCost());
                 PlayerProgressManager.get(player).markDirty();
+                NotificationManager.addNotification("Unlocked recipe: " + recipe.getName());
             }
         }
     }

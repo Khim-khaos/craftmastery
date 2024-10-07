@@ -1,64 +1,57 @@
 Unsupposrted library path: D:\craftmastery\build\classes\java\api
 Unsupposrted library path: D:\craftmastery\build\resources\api
 Symbol range map extraction starting
-Processing 15 files
-startProcessing "com/example/craftmastery/CraftMastery.java" md5: 358c27e34da3995227bb1c9331a62507
+Processing 18 files
+startProcessing "com/example/craftmastery/CraftMastery.java" md5: dcf33be619141e89968bed4cef720561
 @|com/example/craftmastery/CraftMastery.java|8|32|com.example.craftmastery|package|com.example.craftmastery|(file)
 Class Start: com.example.craftmastery.CraftMastery
-   @|com/example/craftmastery/CraftMastery.java|463|466|Mod|class|net.minecraftforge.fml.common.Mod|false
-   @|com/example/craftmastery/CraftMastery.java|467|472|modid|method|net.minecraftforge.fml.common.Mod|modid|()Ljava/lang/String;
-   @|com/example/craftmastery/CraftMastery.java|475|487|CraftMastery|class|com.example.craftmastery.CraftMastery|false
-   @|com/example/craftmastery/CraftMastery.java|488|493|MODID|field|com.example.craftmastery.CraftMastery|MODID
-   @|com/example/craftmastery/CraftMastery.java|495|499|name|method|net.minecraftforge.fml.common.Mod|name|()Ljava/lang/String;
-   @|com/example/craftmastery/CraftMastery.java|502|514|CraftMastery|class|com.example.craftmastery.CraftMastery|false
-   @|com/example/craftmastery/CraftMastery.java|515|519|NAME|field|com.example.craftmastery.CraftMastery|NAME
-   @|com/example/craftmastery/CraftMastery.java|521|528|version|method|net.minecraftforge.fml.common.Mod|version|()Ljava/lang/String;
-   @|com/example/craftmastery/CraftMastery.java|531|543|CraftMastery|class|com.example.craftmastery.CraftMastery|false
-   @|com/example/craftmastery/CraftMastery.java|544|551|VERSION|field|com.example.craftmastery.CraftMastery|VERSION
-   @|com/example/craftmastery/CraftMastery.java|567|579|CraftMastery|class|com.example.craftmastery.CraftMastery|false
+   @|com/example/craftmastery/CraftMastery.java|351|354|Mod|class|net.minecraftforge.fml.common.Mod|false
+   @|com/example/craftmastery/CraftMastery.java|355|360|modid|method|net.minecraftforge.fml.common.Mod|modid|()Ljava/lang/String;
+   @|com/example/craftmastery/CraftMastery.java|363|375|CraftMastery|class|com.example.craftmastery.CraftMastery|false
+   @|com/example/craftmastery/CraftMastery.java|376|381|MODID|field|com.example.craftmastery.CraftMastery|MODID
+   @|com/example/craftmastery/CraftMastery.java|383|387|name|method|net.minecraftforge.fml.common.Mod|name|()Ljava/lang/String;
+   @|com/example/craftmastery/CraftMastery.java|390|402|CraftMastery|class|com.example.craftmastery.CraftMastery|false
+   @|com/example/craftmastery/CraftMastery.java|403|407|NAME|field|com.example.craftmastery.CraftMastery|NAME
+   @|com/example/craftmastery/CraftMastery.java|409|416|version|method|net.minecraftforge.fml.common.Mod|version|()Ljava/lang/String;
+   @|com/example/craftmastery/CraftMastery.java|419|431|CraftMastery|class|com.example.craftmastery.CraftMastery|false
+   @|com/example/craftmastery/CraftMastery.java|432|439|VERSION|field|com.example.craftmastery.CraftMastery|VERSION
+   @|com/example/craftmastery/CraftMastery.java|455|467|CraftMastery|class|com.example.craftmastery.CraftMastery|false
+   @|com/example/craftmastery/CraftMastery.java|495|501|String|class|java.lang.String|false
+   @|com/example/craftmastery/CraftMastery.java|495|501|String|class|java.lang.String|false
+   @|com/example/craftmastery/CraftMastery.java|502|507|MODID|field|com.example.craftmastery.CraftMastery|MODID|
+   @|com/example/craftmastery/CraftMastery.java|551|557|String|class|java.lang.String|false
+   @|com/example/craftmastery/CraftMastery.java|551|557|String|class|java.lang.String|false
+   @|com/example/craftmastery/CraftMastery.java|558|562|NAME|field|com.example.craftmastery.CraftMastery|NAME|
    @|com/example/craftmastery/CraftMastery.java|607|613|String|class|java.lang.String|false
    @|com/example/craftmastery/CraftMastery.java|607|613|String|class|java.lang.String|false
-   @|com/example/craftmastery/CraftMastery.java|614|619|MODID|field|com.example.craftmastery.CraftMastery|MODID|
-   @|com/example/craftmastery/CraftMastery.java|663|669|String|class|java.lang.String|false
-   @|com/example/craftmastery/CraftMastery.java|663|669|String|class|java.lang.String|false
-   @|com/example/craftmastery/CraftMastery.java|670|674|NAME|field|com.example.craftmastery.CraftMastery|NAME|
-   @|com/example/craftmastery/CraftMastery.java|718|724|String|class|java.lang.String|false
-   @|com/example/craftmastery/CraftMastery.java|718|724|String|class|java.lang.String|false
-   @|com/example/craftmastery/CraftMastery.java|725|732|VERSION|field|com.example.craftmastery.CraftMastery|VERSION|
-   @|com/example/craftmastery/CraftMastery.java|764|770|Logger|class|org.apache.logging.log4j.Logger|false
-   @|com/example/craftmastery/CraftMastery.java|764|770|Logger|class|org.apache.logging.log4j.Logger|false
-   @|com/example/craftmastery/CraftMastery.java|771|777|logger|field|com.example.craftmastery.CraftMastery|logger|
+   @|com/example/craftmastery/CraftMastery.java|614|621|VERSION|field|com.example.craftmastery.CraftMastery|VERSION|
+   @|com/example/craftmastery/CraftMastery.java|678|690|CraftMastery|class|com.example.craftmastery.CraftMastery|false
+   @|com/example/craftmastery/CraftMastery.java|639|651|Mod.Instance|class|net.minecraftforge.fml.common.Mod.Instance|false
+   @|com/example/craftmastery/CraftMastery.java|652|657|MODID|field|com.example.craftmastery.CraftMastery|MODID
+   @|com/example/craftmastery/CraftMastery.java|678|690|CraftMastery|class|com.example.craftmastery.CraftMastery|false
+   @|com/example/craftmastery/CraftMastery.java|691|699|instance|field|com.example.craftmastery.CraftMastery|instance|
    Method Start: preInit(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V
-      @|com/example/craftmastery/CraftMastery.java|855|860|event|param|com.example.craftmastery.CraftMastery|preInit|(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V|event|0
-      @|com/example/craftmastery/CraftMastery.java|787|803|Mod.EventHandler|class|net.minecraftforge.fml.common.Mod.EventHandler|false
-      @|com/example/craftmastery/CraftMastery.java|821|828|preInit|method|com.example.craftmastery.CraftMastery|preInit|(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V
-      @|com/example/craftmastery/CraftMastery.java|829|854|FMLPreInitializationEvent|class|net.minecraftforge.fml.common.event.FMLPreInitializationEvent|false
-      @|com/example/craftmastery/CraftMastery.java|873|879|logger|field|com.example.craftmastery.CraftMastery|logger
-      @|com/example/craftmastery/CraftMastery.java|882|887|event|param|com.example.craftmastery.CraftMastery|preInit|(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V|event|0
-      @|com/example/craftmastery/CraftMastery.java|888|897|getModLog|method|net.minecraftforge.fml.common.event.FMLPreInitializationEvent|getModLog|()Lorg/apache/logging/log4j/Logger;
+      @|com/example/craftmastery/CraftMastery.java|777|782|event|param|com.example.craftmastery.CraftMastery|preInit|(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V|event|0
+      @|com/example/craftmastery/CraftMastery.java|709|725|Mod.EventHandler|class|net.minecraftforge.fml.common.Mod.EventHandler|false
+      @|com/example/craftmastery/CraftMastery.java|743|750|preInit|method|com.example.craftmastery.CraftMastery|preInit|(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V
+      @|com/example/craftmastery/CraftMastery.java|751|776|FMLPreInitializationEvent|class|net.minecraftforge.fml.common.event.FMLPreInitializationEvent|false
    Method End: preInit(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V
-   Method Start: serverLoad(Lnet/minecraftforge/fml/common/event/FMLServerStartingEvent;)V
-      @|com/example/craftmastery/CraftMastery.java|982|987|event|param|com.example.craftmastery.CraftMastery|serverLoad|(Lnet/minecraftforge/fml/common/event/FMLServerStartingEvent;)V|event|0
-      @|com/example/craftmastery/CraftMastery.java|914|930|Mod.EventHandler|class|net.minecraftforge.fml.common.Mod.EventHandler|false
-      @|com/example/craftmastery/CraftMastery.java|948|958|serverLoad|method|com.example.craftmastery.CraftMastery|serverLoad|(Lnet/minecraftforge/fml/common/event/FMLServerStartingEvent;)V
-      @|com/example/craftmastery/CraftMastery.java|959|981|FMLServerStartingEvent|class|net.minecraftforge.fml.common.event.FMLServerStartingEvent|false
-      @|com/example/craftmastery/CraftMastery.java|1000|1005|event|param|com.example.craftmastery.CraftMastery|serverLoad|(Lnet/minecraftforge/fml/common/event/FMLServerStartingEvent;)V|event|0
-      @|com/example/craftmastery/CraftMastery.java|1006|1027|registerServerCommand|method|net.minecraftforge.fml.common.event.FMLServerStartingEvent|registerServerCommand|(Lnet/minecraft/command/ICommand;)V
-      @|com/example/craftmastery/CraftMastery.java|1032|1049|CommandGivePoints|class|com.example.craftmastery.command.CommandGivePoints|false
-   Method End: serverLoad(Lnet/minecraftforge/fml/common/event/FMLServerStartingEvent;)V
    Method Start: init(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
-      @|com/example/craftmastery/CraftMastery.java|1131|1136|event|param|com.example.craftmastery.CraftMastery|init|(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V|event|0
-      @|com/example/craftmastery/CraftMastery.java|1069|1085|Mod.EventHandler|class|net.minecraftforge.fml.common.Mod.EventHandler|false
-      @|com/example/craftmastery/CraftMastery.java|1103|1107|init|method|com.example.craftmastery.CraftMastery|init|(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
-      @|com/example/craftmastery/CraftMastery.java|1108|1130|FMLInitializationEvent|class|net.minecraftforge.fml.common.event.FMLInitializationEvent|false
-      @|com/example/craftmastery/CraftMastery.java|1149|1155|logger|field|com.example.craftmastery.CraftMastery|logger
-      @|com/example/craftmastery/CraftMastery.java|1156|1160|info|method|org.apache.logging.log4j.Logger|info|(Ljava/lang/String;)V
+      @|com/example/craftmastery/CraftMastery.java|905|910|event|param|com.example.craftmastery.CraftMastery|init|(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V|event|0
+      @|com/example/craftmastery/CraftMastery.java|843|859|Mod.EventHandler|class|net.minecraftforge.fml.common.Mod.EventHandler|false
+      @|com/example/craftmastery/CraftMastery.java|877|881|init|method|com.example.craftmastery.CraftMastery|init|(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
+      @|com/example/craftmastery/CraftMastery.java|882|904|FMLInitializationEvent|class|net.minecraftforge.fml.common.event.FMLInitializationEvent|false
+      @|com/example/craftmastery/CraftMastery.java|953|958|event|param|com.example.craftmastery.CraftMastery|init|(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V|event|0
+      @|com/example/craftmastery/CraftMastery.java|959|966|getSide|method|net.minecraftforge.fml.common.event.FMLStateEvent|getSide|()Lnet/minecraftforge/fml/relauncher/Side;
+      @|com/example/craftmastery/CraftMastery.java|969|977|isClient|method|net.minecraftforge.fml.relauncher.Side|isClient|()Z
+      @|com/example/craftmastery/CraftMastery.java|996|1007|KeyBindings|class|com.example.craftmastery.keybinding.KeyBindings|false
+      @|com/example/craftmastery/CraftMastery.java|1008|1012|init|method|com.example.craftmastery.keybinding.KeyBindings|init|()V
    Method End: init(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
    Method Start: postInit(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V
-      @|com/example/craftmastery/CraftMastery.java|1278|1283|event|param|com.example.craftmastery.CraftMastery|postInit|(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V|event|0
-      @|com/example/craftmastery/CraftMastery.java|1208|1224|Mod.EventHandler|class|net.minecraftforge.fml.common.Mod.EventHandler|false
-      @|com/example/craftmastery/CraftMastery.java|1242|1250|postInit|method|com.example.craftmastery.CraftMastery|postInit|(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V
-      @|com/example/craftmastery/CraftMastery.java|1251|1277|FMLPostInitializationEvent|class|net.minecraftforge.fml.common.event.FMLPostInitializationEvent|false
+      @|com/example/craftmastery/CraftMastery.java|1112|1117|event|param|com.example.craftmastery.CraftMastery|postInit|(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V|event|0
+      @|com/example/craftmastery/CraftMastery.java|1042|1058|Mod.EventHandler|class|net.minecraftforge.fml.common.Mod.EventHandler|false
+      @|com/example/craftmastery/CraftMastery.java|1076|1084|postInit|method|com.example.craftmastery.CraftMastery|postInit|(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V
+      @|com/example/craftmastery/CraftMastery.java|1085|1111|FMLPostInitializationEvent|class|net.minecraftforge.fml.common.event.FMLPostInitializationEvent|false
    Method End: postInit(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V
 Class End  : com.example.craftmastery.CraftMastery
 endProcessing "com/example/craftmastery/CraftMastery.java"
@@ -128,68 +121,104 @@ Class Start: com.example.craftmastery.command.CommandGivePoints
 Class End  : com.example.craftmastery.command.CommandGivePoints
 endProcessing "com/example/craftmastery/command/CommandGivePoints.java"
 
-startProcessing "com/example/craftmastery/event/ClientEventHandler.java" md5: 96d6769a6d9c9f1fb68358cb0ec792e0
+startProcessing "com/example/craftmastery/event/ClientEventHandler.java" md5: 357cd1828de332ed589a1d8c533142f3
 @|com/example/craftmastery/event/ClientEventHandler.java|8|38|com.example.craftmastery.event|package|com.example.craftmastery.event|(file)
 Class Start: com.example.craftmastery.event.ClientEventHandler
-   @|com/example/craftmastery/event/ClientEventHandler.java|345|367|Mod.EventBusSubscriber|class|net.minecraftforge.fml.common.Mod.EventBusSubscriber|false
-   @|com/example/craftmastery/event/ClientEventHandler.java|382|400|ClientEventHandler|class|com.example.craftmastery.event.ClientEventHandler|false
-   Method Start: onKeyInput(Lnet/minecraftforge/fml/common/gameevent/InputEvent$KeyInputEvent;)V
-      @|com/example/craftmastery/event/ClientEventHandler.java|486|491|event|param|com.example.craftmastery.event.ClientEventHandler|onKeyInput|(Lnet/minecraftforge/fml/common/gameevent/InputEvent$KeyInputEvent;)V|event|0
-      @|com/example/craftmastery/event/ClientEventHandler.java|411|425|SubscribeEvent|class|net.minecraftforge.fml.common.eventhandler.SubscribeEvent|false
-      @|com/example/craftmastery/event/ClientEventHandler.java|450|460|onKeyInput|method|com.example.craftmastery.event.ClientEventHandler|onKeyInput|(Lnet/minecraftforge/fml/common/gameevent/InputEvent$KeyInputEvent;)V
-      @|com/example/craftmastery/event/ClientEventHandler.java|461|485|InputEvent.KeyInputEvent|class|net.minecraftforge.fml.common.gameevent.InputEvent.KeyInputEvent|false
-      @|com/example/craftmastery/event/ClientEventHandler.java|508|516|Keyboard|class|org.lwjgl.input.Keyboard|false
-      @|com/example/craftmastery/event/ClientEventHandler.java|517|533|getEventKeyState|method|org.lwjgl.input.Keyboard|getEventKeyState|()Z
-      @|com/example/craftmastery/event/ClientEventHandler.java|539|547|Keyboard|class|org.lwjgl.input.Keyboard|false
-      @|com/example/craftmastery/event/ClientEventHandler.java|548|559|getEventKey|method|org.lwjgl.input.Keyboard|getEventKey|()I
-      @|com/example/craftmastery/event/ClientEventHandler.java|565|573|Keyboard|class|org.lwjgl.input.Keyboard|false
-      @|com/example/craftmastery/event/ClientEventHandler.java|574|579|KEY_R|field|org.lwjgl.input.Keyboard|KEY_R
-      @|com/example/craftmastery/event/ClientEventHandler.java|596|605|Minecraft|class|net.minecraft.client.Minecraft|false
-      @|com/example/craftmastery/event/ClientEventHandler.java|611|620|Minecraft|class|net.minecraft.client.Minecraft|false
-      @|com/example/craftmastery/event/ClientEventHandler.java|621|633|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
-      @|com/example/craftmastery/event/ClientEventHandler.java|657|663|player|field|net.minecraft.client.Minecraft|player
-      @|com/example/craftmastery/event/ClientEventHandler.java|695|711|displayGuiScreen|method|net.minecraft.client.Minecraft|displayGuiScreen|(Lnet/minecraft/client/gui/GuiScreen;)V
-      @|com/example/craftmastery/event/ClientEventHandler.java|716|732|GuiRecipeManager|class|com.example.craftmastery.gui.GuiRecipeManager|false
-      @|com/example/craftmastery/event/ClientEventHandler.java|736|742|player|field|net.minecraft.client.Minecraft|player
-   Method End: onKeyInput(Lnet/minecraftforge/fml/common/gameevent/InputEvent$KeyInputEvent;)V
+   @|com/example/craftmastery/event/ClientEventHandler.java|362|384|Mod.EventBusSubscriber|class|net.minecraftforge.fml.common.Mod.EventBusSubscriber|false
+   @|com/example/craftmastery/event/ClientEventHandler.java|385|390|modid|method|net.minecraftforge.fml.common.Mod.EventBusSubscriber|modid|()Ljava/lang/String;
+   @|com/example/craftmastery/event/ClientEventHandler.java|393|405|CraftMastery|class|com.example.craftmastery.CraftMastery|false
+   @|com/example/craftmastery/event/ClientEventHandler.java|406|411|MODID|field|com.example.craftmastery.CraftMastery|MODID
+   @|com/example/craftmastery/event/ClientEventHandler.java|413|418|value|method|net.minecraftforge.fml.common.Mod.EventBusSubscriber|value|()[Lnet/minecraftforge/fml/relauncher/Side;
+   @|com/example/craftmastery/event/ClientEventHandler.java|421|425|Side|class|net.minecraftforge.fml.relauncher.Side|false
+   @|com/example/craftmastery/event/ClientEventHandler.java|426|432|CLIENT|field|net.minecraftforge.fml.relauncher.Side|CLIENT
+   @|com/example/craftmastery/event/ClientEventHandler.java|448|466|ClientEventHandler|class|com.example.craftmastery.event.ClientEventHandler|false
+   Method Start: onClientTick(Lnet/minecraftforge/fml/common/gameevent/TickEvent$ClientTickEvent;)V
+      @|com/example/craftmastery/event/ClientEventHandler.java|583|588|event|param|com.example.craftmastery.event.ClientEventHandler|onClientTick|(Lnet/minecraftforge/fml/common/gameevent/TickEvent$ClientTickEvent;)V|event|0
+      @|com/example/craftmastery/event/ClientEventHandler.java|477|491|SubscribeEvent|class|net.minecraftforge.fml.common.eventhandler.SubscribeEvent|false
+      @|com/example/craftmastery/event/ClientEventHandler.java|498|506|SideOnly|class|net.minecraftforge.fml.relauncher.SideOnly|false
+      @|com/example/craftmastery/event/ClientEventHandler.java|507|511|Side|class|net.minecraftforge.fml.relauncher.Side|false
+      @|com/example/craftmastery/event/ClientEventHandler.java|512|518|CLIENT|field|net.minecraftforge.fml.relauncher.Side|CLIENT
+      @|com/example/craftmastery/event/ClientEventHandler.java|544|556|onClientTick|method|com.example.craftmastery.event.ClientEventHandler|onClientTick|(Lnet/minecraftforge/fml/common/gameevent/TickEvent$ClientTickEvent;)V
+      @|com/example/craftmastery/event/ClientEventHandler.java|557|582|TickEvent.ClientTickEvent|class|net.minecraftforge.fml.common.gameevent.TickEvent.ClientTickEvent|false
+      @|com/example/craftmastery/event/ClientEventHandler.java|605|610|event|param|com.example.craftmastery.event.ClientEventHandler|onClientTick|(Lnet/minecraftforge/fml/common/gameevent/TickEvent$ClientTickEvent;)V|event|0
+      @|com/example/craftmastery/event/ClientEventHandler.java|611|616|phase|field|net.minecraftforge.fml.common.gameevent.TickEvent|phase
+      @|com/example/craftmastery/event/ClientEventHandler.java|620|635|TickEvent.Phase|class|net.minecraftforge.fml.common.gameevent.TickEvent.Phase|false
+      @|com/example/craftmastery/event/ClientEventHandler.java|636|639|END|field|net.minecraftforge.fml.common.gameevent.TickEvent.Phase|END
+   Method End: onClientTick(Lnet/minecraftforge/fml/common/gameevent/TickEvent$ClientTickEvent;)V
 Class End  : com.example.craftmastery.event.ClientEventHandler
 endProcessing "com/example/craftmastery/event/ClientEventHandler.java"
 
-startProcessing "com/example/craftmastery/event/CraftingEventHandler.java" md5: c92fc962c81b4c8e646d82004b9ef791
+startProcessing "com/example/craftmastery/event/CraftingEventHandler.java" md5: 3406b028f494e317fc1f30777720d4e7
 @|com/example/craftmastery/event/CraftingEventHandler.java|8|38|com.example.craftmastery.event|package|com.example.craftmastery.event|(file)
 Class Start: com.example.craftmastery.event.CraftingEventHandler
-   @|com/example/craftmastery/event/CraftingEventHandler.java|533|555|Mod.EventBusSubscriber|class|net.minecraftforge.fml.common.Mod.EventBusSubscriber|false
-   @|com/example/craftmastery/event/CraftingEventHandler.java|570|590|CraftingEventHandler|class|com.example.craftmastery.event.CraftingEventHandler|false
+   @|com/example/craftmastery/event/CraftingEventHandler.java|600|622|Mod.EventBusSubscriber|class|net.minecraftforge.fml.common.Mod.EventBusSubscriber|false
+   @|com/example/craftmastery/event/CraftingEventHandler.java|637|657|CraftingEventHandler|class|com.example.craftmastery.event.CraftingEventHandler|false
    Method Start: onItemCrafted(Lnet/minecraftforge/fml/common/gameevent/PlayerEvent$ItemCraftedEvent;)V
-      @|com/example/craftmastery/event/CraftingEventHandler.java|683|688|event|param|com.example.craftmastery.event.CraftingEventHandler|onItemCrafted|(Lnet/minecraftforge/fml/common/gameevent/PlayerEvent$ItemCraftedEvent;)V|event|0
-      @|com/example/craftmastery/event/CraftingEventHandler.java|601|615|SubscribeEvent|class|net.minecraftforge.fml.common.eventhandler.SubscribeEvent|false
-      @|com/example/craftmastery/event/CraftingEventHandler.java|640|653|onItemCrafted|method|com.example.craftmastery.event.CraftingEventHandler|onItemCrafted|(Lnet/minecraftforge/fml/common/gameevent/PlayerEvent$ItemCraftedEvent;)V
-      @|com/example/craftmastery/event/CraftingEventHandler.java|654|682|PlayerEvent.ItemCraftedEvent|class|net.minecraftforge.fml.common.gameevent.PlayerEvent.ItemCraftedEvent|false
-      @|com/example/craftmastery/event/CraftingEventHandler.java|701|713|EntityPlayer|class|net.minecraft.entity.player.EntityPlayer|false
-      @|com/example/craftmastery/event/CraftingEventHandler.java|723|728|event|param|com.example.craftmastery.event.CraftingEventHandler|onItemCrafted|(Lnet/minecraftforge/fml/common/gameevent/PlayerEvent$ItemCraftedEvent;)V|event|0
-      @|com/example/craftmastery/event/CraftingEventHandler.java|729|735|player|field|net.minecraftforge.fml.common.gameevent.PlayerEvent|player
-      @|com/example/craftmastery/event/CraftingEventHandler.java|746|755|ItemStack|class|net.minecraft.item.ItemStack|false
-      @|com/example/craftmastery/event/CraftingEventHandler.java|766|771|event|param|com.example.craftmastery.event.CraftingEventHandler|onItemCrafted|(Lnet/minecraftforge/fml/common/gameevent/PlayerEvent$ItemCraftedEvent;)V|event|0
-      @|com/example/craftmastery/event/CraftingEventHandler.java|772|780|crafting|field|net.minecraftforge.fml.common.gameevent.PlayerEvent.ItemCraftedEvent|crafting
-      @|com/example/craftmastery/event/CraftingEventHandler.java|806|813|isEmpty|method|net.minecraft.item.ItemStack|isEmpty|()Z
-      @|com/example/craftmastery/event/CraftingEventHandler.java|832|844|CustomRecipe|class|com.example.craftmastery.recipe.CustomRecipe|false
-      @|com/example/craftmastery/event/CraftingEventHandler.java|860|873|RecipeManager|class|com.example.craftmastery.recipe.RecipeManager|false
-      @|com/example/craftmastery/event/CraftingEventHandler.java|874|891|getRecipeByOutput|method|com.example.craftmastery.recipe.RecipeManager|getRecipeByOutput|(Lnet/minecraft/item/ItemStack;)Lcom/example/craftmastery/recipe/CustomRecipe;
-      @|com/example/craftmastery/event/CraftingEventHandler.java|962|976|PlayerProgress|class|com.example.craftmastery.player.PlayerProgress|false
-      @|com/example/craftmastery/event/CraftingEventHandler.java|988|1009|PlayerProgressManager|class|com.example.craftmastery.player.PlayerProgressManager|false
-      @|com/example/craftmastery/event/CraftingEventHandler.java|1010|1013|get|method|com.example.craftmastery.player.PlayerProgressManager|get|(Lnet/minecraft/entity/player/EntityPlayer;)Lcom/example/craftmastery/player/PlayerProgressManager;
-      @|com/example/craftmastery/event/CraftingEventHandler.java|1022|1039|getPlayerProgress|method|com.example.craftmastery.player.PlayerProgressManager|getPlayerProgress|(Lnet/minecraft/entity/player/EntityPlayer;)Lcom/example/craftmastery/player/PlayerProgress;
-      @|com/example/craftmastery/event/CraftingEventHandler.java|1081|1097|isRecipeUnlocked|method|com.example.craftmastery.player.PlayerProgress|isRecipeUnlocked|(Lcom/example/craftmastery/recipe/CustomRecipe;)Z
-      @|com/example/craftmastery/event/CraftingEventHandler.java|1219|1233|addCraftPoints|method|com.example.craftmastery.player.PlayerProgress|addCraftPoints|(I)V
-      @|com/example/craftmastery/event/CraftingEventHandler.java|1247|1261|getPointReward|method|com.example.craftmastery.recipe.CustomRecipe|getPointReward|()I
-      @|com/example/craftmastery/event/CraftingEventHandler.java|1287|1308|PlayerProgressManager|class|com.example.craftmastery.player.PlayerProgressManager|false
-      @|com/example/craftmastery/event/CraftingEventHandler.java|1309|1312|get|method|com.example.craftmastery.player.PlayerProgressManager|get|(Lnet/minecraft/entity/player/EntityPlayer;)Lcom/example/craftmastery/player/PlayerProgressManager;
-      @|com/example/craftmastery/event/CraftingEventHandler.java|1321|1330|markDirty|method|net.minecraft.world.storage.WorldSavedData|markDirty|()V
-      @|com/example/craftmastery/event/CraftingEventHandler.java|1445|1450|event|param|com.example.craftmastery.event.CraftingEventHandler|onItemCrafted|(Lnet/minecraftforge/fml/common/gameevent/PlayerEvent$ItemCraftedEvent;)V|event|0
-      @|com/example/craftmastery/event/CraftingEventHandler.java|1451|1462|setCanceled|method|net.minecraftforge.fml.common.eventhandler.Event|setCanceled|(Z)V
+      @|com/example/craftmastery/event/CraftingEventHandler.java|750|755|event|param|com.example.craftmastery.event.CraftingEventHandler|onItemCrafted|(Lnet/minecraftforge/fml/common/gameevent/PlayerEvent$ItemCraftedEvent;)V|event|0
+      @|com/example/craftmastery/event/CraftingEventHandler.java|668|682|SubscribeEvent|class|net.minecraftforge.fml.common.eventhandler.SubscribeEvent|false
+      @|com/example/craftmastery/event/CraftingEventHandler.java|707|720|onItemCrafted|method|com.example.craftmastery.event.CraftingEventHandler|onItemCrafted|(Lnet/minecraftforge/fml/common/gameevent/PlayerEvent$ItemCraftedEvent;)V
+      @|com/example/craftmastery/event/CraftingEventHandler.java|721|749|PlayerEvent.ItemCraftedEvent|class|net.minecraftforge.fml.common.gameevent.PlayerEvent.ItemCraftedEvent|false
+      @|com/example/craftmastery/event/CraftingEventHandler.java|768|780|EntityPlayer|class|net.minecraft.entity.player.EntityPlayer|false
+      @|com/example/craftmastery/event/CraftingEventHandler.java|790|795|event|param|com.example.craftmastery.event.CraftingEventHandler|onItemCrafted|(Lnet/minecraftforge/fml/common/gameevent/PlayerEvent$ItemCraftedEvent;)V|event|0
+      @|com/example/craftmastery/event/CraftingEventHandler.java|796|802|player|field|net.minecraftforge.fml.common.gameevent.PlayerEvent|player
+      @|com/example/craftmastery/event/CraftingEventHandler.java|813|822|ItemStack|class|net.minecraft.item.ItemStack|false
+      @|com/example/craftmastery/event/CraftingEventHandler.java|833|838|event|param|com.example.craftmastery.event.CraftingEventHandler|onItemCrafted|(Lnet/minecraftforge/fml/common/gameevent/PlayerEvent$ItemCraftedEvent;)V|event|0
+      @|com/example/craftmastery/event/CraftingEventHandler.java|839|847|crafting|field|net.minecraftforge.fml.common.gameevent.PlayerEvent.ItemCraftedEvent|crafting
+      @|com/example/craftmastery/event/CraftingEventHandler.java|873|880|isEmpty|method|net.minecraft.item.ItemStack|isEmpty|()Z
+      @|com/example/craftmastery/event/CraftingEventHandler.java|899|911|CustomRecipe|class|com.example.craftmastery.recipe.CustomRecipe|false
+      @|com/example/craftmastery/event/CraftingEventHandler.java|927|940|RecipeManager|class|com.example.craftmastery.recipe.RecipeManager|false
+      @|com/example/craftmastery/event/CraftingEventHandler.java|941|958|getRecipeByOutput|method|com.example.craftmastery.recipe.RecipeManager|getRecipeByOutput|(Lnet/minecraft/item/ItemStack;)Lcom/example/craftmastery/recipe/CustomRecipe;
+      @|com/example/craftmastery/event/CraftingEventHandler.java|1029|1043|PlayerProgress|class|com.example.craftmastery.player.PlayerProgress|false
+      @|com/example/craftmastery/event/CraftingEventHandler.java|1055|1076|PlayerProgressManager|class|com.example.craftmastery.player.PlayerProgressManager|false
+      @|com/example/craftmastery/event/CraftingEventHandler.java|1077|1080|get|method|com.example.craftmastery.player.PlayerProgressManager|get|(Lnet/minecraft/entity/player/EntityPlayer;)Lcom/example/craftmastery/player/PlayerProgressManager;
+      @|com/example/craftmastery/event/CraftingEventHandler.java|1089|1106|getPlayerProgress|method|com.example.craftmastery.player.PlayerProgressManager|getPlayerProgress|(Lnet/minecraft/entity/player/EntityPlayer;)Lcom/example/craftmastery/player/PlayerProgress;
+      @|com/example/craftmastery/event/CraftingEventHandler.java|1148|1164|isRecipeUnlocked|method|com.example.craftmastery.player.PlayerProgress|isRecipeUnlocked|(Lcom/example/craftmastery/recipe/CustomRecipe;)Z
+      @|com/example/craftmastery/event/CraftingEventHandler.java|1235|1249|getPointReward|method|com.example.craftmastery.recipe.CustomRecipe|getPointReward|()I
+      @|com/example/craftmastery/event/CraftingEventHandler.java|1283|1297|addCraftPoints|method|com.example.craftmastery.player.PlayerProgress|addCraftPoints|(I)V
+      @|com/example/craftmastery/event/CraftingEventHandler.java|1343|1356|addExperience|method|com.example.craftmastery.player.PlayerProgress|addExperience|(ILnet/minecraft/entity/player/EntityPlayer;)V
+      @|com/example/craftmastery/event/CraftingEventHandler.java|1370|1382|getExpReward|method|com.example.craftmastery.recipe.CustomRecipe|getExpReward|()I
+      @|com/example/craftmastery/event/CraftingEventHandler.java|1416|1437|PlayerProgressManager|class|com.example.craftmastery.player.PlayerProgressManager|false
+      @|com/example/craftmastery/event/CraftingEventHandler.java|1438|1441|get|method|com.example.craftmastery.player.PlayerProgressManager|get|(Lnet/minecraft/entity/player/EntityPlayer;)Lcom/example/craftmastery/player/PlayerProgressManager;
+      @|com/example/craftmastery/event/CraftingEventHandler.java|1450|1459|markDirty|method|net.minecraft.world.storage.WorldSavedData|markDirty|()V
+      @|com/example/craftmastery/event/CraftingEventHandler.java|1486|1505|NotificationManager|class|com.example.craftmastery.notification.NotificationManager|false
+      @|com/example/craftmastery/event/CraftingEventHandler.java|1506|1521|addNotification|method|com.example.craftmastery.notification.NotificationManager|addNotification|(Ljava/lang/String;)V
+      @|com/example/craftmastery/event/CraftingEventHandler.java|1585|1597|getExpReward|method|com.example.craftmastery.recipe.CustomRecipe|getExpReward|()I
+      @|com/example/craftmastery/event/CraftingEventHandler.java|1658|1663|event|param|com.example.craftmastery.event.CraftingEventHandler|onItemCrafted|(Lnet/minecraftforge/fml/common/gameevent/PlayerEvent$ItemCraftedEvent;)V|event|0
+      @|com/example/craftmastery/event/CraftingEventHandler.java|1664|1675|setCanceled|method|net.minecraftforge.fml.common.eventhandler.Event|setCanceled|(Z)V
+      @|com/example/craftmastery/event/CraftingEventHandler.java|1704|1723|NotificationManager|class|com.example.craftmastery.notification.NotificationManager|false
+      @|com/example/craftmastery/event/CraftingEventHandler.java|1724|1739|addNotification|method|com.example.craftmastery.notification.NotificationManager|addNotification|(Ljava/lang/String;)V
    Method End: onItemCrafted(Lnet/minecraftforge/fml/common/gameevent/PlayerEvent$ItemCraftedEvent;)V
 Class End  : com.example.craftmastery.event.CraftingEventHandler
 endProcessing "com/example/craftmastery/event/CraftingEventHandler.java"
+
+startProcessing "com/example/craftmastery/event/KeyInputHandler.java" md5: 6f30bc9e640b63524bb4cba1c15133af
+@|com/example/craftmastery/event/KeyInputHandler.java|8|38|com.example.craftmastery.event|package|com.example.craftmastery.event|(file)
+Class Start: com.example.craftmastery.event.KeyInputHandler
+   @|com/example/craftmastery/event/KeyInputHandler.java|464|486|Mod.EventBusSubscriber|class|net.minecraftforge.fml.common.Mod.EventBusSubscriber|false
+   @|com/example/craftmastery/event/KeyInputHandler.java|487|491|Side|class|net.minecraftforge.fml.relauncher.Side|false
+   @|com/example/craftmastery/event/KeyInputHandler.java|492|498|CLIENT|field|net.minecraftforge.fml.relauncher.Side|CLIENT
+   @|com/example/craftmastery/event/KeyInputHandler.java|514|529|KeyInputHandler|class|com.example.craftmastery.event.KeyInputHandler|false
+   Method Start: onKeyInput(Lnet/minecraftforge/fml/common/gameevent/InputEvent$KeyInputEvent;)V
+      @|com/example/craftmastery/event/KeyInputHandler.java|643|648|event|param|com.example.craftmastery.event.KeyInputHandler|onKeyInput|(Lnet/minecraftforge/fml/common/gameevent/InputEvent$KeyInputEvent;)V|event|0
+      @|com/example/craftmastery/event/KeyInputHandler.java|540|554|SubscribeEvent|class|net.minecraftforge.fml.common.eventhandler.SubscribeEvent|false
+      @|com/example/craftmastery/event/KeyInputHandler.java|561|569|SideOnly|class|net.minecraftforge.fml.relauncher.SideOnly|false
+      @|com/example/craftmastery/event/KeyInputHandler.java|570|574|Side|class|net.minecraftforge.fml.relauncher.Side|false
+      @|com/example/craftmastery/event/KeyInputHandler.java|575|581|CLIENT|field|net.minecraftforge.fml.relauncher.Side|CLIENT
+      @|com/example/craftmastery/event/KeyInputHandler.java|607|617|onKeyInput|method|com.example.craftmastery.event.KeyInputHandler|onKeyInput|(Lnet/minecraftforge/fml/common/gameevent/InputEvent$KeyInputEvent;)V
+      @|com/example/craftmastery/event/KeyInputHandler.java|618|642|InputEvent.KeyInputEvent|class|net.minecraftforge.fml.common.gameevent.InputEvent.KeyInputEvent|false
+      @|com/example/craftmastery/event/KeyInputHandler.java|665|676|KeyBindings|class|com.example.craftmastery.keybinding.KeyBindings|false
+      @|com/example/craftmastery/event/KeyInputHandler.java|677|693|openSkillTreeKey|field|com.example.craftmastery.keybinding.KeyBindings|openSkillTreeKey
+      @|com/example/craftmastery/event/KeyInputHandler.java|694|703|isPressed|method|net.minecraft.client.settings.KeyBinding|isPressed|()Z
+      @|com/example/craftmastery/event/KeyInputHandler.java|722|731|Minecraft|class|net.minecraft.client.Minecraft|false
+      @|com/example/craftmastery/event/KeyInputHandler.java|737|746|Minecraft|class|net.minecraft.client.Minecraft|false
+      @|com/example/craftmastery/event/KeyInputHandler.java|747|759|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|com/example/craftmastery/event/KeyInputHandler.java|783|789|player|field|net.minecraft.client.Minecraft|player
+      @|com/example/craftmastery/event/KeyInputHandler.java|821|837|displayGuiScreen|method|net.minecraft.client.Minecraft|displayGuiScreen|(Lnet/minecraft/client/gui/GuiScreen;)V
+      @|com/example/craftmastery/event/KeyInputHandler.java|842|854|GuiSkillTree|class|com.example.craftmastery.gui.GuiSkillTree|false
+      @|com/example/craftmastery/event/KeyInputHandler.java|858|864|player|field|net.minecraft.client.Minecraft|player
+   Method End: onKeyInput(Lnet/minecraftforge/fml/common/gameevent/InputEvent$KeyInputEvent;)V
+Class End  : com.example.craftmastery.event.KeyInputHandler
+endProcessing "com/example/craftmastery/event/KeyInputHandler.java"
 
 startProcessing "com/example/craftmastery/event/RecipeEventHandler.java" md5: 07a755a634331d0689d37d2820d3c6f6
 @|com/example/craftmastery/event/RecipeEventHandler.java|8|38|com.example.craftmastery.event|package|com.example.craftmastery.event|(file)
@@ -483,352 +512,526 @@ Class Start: com.example.craftmastery.gui.GuiRecipeManager
 Class End  : com.example.craftmastery.gui.GuiRecipeManager
 endProcessing "com/example/craftmastery/gui/GuiRecipeManager.java"
 
-startProcessing "com/example/craftmastery/gui/GuiSkillTree.java" md5: c74449db507b2767742d14dae984dadf
+startProcessing "com/example/craftmastery/gui/GuiSkillTree.java" md5: f5afb801177f41d5638bf28c918ace1b
 @|com/example/craftmastery/gui/GuiSkillTree.java|8|36|com.example.craftmastery.gui|package|com.example.craftmastery.gui|(file)
 Class Start: com.example.craftmastery.gui.GuiSkillTree
-   @|com/example/craftmastery/gui/GuiSkillTree.java|623|635|GuiSkillTree|class|com.example.craftmastery.gui.GuiSkillTree|false
-   @|com/example/craftmastery/gui/GuiSkillTree.java|644|653|GuiScreen|class|net.minecraft.client.gui.GuiScreen|false
-   @|com/example/craftmastery/gui/GuiSkillTree.java|682|698|ResourceLocation|class|net.minecraft.util.ResourceLocation|false
-   @|com/example/craftmastery/gui/GuiSkillTree.java|682|698|ResourceLocation|class|net.minecraft.util.ResourceLocation|false
-   @|com/example/craftmastery/gui/GuiSkillTree.java|699|706|TEXTURE|field|com.example.craftmastery.gui.GuiSkillTree|TEXTURE|
-   @|com/example/craftmastery/gui/GuiSkillTree.java|713|729|ResourceLocation|class|net.minecraft.util.ResourceLocation|false
-   @|com/example/craftmastery/gui/GuiSkillTree.java|730|742|CraftMastery|class|com.example.craftmastery.CraftMastery|false
-   @|com/example/craftmastery/gui/GuiSkillTree.java|743|748|MODID|field|com.example.craftmastery.CraftMastery|MODID
-   @|com/example/craftmastery/gui/GuiSkillTree.java|812|821|GUI_WIDTH|field|com.example.craftmastery.gui.GuiSkillTree|GUI_WIDTH|
-   @|com/example/craftmastery/gui/GuiSkillTree.java|859|869|GUI_HEIGHT|field|com.example.craftmastery.gui.GuiSkillTree|GUI_HEIGHT|
-   @|com/example/craftmastery/gui/GuiSkillTree.java|898|910|EntityPlayer|class|net.minecraft.entity.player.EntityPlayer|false
-   @|com/example/craftmastery/gui/GuiSkillTree.java|898|910|EntityPlayer|class|net.minecraft.entity.player.EntityPlayer|false
-   @|com/example/craftmastery/gui/GuiSkillTree.java|911|917|player|field|com.example.craftmastery.gui.GuiSkillTree|player|
-   @|com/example/craftmastery/gui/GuiSkillTree.java|938|952|PlayerProgress|class|com.example.craftmastery.player.PlayerProgress|false
-   @|com/example/craftmastery/gui/GuiSkillTree.java|938|952|PlayerProgress|class|com.example.craftmastery.player.PlayerProgress|false
-   @|com/example/craftmastery/gui/GuiSkillTree.java|953|967|playerProgress|field|com.example.craftmastery.gui.GuiSkillTree|playerProgress|
-   @|com/example/craftmastery/gui/GuiSkillTree.java|987|999|CustomRecipe|class|com.example.craftmastery.recipe.CustomRecipe|false
-   @|com/example/craftmastery/gui/GuiSkillTree.java|982|986|List|class|java.util.List|false
-   @|com/example/craftmastery/gui/GuiSkillTree.java|982|986|List|class|java.util.List|false
-   @|com/example/craftmastery/gui/GuiSkillTree.java|987|999|CustomRecipe|class|com.example.craftmastery.recipe.CustomRecipe|false
-   @|com/example/craftmastery/gui/GuiSkillTree.java|1001|1008|recipes|field|com.example.craftmastery.gui.GuiSkillTree|recipes|
+   @|com/example/craftmastery/gui/GuiSkillTree.java|690|702|GuiSkillTree|class|com.example.craftmastery.gui.GuiSkillTree|false
+   @|com/example/craftmastery/gui/GuiSkillTree.java|711|720|GuiScreen|class|net.minecraft.client.gui.GuiScreen|false
+   @|com/example/craftmastery/gui/GuiSkillTree.java|749|765|ResourceLocation|class|net.minecraft.util.ResourceLocation|false
+   @|com/example/craftmastery/gui/GuiSkillTree.java|749|765|ResourceLocation|class|net.minecraft.util.ResourceLocation|false
+   @|com/example/craftmastery/gui/GuiSkillTree.java|766|773|TEXTURE|field|com.example.craftmastery.gui.GuiSkillTree|TEXTURE|
+   @|com/example/craftmastery/gui/GuiSkillTree.java|780|796|ResourceLocation|class|net.minecraft.util.ResourceLocation|false
+   @|com/example/craftmastery/gui/GuiSkillTree.java|797|809|CraftMastery|class|com.example.craftmastery.CraftMastery|false
+   @|com/example/craftmastery/gui/GuiSkillTree.java|810|815|MODID|field|com.example.craftmastery.CraftMastery|MODID
+   @|com/example/craftmastery/gui/GuiSkillTree.java|879|888|GUI_WIDTH|field|com.example.craftmastery.gui.GuiSkillTree|GUI_WIDTH|
+   @|com/example/craftmastery/gui/GuiSkillTree.java|926|936|GUI_HEIGHT|field|com.example.craftmastery.gui.GuiSkillTree|GUI_HEIGHT|
+   @|com/example/craftmastery/gui/GuiSkillTree.java|965|977|EntityPlayer|class|net.minecraft.entity.player.EntityPlayer|false
+   @|com/example/craftmastery/gui/GuiSkillTree.java|965|977|EntityPlayer|class|net.minecraft.entity.player.EntityPlayer|false
+   @|com/example/craftmastery/gui/GuiSkillTree.java|978|984|player|field|com.example.craftmastery.gui.GuiSkillTree|player|
+   @|com/example/craftmastery/gui/GuiSkillTree.java|1005|1019|PlayerProgress|class|com.example.craftmastery.player.PlayerProgress|false
+   @|com/example/craftmastery/gui/GuiSkillTree.java|1005|1019|PlayerProgress|class|com.example.craftmastery.player.PlayerProgress|false
+   @|com/example/craftmastery/gui/GuiSkillTree.java|1020|1034|playerProgress|field|com.example.craftmastery.gui.GuiSkillTree|playerProgress|
+   @|com/example/craftmastery/gui/GuiSkillTree.java|1054|1066|CustomRecipe|class|com.example.craftmastery.recipe.CustomRecipe|false
+   @|com/example/craftmastery/gui/GuiSkillTree.java|1049|1053|List|class|java.util.List|false
+   @|com/example/craftmastery/gui/GuiSkillTree.java|1049|1053|List|class|java.util.List|false
+   @|com/example/craftmastery/gui/GuiSkillTree.java|1054|1066|CustomRecipe|class|com.example.craftmastery.recipe.CustomRecipe|false
+   @|com/example/craftmastery/gui/GuiSkillTree.java|1068|1075|recipes|field|com.example.craftmastery.gui.GuiSkillTree|recipes|
    Method Start: GuiSkillTree(Lnet/minecraft/entity/player/EntityPlayer;)V
-      @|com/example/craftmastery/gui/GuiSkillTree.java|1050|1056|player|param|com.example.craftmastery.gui.GuiSkillTree|GuiSkillTree|(Lnet/minecraft/entity/player/EntityPlayer;)V|player|0
-      @|com/example/craftmastery/gui/GuiSkillTree.java|1024|1036|GuiSkillTree|method|com.example.craftmastery.gui.GuiSkillTree|GuiSkillTree|(Lnet/minecraft/entity/player/EntityPlayer;)V
-      @|com/example/craftmastery/gui/GuiSkillTree.java|1037|1049|EntityPlayer|class|net.minecraft.entity.player.EntityPlayer|false
-      @|com/example/craftmastery/gui/GuiSkillTree.java|1074|1080|player|field|com.example.craftmastery.gui.GuiSkillTree|player
-      @|com/example/craftmastery/gui/GuiSkillTree.java|1083|1089|player|param|com.example.craftmastery.gui.GuiSkillTree|GuiSkillTree|(Lnet/minecraft/entity/player/EntityPlayer;)V|player|0
-      @|com/example/craftmastery/gui/GuiSkillTree.java|1105|1119|playerProgress|field|com.example.craftmastery.gui.GuiSkillTree|playerProgress
-      @|com/example/craftmastery/gui/GuiSkillTree.java|1122|1143|PlayerProgressManager|class|com.example.craftmastery.player.PlayerProgressManager|false
-      @|com/example/craftmastery/gui/GuiSkillTree.java|1144|1147|get|method|com.example.craftmastery.player.PlayerProgressManager|get|(Lnet/minecraft/entity/player/EntityPlayer;)Lcom/example/craftmastery/player/PlayerProgressManager;
-      @|com/example/craftmastery/gui/GuiSkillTree.java|1148|1154|player|param|com.example.craftmastery.gui.GuiSkillTree|GuiSkillTree|(Lnet/minecraft/entity/player/EntityPlayer;)V|player|0
-      @|com/example/craftmastery/gui/GuiSkillTree.java|1156|1173|getPlayerProgress|method|com.example.craftmastery.player.PlayerProgressManager|getPlayerProgress|(Lnet/minecraft/entity/player/EntityPlayer;)Lcom/example/craftmastery/player/PlayerProgress;
-      @|com/example/craftmastery/gui/GuiSkillTree.java|1174|1180|player|param|com.example.craftmastery.gui.GuiSkillTree|GuiSkillTree|(Lnet/minecraft/entity/player/EntityPlayer;)V|player|0
-      @|com/example/craftmastery/gui/GuiSkillTree.java|1197|1204|recipes|field|com.example.craftmastery.gui.GuiSkillTree|recipes
-      @|com/example/craftmastery/gui/GuiSkillTree.java|1207|1220|RecipeManager|class|com.example.craftmastery.recipe.RecipeManager|false
-      @|com/example/craftmastery/gui/GuiSkillTree.java|1221|1234|getAllRecipes|method|com.example.craftmastery.recipe.RecipeManager|getAllRecipes|()Ljava/util/List;
+      @|com/example/craftmastery/gui/GuiSkillTree.java|1117|1123|player|param|com.example.craftmastery.gui.GuiSkillTree|GuiSkillTree|(Lnet/minecraft/entity/player/EntityPlayer;)V|player|0
+      @|com/example/craftmastery/gui/GuiSkillTree.java|1091|1103|GuiSkillTree|method|com.example.craftmastery.gui.GuiSkillTree|GuiSkillTree|(Lnet/minecraft/entity/player/EntityPlayer;)V
+      @|com/example/craftmastery/gui/GuiSkillTree.java|1104|1116|EntityPlayer|class|net.minecraft.entity.player.EntityPlayer|false
+      @|com/example/craftmastery/gui/GuiSkillTree.java|1141|1147|player|field|com.example.craftmastery.gui.GuiSkillTree|player
+      @|com/example/craftmastery/gui/GuiSkillTree.java|1150|1156|player|param|com.example.craftmastery.gui.GuiSkillTree|GuiSkillTree|(Lnet/minecraft/entity/player/EntityPlayer;)V|player|0
+      @|com/example/craftmastery/gui/GuiSkillTree.java|1172|1186|playerProgress|field|com.example.craftmastery.gui.GuiSkillTree|playerProgress
+      @|com/example/craftmastery/gui/GuiSkillTree.java|1189|1210|PlayerProgressManager|class|com.example.craftmastery.player.PlayerProgressManager|false
+      @|com/example/craftmastery/gui/GuiSkillTree.java|1211|1214|get|method|com.example.craftmastery.player.PlayerProgressManager|get|(Lnet/minecraft/entity/player/EntityPlayer;)Lcom/example/craftmastery/player/PlayerProgressManager;
+      @|com/example/craftmastery/gui/GuiSkillTree.java|1215|1221|player|param|com.example.craftmastery.gui.GuiSkillTree|GuiSkillTree|(Lnet/minecraft/entity/player/EntityPlayer;)V|player|0
+      @|com/example/craftmastery/gui/GuiSkillTree.java|1223|1240|getPlayerProgress|method|com.example.craftmastery.player.PlayerProgressManager|getPlayerProgress|(Lnet/minecraft/entity/player/EntityPlayer;)Lcom/example/craftmastery/player/PlayerProgress;
+      @|com/example/craftmastery/gui/GuiSkillTree.java|1241|1247|player|param|com.example.craftmastery.gui.GuiSkillTree|GuiSkillTree|(Lnet/minecraft/entity/player/EntityPlayer;)V|player|0
+      @|com/example/craftmastery/gui/GuiSkillTree.java|1264|1271|recipes|field|com.example.craftmastery.gui.GuiSkillTree|recipes
+      @|com/example/craftmastery/gui/GuiSkillTree.java|1274|1287|RecipeManager|class|com.example.craftmastery.recipe.RecipeManager|false
+      @|com/example/craftmastery/gui/GuiSkillTree.java|1288|1301|getAllRecipes|method|com.example.craftmastery.recipe.RecipeManager|getAllRecipes|()Ljava/util/List;
    Method End: GuiSkillTree(Lnet/minecraft/entity/player/EntityPlayer;)V
    Method Start: initGui()V
-      @|com/example/craftmastery/gui/GuiSkillTree.java|1253|1261|Override|class|java.lang.Override|false
-      @|com/example/craftmastery/gui/GuiSkillTree.java|1279|1286|initGui|method|net.minecraft.client.gui.GuiScreen|initGui|()V
-      @|com/example/craftmastery/gui/GuiSkillTree.java|1306|1313|initGui|method|net.minecraft.client.gui.GuiScreen|initGui|()V
-      @|com/example/craftmastery/gui/GuiSkillTree.java|1341|1346|width|field|net.minecraft.client.gui.GuiScreen|width
-      @|com/example/craftmastery/gui/GuiSkillTree.java|1349|1358|GUI_WIDTH|field|com.example.craftmastery.gui.GuiSkillTree|GUI_WIDTH
-      @|com/example/craftmastery/gui/GuiSkillTree.java|1388|1394|height|field|net.minecraft.client.gui.GuiScreen|height
-      @|com/example/craftmastery/gui/GuiSkillTree.java|1397|1407|GUI_HEIGHT|field|com.example.craftmastery.gui.GuiSkillTree|GUI_HEIGHT
-      @|com/example/craftmastery/gui/GuiSkillTree.java|1485|1492|recipes|field|com.example.craftmastery.gui.GuiSkillTree|recipes
-      @|com/example/craftmastery/gui/GuiSkillTree.java|1493|1497|size|method|java.util.Collection|size|()I
-      @|com/example/craftmastery/gui/GuiSkillTree.java|1521|1533|CustomRecipe|class|com.example.craftmastery.recipe.CustomRecipe|false
-      @|com/example/craftmastery/gui/GuiSkillTree.java|1543|1550|recipes|field|com.example.craftmastery.gui.GuiSkillTree|recipes
-      @|com/example/craftmastery/gui/GuiSkillTree.java|1551|1554|get|method|java.util.List|get|(I)Ljava/lang/Object;
-      @|com/example/craftmastery/gui/GuiSkillTree.java|1671|1681|buttonList|field|net.minecraft.client.gui.GuiScreen|buttonList
-      @|com/example/craftmastery/gui/GuiSkillTree.java|1682|1685|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
-      @|com/example/craftmastery/gui/GuiSkillTree.java|1690|1699|GuiButton|class|net.minecraft.client.gui.GuiButton|false
+      @|com/example/craftmastery/gui/GuiSkillTree.java|1320|1328|Override|class|java.lang.Override|false
+      @|com/example/craftmastery/gui/GuiSkillTree.java|1346|1353|initGui|method|net.minecraft.client.gui.GuiScreen|initGui|()V
+      @|com/example/craftmastery/gui/GuiSkillTree.java|1373|1380|initGui|method|net.minecraft.client.gui.GuiScreen|initGui|()V
+      @|com/example/craftmastery/gui/GuiSkillTree.java|1408|1413|width|field|net.minecraft.client.gui.GuiScreen|width
+      @|com/example/craftmastery/gui/GuiSkillTree.java|1416|1425|GUI_WIDTH|field|com.example.craftmastery.gui.GuiSkillTree|GUI_WIDTH
+      @|com/example/craftmastery/gui/GuiSkillTree.java|1455|1461|height|field|net.minecraft.client.gui.GuiScreen|height
+      @|com/example/craftmastery/gui/GuiSkillTree.java|1464|1474|GUI_HEIGHT|field|com.example.craftmastery.gui.GuiSkillTree|GUI_HEIGHT
+      @|com/example/craftmastery/gui/GuiSkillTree.java|1512|1519|recipes|field|com.example.craftmastery.gui.GuiSkillTree|recipes
+      @|com/example/craftmastery/gui/GuiSkillTree.java|1520|1524|size|method|java.util.Collection|size|()I
+      @|com/example/craftmastery/gui/GuiSkillTree.java|1548|1560|CustomRecipe|class|com.example.craftmastery.recipe.CustomRecipe|false
+      @|com/example/craftmastery/gui/GuiSkillTree.java|1570|1577|recipes|field|com.example.craftmastery.gui.GuiSkillTree|recipes
+      @|com/example/craftmastery/gui/GuiSkillTree.java|1578|1581|get|method|java.util.List|get|(I)Ljava/lang/Object;
+      @|com/example/craftmastery/gui/GuiSkillTree.java|1698|1708|buttonList|field|net.minecraft.client.gui.GuiScreen|buttonList
+      @|com/example/craftmastery/gui/GuiSkillTree.java|1709|1712|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|com/example/craftmastery/gui/GuiSkillTree.java|1717|1726|GuiButton|class|net.minecraft.client.gui.GuiButton|false
    Method End: initGui()V
    Method Start: drawScreen(IIF)V
-      @|com/example/craftmastery/gui/GuiSkillTree.java|1790|1796|mouseX|param|com.example.craftmastery.gui.GuiSkillTree|drawScreen|(IIF)V|mouseX|0
-      @|com/example/craftmastery/gui/GuiSkillTree.java|1802|1808|mouseY|param|com.example.craftmastery.gui.GuiSkillTree|drawScreen|(IIF)V|mouseY|1
-      @|com/example/craftmastery/gui/GuiSkillTree.java|1816|1828|partialTicks|param|com.example.craftmastery.gui.GuiSkillTree|drawScreen|(IIF)V|partialTicks|2
-      @|com/example/craftmastery/gui/GuiSkillTree.java|1749|1757|Override|class|java.lang.Override|false
-      @|com/example/craftmastery/gui/GuiSkillTree.java|1775|1785|drawScreen|method|net.minecraft.client.gui.GuiScreen|drawScreen|(IIF)V
-      @|com/example/craftmastery/gui/GuiSkillTree.java|1841|1862|drawDefaultBackground|method|net.minecraft.client.gui.GuiScreen|drawDefaultBackground|()V
-      @|com/example/craftmastery/gui/GuiSkillTree.java|1875|1877|mc|field|net.minecraft.client.gui.GuiScreen|mc
-      @|com/example/craftmastery/gui/GuiSkillTree.java|1878|1895|getTextureManager|method|net.minecraft.client.Minecraft|getTextureManager|()Lnet/minecraft/client/renderer/texture/TextureManager;
-      @|com/example/craftmastery/gui/GuiSkillTree.java|1898|1909|bindTexture|method|net.minecraft.client.renderer.texture.TextureManager|bindTexture|(Lnet/minecraft/util/ResourceLocation;)V
-      @|com/example/craftmastery/gui/GuiSkillTree.java|1910|1917|TEXTURE|field|com.example.craftmastery.gui.GuiSkillTree|TEXTURE
-      @|com/example/craftmastery/gui/GuiSkillTree.java|1944|1949|width|field|net.minecraft.client.gui.GuiScreen|width
-      @|com/example/craftmastery/gui/GuiSkillTree.java|1952|1961|GUI_WIDTH|field|com.example.craftmastery.gui.GuiSkillTree|GUI_WIDTH
-      @|com/example/craftmastery/gui/GuiSkillTree.java|1991|1997|height|field|net.minecraft.client.gui.GuiScreen|height
-      @|com/example/craftmastery/gui/GuiSkillTree.java|2000|2010|GUI_HEIGHT|field|com.example.craftmastery.gui.GuiSkillTree|GUI_HEIGHT
-      @|com/example/craftmastery/gui/GuiSkillTree.java|2026|2047|drawTexturedModalRect|method|net.minecraft.client.gui.Gui|drawTexturedModalRect|(IIIIII)V
-      @|com/example/craftmastery/gui/GuiSkillTree.java|2071|2080|GUI_WIDTH|field|com.example.craftmastery.gui.GuiSkillTree|GUI_WIDTH
-      @|com/example/craftmastery/gui/GuiSkillTree.java|2082|2092|GUI_HEIGHT|field|com.example.craftmastery.gui.GuiSkillTree|GUI_HEIGHT
-      @|com/example/craftmastery/gui/GuiSkillTree.java|2106|2118|fontRenderer|field|net.minecraft.client.gui.GuiScreen|fontRenderer
-      @|com/example/craftmastery/gui/GuiSkillTree.java|2119|2129|drawString|method|net.minecraft.client.gui.FontRenderer|drawString|(Ljava/lang/String;III)I
-      @|com/example/craftmastery/gui/GuiSkillTree.java|2188|2200|fontRenderer|field|net.minecraft.client.gui.GuiScreen|fontRenderer
-      @|com/example/craftmastery/gui/GuiSkillTree.java|2201|2211|drawString|method|net.minecraft.client.gui.FontRenderer|drawString|(Ljava/lang/String;III)I
-      @|com/example/craftmastery/gui/GuiSkillTree.java|2231|2245|playerProgress|field|com.example.craftmastery.gui.GuiSkillTree|playerProgress
-      @|com/example/craftmastery/gui/GuiSkillTree.java|2246|2260|getCraftPoints|method|com.example.craftmastery.player.PlayerProgress|getCraftPoints|()I
-      @|com/example/craftmastery/gui/GuiSkillTree.java|2331|2338|recipes|field|com.example.craftmastery.gui.GuiSkillTree|recipes
-      @|com/example/craftmastery/gui/GuiSkillTree.java|2339|2343|size|method|java.util.Collection|size|()I
-      @|com/example/craftmastery/gui/GuiSkillTree.java|2367|2379|CustomRecipe|class|com.example.craftmastery.recipe.CustomRecipe|false
-      @|com/example/craftmastery/gui/GuiSkillTree.java|2389|2396|recipes|field|com.example.craftmastery.gui.GuiSkillTree|recipes
-      @|com/example/craftmastery/gui/GuiSkillTree.java|2397|2400|get|method|java.util.List|get|(I)Ljava/lang/Object;
-      @|com/example/craftmastery/gui/GuiSkillTree.java|2418|2427|GuiButton|class|net.minecraft.client.gui.GuiButton|false
-      @|com/example/craftmastery/gui/GuiSkillTree.java|2437|2447|buttonList|field|net.minecraft.client.gui.GuiScreen|buttonList
-      @|com/example/craftmastery/gui/GuiSkillTree.java|2448|2451|get|method|java.util.List|get|(I)Ljava/lang/Object;
-      @|com/example/craftmastery/gui/GuiSkillTree.java|2490|2504|playerProgress|field|com.example.craftmastery.gui.GuiSkillTree|playerProgress
-      @|com/example/craftmastery/gui/GuiSkillTree.java|2505|2521|isRecipeUnlocked|method|com.example.craftmastery.player.PlayerProgress|isRecipeUnlocked|(Lcom/example/craftmastery/recipe/CustomRecipe;)Z
-      @|com/example/craftmastery/gui/GuiSkillTree.java|2551|2558|enabled|field|net.minecraft.client.gui.GuiButton|enabled
-      @|com/example/craftmastery/gui/GuiSkillTree.java|2576|2590|playerProgress|field|com.example.craftmastery.gui.GuiSkillTree|playerProgress
-      @|com/example/craftmastery/gui/GuiSkillTree.java|2591|2605|getCraftPoints|method|com.example.craftmastery.player.PlayerProgress|getCraftPoints|()I
-      @|com/example/craftmastery/gui/GuiSkillTree.java|2618|2630|getPointCost|method|com.example.craftmastery.recipe.CustomRecipe|getPointCost|()I
-      @|com/example/craftmastery/gui/GuiSkillTree.java|2649|2663|GlStateManager|class|net.minecraft.client.renderer.GlStateManager|false
-      @|com/example/craftmastery/gui/GuiSkillTree.java|2664|2669|color|method|net.minecraft.client.renderer.GlStateManager|color|(FFFF)V
-      @|com/example/craftmastery/gui/GuiSkillTree.java|2708|2710|mc|field|net.minecraft.client.gui.GuiScreen|mc
-      @|com/example/craftmastery/gui/GuiSkillTree.java|2711|2728|getTextureManager|method|net.minecraft.client.Minecraft|getTextureManager|()Lnet/minecraft/client/renderer/texture/TextureManager;
-      @|com/example/craftmastery/gui/GuiSkillTree.java|2731|2742|bindTexture|method|net.minecraft.client.renderer.texture.TextureManager|bindTexture|(Lnet/minecraft/util/ResourceLocation;)V
-      @|com/example/craftmastery/gui/GuiSkillTree.java|2747|2763|ResourceLocation|class|net.minecraft.util.ResourceLocation|false
-      @|com/example/craftmastery/gui/GuiSkillTree.java|2791|2800|getOutput|method|com.example.craftmastery.recipe.CustomRecipe|getOutput|()Lnet/minecraft/item/ItemStack;
-      @|com/example/craftmastery/gui/GuiSkillTree.java|2803|2810|getItem|method|net.minecraft.item.ItemStack|getItem|()Lnet/minecraft/item/Item;
-      @|com/example/craftmastery/gui/GuiSkillTree.java|2813|2828|getRegistryName|method|net.minecraftforge.registries.IForgeRegistryEntry|getRegistryName|()Lnet/minecraft/util/ResourceLocation;
-      @|com/example/craftmastery/gui/GuiSkillTree.java|2831|2838|getPath|method|net.minecraft.util.ResourceLocation|getPath|()Ljava/lang/String;
-      @|com/example/craftmastery/gui/GuiSkillTree.java|2866|2887|drawTexturedModalRect|method|net.minecraft.client.gui.Gui|drawTexturedModalRect|(IIIIII)V
-      @|com/example/craftmastery/gui/GuiSkillTree.java|2895|2896|x|field|net.minecraft.client.gui.GuiButton|x
-      @|com/example/craftmastery/gui/GuiSkillTree.java|2910|2911|y|field|net.minecraft.client.gui.GuiButton|y
-      @|com/example/craftmastery/gui/GuiSkillTree.java|2982|2990|drawRect|method|net.minecraft.client.gui.Gui|drawRect|(IIIII)V
-      @|com/example/craftmastery/gui/GuiSkillTree.java|2998|2999|x|field|net.minecraft.client.gui.GuiButton|x
-      @|com/example/craftmastery/gui/GuiSkillTree.java|3008|3009|y|field|net.minecraft.client.gui.GuiButton|y
-      @|com/example/craftmastery/gui/GuiSkillTree.java|3018|3019|x|field|net.minecraft.client.gui.GuiButton|x
-      @|com/example/craftmastery/gui/GuiSkillTree.java|3029|3034|width|field|net.minecraft.client.gui.GuiButton|width
-      @|com/example/craftmastery/gui/GuiSkillTree.java|3043|3044|y|field|net.minecraft.client.gui.GuiButton|y
-      @|com/example/craftmastery/gui/GuiSkillTree.java|3054|3060|height|field|net.minecraft.client.gui.GuiButton|height
-      @|com/example/craftmastery/gui/GuiSkillTree.java|3118|3128|drawScreen|method|net.minecraft.client.gui.GuiScreen|drawScreen|(IIF)V
-      @|com/example/craftmastery/gui/GuiSkillTree.java|3129|3135|mouseX|param|com.example.craftmastery.gui.GuiSkillTree|drawScreen|(IIF)V|mouseX|0
-      @|com/example/craftmastery/gui/GuiSkillTree.java|3137|3143|mouseY|param|com.example.craftmastery.gui.GuiSkillTree|drawScreen|(IIF)V|mouseY|1
-      @|com/example/craftmastery/gui/GuiSkillTree.java|3145|3157|partialTicks|param|com.example.craftmastery.gui.GuiSkillTree|drawScreen|(IIF)V|partialTicks|2
-      @|com/example/craftmastery/gui/GuiSkillTree.java|3217|3224|recipes|field|com.example.craftmastery.gui.GuiSkillTree|recipes
-      @|com/example/craftmastery/gui/GuiSkillTree.java|3225|3229|size|method|java.util.Collection|size|()I
-      @|com/example/craftmastery/gui/GuiSkillTree.java|3253|3265|CustomRecipe|class|com.example.craftmastery.recipe.CustomRecipe|false
-      @|com/example/craftmastery/gui/GuiSkillTree.java|3275|3282|recipes|field|com.example.craftmastery.gui.GuiSkillTree|recipes
-      @|com/example/craftmastery/gui/GuiSkillTree.java|3283|3286|get|method|java.util.List|get|(I)Ljava/lang/Object;
-      @|com/example/craftmastery/gui/GuiSkillTree.java|3304|3313|GuiButton|class|net.minecraft.client.gui.GuiButton|false
-      @|com/example/craftmastery/gui/GuiSkillTree.java|3323|3333|buttonList|field|net.minecraft.client.gui.GuiScreen|buttonList
-      @|com/example/craftmastery/gui/GuiSkillTree.java|3334|3337|get|method|java.util.List|get|(I)Ljava/lang/Object;
-      @|com/example/craftmastery/gui/GuiSkillTree.java|3359|3370|isMouseOver|method|com.example.craftmastery.gui.GuiSkillTree|isMouseOver|(Lnet/minecraft/client/gui/GuiButton;II)Z
-      @|com/example/craftmastery/gui/GuiSkillTree.java|3379|3385|mouseX|param|com.example.craftmastery.gui.GuiSkillTree|drawScreen|(IIF)V|mouseX|0
-      @|com/example/craftmastery/gui/GuiSkillTree.java|3387|3393|mouseY|param|com.example.craftmastery.gui.GuiSkillTree|drawScreen|(IIF)V|mouseY|1
-      @|com/example/craftmastery/gui/GuiSkillTree.java|3415|3431|drawHoveringText|method|net.minecraft.client.gui.GuiScreen|drawHoveringText|(Ljava/lang/String;II)V
-      @|com/example/craftmastery/gui/GuiSkillTree.java|3439|3446|getName|method|com.example.craftmastery.recipe.CustomRecipe|getName|()Ljava/lang/String;
-      @|com/example/craftmastery/gui/GuiSkillTree.java|3471|3483|getPointCost|method|com.example.craftmastery.recipe.CustomRecipe|getPointCost|()I
-      @|com/example/craftmastery/gui/GuiSkillTree.java|3493|3499|mouseX|param|com.example.craftmastery.gui.GuiSkillTree|drawScreen|(IIF)V|mouseX|0
-      @|com/example/craftmastery/gui/GuiSkillTree.java|3501|3507|mouseY|param|com.example.craftmastery.gui.GuiSkillTree|drawScreen|(IIF)V|mouseY|1
+      @|com/example/craftmastery/gui/GuiSkillTree.java|1817|1823|mouseX|param|com.example.craftmastery.gui.GuiSkillTree|drawScreen|(IIF)V|mouseX|0
+      @|com/example/craftmastery/gui/GuiSkillTree.java|1829|1835|mouseY|param|com.example.craftmastery.gui.GuiSkillTree|drawScreen|(IIF)V|mouseY|1
+      @|com/example/craftmastery/gui/GuiSkillTree.java|1843|1855|partialTicks|param|com.example.craftmastery.gui.GuiSkillTree|drawScreen|(IIF)V|partialTicks|2
+      @|com/example/craftmastery/gui/GuiSkillTree.java|1776|1784|Override|class|java.lang.Override|false
+      @|com/example/craftmastery/gui/GuiSkillTree.java|1802|1812|drawScreen|method|net.minecraft.client.gui.GuiScreen|drawScreen|(IIF)V
+      @|com/example/craftmastery/gui/GuiSkillTree.java|1868|1889|drawDefaultBackground|method|net.minecraft.client.gui.GuiScreen|drawDefaultBackground|()V
+      @|com/example/craftmastery/gui/GuiSkillTree.java|1902|1904|mc|field|net.minecraft.client.gui.GuiScreen|mc
+      @|com/example/craftmastery/gui/GuiSkillTree.java|1905|1922|getTextureManager|method|net.minecraft.client.Minecraft|getTextureManager|()Lnet/minecraft/client/renderer/texture/TextureManager;
+      @|com/example/craftmastery/gui/GuiSkillTree.java|1925|1936|bindTexture|method|net.minecraft.client.renderer.texture.TextureManager|bindTexture|(Lnet/minecraft/util/ResourceLocation;)V
+      @|com/example/craftmastery/gui/GuiSkillTree.java|1937|1944|TEXTURE|field|com.example.craftmastery.gui.GuiSkillTree|TEXTURE
+      @|com/example/craftmastery/gui/GuiSkillTree.java|1971|1976|width|field|net.minecraft.client.gui.GuiScreen|width
+      @|com/example/craftmastery/gui/GuiSkillTree.java|1979|1988|GUI_WIDTH|field|com.example.craftmastery.gui.GuiSkillTree|GUI_WIDTH
+      @|com/example/craftmastery/gui/GuiSkillTree.java|2018|2024|height|field|net.minecraft.client.gui.GuiScreen|height
+      @|com/example/craftmastery/gui/GuiSkillTree.java|2027|2037|GUI_HEIGHT|field|com.example.craftmastery.gui.GuiSkillTree|GUI_HEIGHT
+      @|com/example/craftmastery/gui/GuiSkillTree.java|2053|2074|drawTexturedModalRect|method|net.minecraft.client.gui.Gui|drawTexturedModalRect|(IIIIII)V
+      @|com/example/craftmastery/gui/GuiSkillTree.java|2098|2107|GUI_WIDTH|field|com.example.craftmastery.gui.GuiSkillTree|GUI_WIDTH
+      @|com/example/craftmastery/gui/GuiSkillTree.java|2109|2119|GUI_HEIGHT|field|com.example.craftmastery.gui.GuiSkillTree|GUI_HEIGHT
+      @|com/example/craftmastery/gui/GuiSkillTree.java|2133|2145|fontRenderer|field|net.minecraft.client.gui.GuiScreen|fontRenderer
+      @|com/example/craftmastery/gui/GuiSkillTree.java|2146|2156|drawString|method|net.minecraft.client.gui.FontRenderer|drawString|(Ljava/lang/String;III)I
+      @|com/example/craftmastery/gui/GuiSkillTree.java|2215|2227|fontRenderer|field|net.minecraft.client.gui.GuiScreen|fontRenderer
+      @|com/example/craftmastery/gui/GuiSkillTree.java|2228|2238|drawString|method|net.minecraft.client.gui.FontRenderer|drawString|(Ljava/lang/String;III)I
+      @|com/example/craftmastery/gui/GuiSkillTree.java|2258|2272|playerProgress|field|com.example.craftmastery.gui.GuiSkillTree|playerProgress
+      @|com/example/craftmastery/gui/GuiSkillTree.java|2273|2287|getCraftPoints|method|com.example.craftmastery.player.PlayerProgress|getCraftPoints|()I
+      @|com/example/craftmastery/gui/GuiSkillTree.java|2336|2348|fontRenderer|field|net.minecraft.client.gui.GuiScreen|fontRenderer
+      @|com/example/craftmastery/gui/GuiSkillTree.java|2349|2359|drawString|method|net.minecraft.client.gui.FontRenderer|drawString|(Ljava/lang/String;III)I
+      @|com/example/craftmastery/gui/GuiSkillTree.java|2372|2386|playerProgress|field|com.example.craftmastery.gui.GuiSkillTree|playerProgress
+      @|com/example/craftmastery/gui/GuiSkillTree.java|2387|2395|getLevel|method|com.example.craftmastery.player.PlayerProgress|getLevel|()I
+      @|com/example/craftmastery/gui/GuiSkillTree.java|2444|2456|fontRenderer|field|net.minecraft.client.gui.GuiScreen|fontRenderer
+      @|com/example/craftmastery/gui/GuiSkillTree.java|2457|2467|drawString|method|net.minecraft.client.gui.FontRenderer|drawString|(Ljava/lang/String;III)I
+      @|com/example/craftmastery/gui/GuiSkillTree.java|2477|2491|playerProgress|field|com.example.craftmastery.gui.GuiSkillTree|playerProgress
+      @|com/example/craftmastery/gui/GuiSkillTree.java|2492|2505|getExperience|method|com.example.craftmastery.player.PlayerProgress|getExperience|()I
+      @|com/example/craftmastery/gui/GuiSkillTree.java|2576|2583|recipes|field|com.example.craftmastery.gui.GuiSkillTree|recipes
+      @|com/example/craftmastery/gui/GuiSkillTree.java|2584|2588|size|method|java.util.Collection|size|()I
+      @|com/example/craftmastery/gui/GuiSkillTree.java|2612|2624|CustomRecipe|class|com.example.craftmastery.recipe.CustomRecipe|false
+      @|com/example/craftmastery/gui/GuiSkillTree.java|2634|2641|recipes|field|com.example.craftmastery.gui.GuiSkillTree|recipes
+      @|com/example/craftmastery/gui/GuiSkillTree.java|2642|2645|get|method|java.util.List|get|(I)Ljava/lang/Object;
+      @|com/example/craftmastery/gui/GuiSkillTree.java|2663|2672|GuiButton|class|net.minecraft.client.gui.GuiButton|false
+      @|com/example/craftmastery/gui/GuiSkillTree.java|2682|2692|buttonList|field|net.minecraft.client.gui.GuiScreen|buttonList
+      @|com/example/craftmastery/gui/GuiSkillTree.java|2693|2696|get|method|java.util.List|get|(I)Ljava/lang/Object;
+      @|com/example/craftmastery/gui/GuiSkillTree.java|2735|2749|playerProgress|field|com.example.craftmastery.gui.GuiSkillTree|playerProgress
+      @|com/example/craftmastery/gui/GuiSkillTree.java|2750|2766|isRecipeUnlocked|method|com.example.craftmastery.player.PlayerProgress|isRecipeUnlocked|(Lcom/example/craftmastery/recipe/CustomRecipe;)Z
+      @|com/example/craftmastery/gui/GuiSkillTree.java|2796|2803|enabled|field|net.minecraft.client.gui.GuiButton|enabled
+      @|com/example/craftmastery/gui/GuiSkillTree.java|2821|2835|playerProgress|field|com.example.craftmastery.gui.GuiSkillTree|playerProgress
+      @|com/example/craftmastery/gui/GuiSkillTree.java|2836|2850|getCraftPoints|method|com.example.craftmastery.player.PlayerProgress|getCraftPoints|()I
+      @|com/example/craftmastery/gui/GuiSkillTree.java|2863|2875|getPointCost|method|com.example.craftmastery.recipe.CustomRecipe|getPointCost|()I
+      @|com/example/craftmastery/gui/GuiSkillTree.java|2894|2908|GlStateManager|class|net.minecraft.client.renderer.GlStateManager|false
+      @|com/example/craftmastery/gui/GuiSkillTree.java|2909|2914|color|method|net.minecraft.client.renderer.GlStateManager|color|(FFFF)V
+      @|com/example/craftmastery/gui/GuiSkillTree.java|2953|2955|mc|field|net.minecraft.client.gui.GuiScreen|mc
+      @|com/example/craftmastery/gui/GuiSkillTree.java|2956|2973|getTextureManager|method|net.minecraft.client.Minecraft|getTextureManager|()Lnet/minecraft/client/renderer/texture/TextureManager;
+      @|com/example/craftmastery/gui/GuiSkillTree.java|2976|2987|bindTexture|method|net.minecraft.client.renderer.texture.TextureManager|bindTexture|(Lnet/minecraft/util/ResourceLocation;)V
+      @|com/example/craftmastery/gui/GuiSkillTree.java|2992|3008|ResourceLocation|class|net.minecraft.util.ResourceLocation|false
+      @|com/example/craftmastery/gui/GuiSkillTree.java|3036|3045|getOutput|method|com.example.craftmastery.recipe.CustomRecipe|getOutput|()Lnet/minecraft/item/ItemStack;
+      @|com/example/craftmastery/gui/GuiSkillTree.java|3048|3055|getItem|method|net.minecraft.item.ItemStack|getItem|()Lnet/minecraft/item/Item;
+      @|com/example/craftmastery/gui/GuiSkillTree.java|3058|3073|getRegistryName|method|net.minecraftforge.registries.IForgeRegistryEntry|getRegistryName|()Lnet/minecraft/util/ResourceLocation;
+      @|com/example/craftmastery/gui/GuiSkillTree.java|3076|3083|getPath|method|net.minecraft.util.ResourceLocation|getPath|()Ljava/lang/String;
+      @|com/example/craftmastery/gui/GuiSkillTree.java|3111|3132|drawTexturedModalRect|method|net.minecraft.client.gui.Gui|drawTexturedModalRect|(IIIIII)V
+      @|com/example/craftmastery/gui/GuiSkillTree.java|3140|3141|x|field|net.minecraft.client.gui.GuiButton|x
+      @|com/example/craftmastery/gui/GuiSkillTree.java|3155|3156|y|field|net.minecraft.client.gui.GuiButton|y
+      @|com/example/craftmastery/gui/GuiSkillTree.java|3227|3235|drawRect|method|net.minecraft.client.gui.Gui|drawRect|(IIIII)V
+      @|com/example/craftmastery/gui/GuiSkillTree.java|3243|3244|x|field|net.minecraft.client.gui.GuiButton|x
+      @|com/example/craftmastery/gui/GuiSkillTree.java|3253|3254|y|field|net.minecraft.client.gui.GuiButton|y
+      @|com/example/craftmastery/gui/GuiSkillTree.java|3263|3264|x|field|net.minecraft.client.gui.GuiButton|x
+      @|com/example/craftmastery/gui/GuiSkillTree.java|3274|3279|width|field|net.minecraft.client.gui.GuiButton|width
+      @|com/example/craftmastery/gui/GuiSkillTree.java|3288|3289|y|field|net.minecraft.client.gui.GuiButton|y
+      @|com/example/craftmastery/gui/GuiSkillTree.java|3299|3305|height|field|net.minecraft.client.gui.GuiButton|height
+      @|com/example/craftmastery/gui/GuiSkillTree.java|3363|3373|drawScreen|method|net.minecraft.client.gui.GuiScreen|drawScreen|(IIF)V
+      @|com/example/craftmastery/gui/GuiSkillTree.java|3374|3380|mouseX|param|com.example.craftmastery.gui.GuiSkillTree|drawScreen|(IIF)V|mouseX|0
+      @|com/example/craftmastery/gui/GuiSkillTree.java|3382|3388|mouseY|param|com.example.craftmastery.gui.GuiSkillTree|drawScreen|(IIF)V|mouseY|1
+      @|com/example/craftmastery/gui/GuiSkillTree.java|3390|3402|partialTicks|param|com.example.craftmastery.gui.GuiSkillTree|drawScreen|(IIF)V|partialTicks|2
+      @|com/example/craftmastery/gui/GuiSkillTree.java|3436|3443|recipes|field|com.example.craftmastery.gui.GuiSkillTree|recipes
+      @|com/example/craftmastery/gui/GuiSkillTree.java|3444|3448|size|method|java.util.Collection|size|()I
+      @|com/example/craftmastery/gui/GuiSkillTree.java|3472|3484|CustomRecipe|class|com.example.craftmastery.recipe.CustomRecipe|false
+      @|com/example/craftmastery/gui/GuiSkillTree.java|3494|3501|recipes|field|com.example.craftmastery.gui.GuiSkillTree|recipes
+      @|com/example/craftmastery/gui/GuiSkillTree.java|3502|3505|get|method|java.util.List|get|(I)Ljava/lang/Object;
+      @|com/example/craftmastery/gui/GuiSkillTree.java|3523|3532|GuiButton|class|net.minecraft.client.gui.GuiButton|false
+      @|com/example/craftmastery/gui/GuiSkillTree.java|3542|3552|buttonList|field|net.minecraft.client.gui.GuiScreen|buttonList
+      @|com/example/craftmastery/gui/GuiSkillTree.java|3553|3556|get|method|java.util.List|get|(I)Ljava/lang/Object;
+      @|com/example/craftmastery/gui/GuiSkillTree.java|3578|3589|isMouseOver|method|com.example.craftmastery.gui.GuiSkillTree|isMouseOver|(Lnet/minecraft/client/gui/GuiButton;II)Z
+      @|com/example/craftmastery/gui/GuiSkillTree.java|3598|3604|mouseX|param|com.example.craftmastery.gui.GuiSkillTree|drawScreen|(IIF)V|mouseX|0
+      @|com/example/craftmastery/gui/GuiSkillTree.java|3606|3612|mouseY|param|com.example.craftmastery.gui.GuiSkillTree|drawScreen|(IIF)V|mouseY|1
+      @|com/example/craftmastery/gui/GuiSkillTree.java|3634|3650|drawHoveringText|method|net.minecraft.client.gui.GuiScreen|drawHoveringText|(Ljava/lang/String;II)V
+      @|com/example/craftmastery/gui/GuiSkillTree.java|3658|3665|getName|method|com.example.craftmastery.recipe.CustomRecipe|getName|()Ljava/lang/String;
+      @|com/example/craftmastery/gui/GuiSkillTree.java|3690|3702|getPointCost|method|com.example.craftmastery.recipe.CustomRecipe|getPointCost|()I
+      @|com/example/craftmastery/gui/GuiSkillTree.java|3712|3718|mouseX|param|com.example.craftmastery.gui.GuiSkillTree|drawScreen|(IIF)V|mouseX|0
+      @|com/example/craftmastery/gui/GuiSkillTree.java|3720|3726|mouseY|param|com.example.craftmastery.gui.GuiSkillTree|drawScreen|(IIF)V|mouseY|1
    Method End: drawScreen(IIF)V
    Method Start: actionPerformed(Lnet/minecraft/client/gui/GuiButton;)V
-      @|com/example/craftmastery/gui/GuiSkillTree.java|3606|3612|button|param|com.example.craftmastery.gui.GuiSkillTree|actionPerformed|(Lnet/minecraft/client/gui/GuiButton;)V|button|0
-      @|com/example/craftmastery/gui/GuiSkillTree.java|3551|3559|Override|class|java.lang.Override|false
-      @|com/example/craftmastery/gui/GuiSkillTree.java|3580|3595|actionPerformed|method|net.minecraft.client.gui.GuiScreen|actionPerformed|(Lnet/minecraft/client/gui/GuiButton;)V
-      @|com/example/craftmastery/gui/GuiSkillTree.java|3596|3605|GuiButton|class|net.minecraft.client.gui.GuiButton|false
-      @|com/example/craftmastery/gui/GuiSkillTree.java|3621|3632|IOException|class|java.io.IOException|false
-      @|com/example/craftmastery/gui/GuiSkillTree.java|3648|3654|button|param|com.example.craftmastery.gui.GuiSkillTree|actionPerformed|(Lnet/minecraft/client/gui/GuiButton;)V|button|0
-      @|com/example/craftmastery/gui/GuiSkillTree.java|3655|3657|id|field|net.minecraft.client.gui.GuiButton|id
-      @|com/example/craftmastery/gui/GuiSkillTree.java|3666|3672|button|param|com.example.craftmastery.gui.GuiSkillTree|actionPerformed|(Lnet/minecraft/client/gui/GuiButton;)V|button|0
-      @|com/example/craftmastery/gui/GuiSkillTree.java|3673|3675|id|field|net.minecraft.client.gui.GuiButton|id
-      @|com/example/craftmastery/gui/GuiSkillTree.java|3678|3685|recipes|field|com.example.craftmastery.gui.GuiSkillTree|recipes
-      @|com/example/craftmastery/gui/GuiSkillTree.java|3686|3690|size|method|java.util.Collection|size|()I
-      @|com/example/craftmastery/gui/GuiSkillTree.java|3709|3721|CustomRecipe|class|com.example.craftmastery.recipe.CustomRecipe|false
-      @|com/example/craftmastery/gui/GuiSkillTree.java|3731|3738|recipes|field|com.example.craftmastery.gui.GuiSkillTree|recipes
-      @|com/example/craftmastery/gui/GuiSkillTree.java|3739|3742|get|method|java.util.List|get|(I)Ljava/lang/Object;
-      @|com/example/craftmastery/gui/GuiSkillTree.java|3743|3749|button|param|com.example.craftmastery.gui.GuiSkillTree|actionPerformed|(Lnet/minecraft/client/gui/GuiButton;)V|button|0
-      @|com/example/craftmastery/gui/GuiSkillTree.java|3750|3752|id|field|net.minecraft.client.gui.GuiButton|id
-      @|com/example/craftmastery/gui/GuiSkillTree.java|3772|3786|playerProgress|field|com.example.craftmastery.gui.GuiSkillTree|playerProgress
-      @|com/example/craftmastery/gui/GuiSkillTree.java|3787|3801|getCraftPoints|method|com.example.craftmastery.player.PlayerProgress|getCraftPoints|()I
-      @|com/example/craftmastery/gui/GuiSkillTree.java|3814|3826|getPointCost|method|com.example.craftmastery.recipe.CustomRecipe|getPointCost|()I
-      @|com/example/craftmastery/gui/GuiSkillTree.java|3849|3863|playerProgress|field|com.example.craftmastery.gui.GuiSkillTree|playerProgress
-      @|com/example/craftmastery/gui/GuiSkillTree.java|3864|3876|unlockRecipe|method|com.example.craftmastery.player.PlayerProgress|unlockRecipe|(Lcom/example/craftmastery/recipe/CustomRecipe;)V
-      @|com/example/craftmastery/gui/GuiSkillTree.java|3903|3917|playerProgress|field|com.example.craftmastery.gui.GuiSkillTree|playerProgress
-      @|com/example/craftmastery/gui/GuiSkillTree.java|3918|3934|spendCraftPoints|method|com.example.craftmastery.player.PlayerProgress|spendCraftPoints|(I)Z
-      @|com/example/craftmastery/gui/GuiSkillTree.java|3942|3954|getPointCost|method|com.example.craftmastery.recipe.CustomRecipe|getPointCost|()I
-      @|com/example/craftmastery/gui/GuiSkillTree.java|3976|3997|PlayerProgressManager|class|com.example.craftmastery.player.PlayerProgressManager|false
-      @|com/example/craftmastery/gui/GuiSkillTree.java|3998|4001|get|method|com.example.craftmastery.player.PlayerProgressManager|get|(Lnet/minecraft/entity/player/EntityPlayer;)Lcom/example/craftmastery/player/PlayerProgressManager;
-      @|com/example/craftmastery/gui/GuiSkillTree.java|4002|4008|player|field|com.example.craftmastery.gui.GuiSkillTree|player
-      @|com/example/craftmastery/gui/GuiSkillTree.java|4010|4019|markDirty|method|net.minecraft.world.storage.WorldSavedData|markDirty|()V
+      @|com/example/craftmastery/gui/GuiSkillTree.java|3825|3831|button|param|com.example.craftmastery.gui.GuiSkillTree|actionPerformed|(Lnet/minecraft/client/gui/GuiButton;)V|button|0
+      @|com/example/craftmastery/gui/GuiSkillTree.java|3770|3778|Override|class|java.lang.Override|false
+      @|com/example/craftmastery/gui/GuiSkillTree.java|3799|3814|actionPerformed|method|net.minecraft.client.gui.GuiScreen|actionPerformed|(Lnet/minecraft/client/gui/GuiButton;)V
+      @|com/example/craftmastery/gui/GuiSkillTree.java|3815|3824|GuiButton|class|net.minecraft.client.gui.GuiButton|false
+      @|com/example/craftmastery/gui/GuiSkillTree.java|3840|3851|IOException|class|java.io.IOException|false
+      @|com/example/craftmastery/gui/GuiSkillTree.java|3867|3873|button|param|com.example.craftmastery.gui.GuiSkillTree|actionPerformed|(Lnet/minecraft/client/gui/GuiButton;)V|button|0
+      @|com/example/craftmastery/gui/GuiSkillTree.java|3874|3876|id|field|net.minecraft.client.gui.GuiButton|id
+      @|com/example/craftmastery/gui/GuiSkillTree.java|3885|3891|button|param|com.example.craftmastery.gui.GuiSkillTree|actionPerformed|(Lnet/minecraft/client/gui/GuiButton;)V|button|0
+      @|com/example/craftmastery/gui/GuiSkillTree.java|3892|3894|id|field|net.minecraft.client.gui.GuiButton|id
+      @|com/example/craftmastery/gui/GuiSkillTree.java|3897|3904|recipes|field|com.example.craftmastery.gui.GuiSkillTree|recipes
+      @|com/example/craftmastery/gui/GuiSkillTree.java|3905|3909|size|method|java.util.Collection|size|()I
+      @|com/example/craftmastery/gui/GuiSkillTree.java|3928|3940|CustomRecipe|class|com.example.craftmastery.recipe.CustomRecipe|false
+      @|com/example/craftmastery/gui/GuiSkillTree.java|3950|3957|recipes|field|com.example.craftmastery.gui.GuiSkillTree|recipes
+      @|com/example/craftmastery/gui/GuiSkillTree.java|3958|3961|get|method|java.util.List|get|(I)Ljava/lang/Object;
+      @|com/example/craftmastery/gui/GuiSkillTree.java|3962|3968|button|param|com.example.craftmastery.gui.GuiSkillTree|actionPerformed|(Lnet/minecraft/client/gui/GuiButton;)V|button|0
+      @|com/example/craftmastery/gui/GuiSkillTree.java|3969|3971|id|field|net.minecraft.client.gui.GuiButton|id
+      @|com/example/craftmastery/gui/GuiSkillTree.java|3991|4005|playerProgress|field|com.example.craftmastery.gui.GuiSkillTree|playerProgress
+      @|com/example/craftmastery/gui/GuiSkillTree.java|4006|4020|getCraftPoints|method|com.example.craftmastery.player.PlayerProgress|getCraftPoints|()I
+      @|com/example/craftmastery/gui/GuiSkillTree.java|4033|4045|getPointCost|method|com.example.craftmastery.recipe.CustomRecipe|getPointCost|()I
+      @|com/example/craftmastery/gui/GuiSkillTree.java|4068|4082|playerProgress|field|com.example.craftmastery.gui.GuiSkillTree|playerProgress
+      @|com/example/craftmastery/gui/GuiSkillTree.java|4083|4095|unlockRecipe|method|com.example.craftmastery.player.PlayerProgress|unlockRecipe|(Lcom/example/craftmastery/recipe/CustomRecipe;Lnet/minecraft/entity/player/EntityPlayer;)V
+      @|com/example/craftmastery/gui/GuiSkillTree.java|4104|4110|player|field|com.example.craftmastery.gui.GuiSkillTree|player
+      @|com/example/craftmastery/gui/GuiSkillTree.java|4130|4144|playerProgress|field|com.example.craftmastery.gui.GuiSkillTree|playerProgress
+      @|com/example/craftmastery/gui/GuiSkillTree.java|4145|4161|spendCraftPoints|method|com.example.craftmastery.player.PlayerProgress|spendCraftPoints|(I)Z
+      @|com/example/craftmastery/gui/GuiSkillTree.java|4169|4181|getPointCost|method|com.example.craftmastery.recipe.CustomRecipe|getPointCost|()I
+      @|com/example/craftmastery/gui/GuiSkillTree.java|4203|4224|PlayerProgressManager|class|com.example.craftmastery.player.PlayerProgressManager|false
+      @|com/example/craftmastery/gui/GuiSkillTree.java|4225|4228|get|method|com.example.craftmastery.player.PlayerProgressManager|get|(Lnet/minecraft/entity/player/EntityPlayer;)Lcom/example/craftmastery/player/PlayerProgressManager;
+      @|com/example/craftmastery/gui/GuiSkillTree.java|4229|4235|player|field|com.example.craftmastery.gui.GuiSkillTree|player
+      @|com/example/craftmastery/gui/GuiSkillTree.java|4237|4246|markDirty|method|net.minecraft.world.storage.WorldSavedData|markDirty|()V
+      @|com/example/craftmastery/gui/GuiSkillTree.java|4267|4286|NotificationManager|class|com.example.craftmastery.notification.NotificationManager|false
+      @|com/example/craftmastery/gui/GuiSkillTree.java|4287|4302|addNotification|method|com.example.craftmastery.notification.NotificationManager|addNotification|(Ljava/lang/String;)V
+      @|com/example/craftmastery/gui/GuiSkillTree.java|4332|4339|getName|method|com.example.craftmastery.recipe.CustomRecipe|getName|()Ljava/lang/String;
    Method End: actionPerformed(Lnet/minecraft/client/gui/GuiButton;)V
    Method Start: isMouseOver(Lnet/minecraft/client/gui/GuiButton;II)Z
-      @|com/example/craftmastery/gui/GuiSkillTree.java|4101|4107|button|param|com.example.craftmastery.gui.GuiSkillTree|isMouseOver|(Lnet/minecraft/client/gui/GuiButton;II)Z|button|0
-      @|com/example/craftmastery/gui/GuiSkillTree.java|4113|4119|mouseX|param|com.example.craftmastery.gui.GuiSkillTree|isMouseOver|(Lnet/minecraft/client/gui/GuiButton;II)Z|mouseX|1
-      @|com/example/craftmastery/gui/GuiSkillTree.java|4125|4131|mouseY|param|com.example.craftmastery.gui.GuiSkillTree|isMouseOver|(Lnet/minecraft/client/gui/GuiButton;II)Z|mouseY|2
-      @|com/example/craftmastery/gui/GuiSkillTree.java|4079|4090|isMouseOver|method|com.example.craftmastery.gui.GuiSkillTree|isMouseOver|(Lnet/minecraft/client/gui/GuiButton;II)Z
-      @|com/example/craftmastery/gui/GuiSkillTree.java|4091|4100|GuiButton|class|net.minecraft.client.gui.GuiButton|false
-      @|com/example/craftmastery/gui/GuiSkillTree.java|4151|4157|mouseX|param|com.example.craftmastery.gui.GuiSkillTree|isMouseOver|(Lnet/minecraft/client/gui/GuiButton;II)Z|mouseX|1
-      @|com/example/craftmastery/gui/GuiSkillTree.java|4161|4167|button|param|com.example.craftmastery.gui.GuiSkillTree|isMouseOver|(Lnet/minecraft/client/gui/GuiButton;II)Z|button|0
-      @|com/example/craftmastery/gui/GuiSkillTree.java|4168|4169|x|field|net.minecraft.client.gui.GuiButton|x
-      @|com/example/craftmastery/gui/GuiSkillTree.java|4173|4179|mouseX|param|com.example.craftmastery.gui.GuiSkillTree|isMouseOver|(Lnet/minecraft/client/gui/GuiButton;II)Z|mouseX|1
-      @|com/example/craftmastery/gui/GuiSkillTree.java|4182|4188|button|param|com.example.craftmastery.gui.GuiSkillTree|isMouseOver|(Lnet/minecraft/client/gui/GuiButton;II)Z|button|0
-      @|com/example/craftmastery/gui/GuiSkillTree.java|4189|4190|x|field|net.minecraft.client.gui.GuiButton|x
-      @|com/example/craftmastery/gui/GuiSkillTree.java|4193|4199|button|param|com.example.craftmastery.gui.GuiSkillTree|isMouseOver|(Lnet/minecraft/client/gui/GuiButton;II)Z|button|0
-      @|com/example/craftmastery/gui/GuiSkillTree.java|4200|4205|width|field|net.minecraft.client.gui.GuiButton|width
-      @|com/example/craftmastery/gui/GuiSkillTree.java|4226|4232|mouseY|param|com.example.craftmastery.gui.GuiSkillTree|isMouseOver|(Lnet/minecraft/client/gui/GuiButton;II)Z|mouseY|2
-      @|com/example/craftmastery/gui/GuiSkillTree.java|4236|4242|button|param|com.example.craftmastery.gui.GuiSkillTree|isMouseOver|(Lnet/minecraft/client/gui/GuiButton;II)Z|button|0
-      @|com/example/craftmastery/gui/GuiSkillTree.java|4243|4244|y|field|net.minecraft.client.gui.GuiButton|y
-      @|com/example/craftmastery/gui/GuiSkillTree.java|4248|4254|mouseY|param|com.example.craftmastery.gui.GuiSkillTree|isMouseOver|(Lnet/minecraft/client/gui/GuiButton;II)Z|mouseY|2
-      @|com/example/craftmastery/gui/GuiSkillTree.java|4257|4263|button|param|com.example.craftmastery.gui.GuiSkillTree|isMouseOver|(Lnet/minecraft/client/gui/GuiButton;II)Z|button|0
-      @|com/example/craftmastery/gui/GuiSkillTree.java|4264|4265|y|field|net.minecraft.client.gui.GuiButton|y
-      @|com/example/craftmastery/gui/GuiSkillTree.java|4268|4274|button|param|com.example.craftmastery.gui.GuiSkillTree|isMouseOver|(Lnet/minecraft/client/gui/GuiButton;II)Z|button|0
-      @|com/example/craftmastery/gui/GuiSkillTree.java|4275|4281|height|field|net.minecraft.client.gui.GuiButton|height
+      @|com/example/craftmastery/gui/GuiSkillTree.java|4422|4428|button|param|com.example.craftmastery.gui.GuiSkillTree|isMouseOver|(Lnet/minecraft/client/gui/GuiButton;II)Z|button|0
+      @|com/example/craftmastery/gui/GuiSkillTree.java|4434|4440|mouseX|param|com.example.craftmastery.gui.GuiSkillTree|isMouseOver|(Lnet/minecraft/client/gui/GuiButton;II)Z|mouseX|1
+      @|com/example/craftmastery/gui/GuiSkillTree.java|4446|4452|mouseY|param|com.example.craftmastery.gui.GuiSkillTree|isMouseOver|(Lnet/minecraft/client/gui/GuiButton;II)Z|mouseY|2
+      @|com/example/craftmastery/gui/GuiSkillTree.java|4400|4411|isMouseOver|method|com.example.craftmastery.gui.GuiSkillTree|isMouseOver|(Lnet/minecraft/client/gui/GuiButton;II)Z
+      @|com/example/craftmastery/gui/GuiSkillTree.java|4412|4421|GuiButton|class|net.minecraft.client.gui.GuiButton|false
+      @|com/example/craftmastery/gui/GuiSkillTree.java|4472|4478|mouseX|param|com.example.craftmastery.gui.GuiSkillTree|isMouseOver|(Lnet/minecraft/client/gui/GuiButton;II)Z|mouseX|1
+      @|com/example/craftmastery/gui/GuiSkillTree.java|4482|4488|button|param|com.example.craftmastery.gui.GuiSkillTree|isMouseOver|(Lnet/minecraft/client/gui/GuiButton;II)Z|button|0
+      @|com/example/craftmastery/gui/GuiSkillTree.java|4489|4490|x|field|net.minecraft.client.gui.GuiButton|x
+      @|com/example/craftmastery/gui/GuiSkillTree.java|4494|4500|mouseX|param|com.example.craftmastery.gui.GuiSkillTree|isMouseOver|(Lnet/minecraft/client/gui/GuiButton;II)Z|mouseX|1
+      @|com/example/craftmastery/gui/GuiSkillTree.java|4503|4509|button|param|com.example.craftmastery.gui.GuiSkillTree|isMouseOver|(Lnet/minecraft/client/gui/GuiButton;II)Z|button|0
+      @|com/example/craftmastery/gui/GuiSkillTree.java|4510|4511|x|field|net.minecraft.client.gui.GuiButton|x
+      @|com/example/craftmastery/gui/GuiSkillTree.java|4514|4520|button|param|com.example.craftmastery.gui.GuiSkillTree|isMouseOver|(Lnet/minecraft/client/gui/GuiButton;II)Z|button|0
+      @|com/example/craftmastery/gui/GuiSkillTree.java|4521|4526|width|field|net.minecraft.client.gui.GuiButton|width
+      @|com/example/craftmastery/gui/GuiSkillTree.java|4547|4553|mouseY|param|com.example.craftmastery.gui.GuiSkillTree|isMouseOver|(Lnet/minecraft/client/gui/GuiButton;II)Z|mouseY|2
+      @|com/example/craftmastery/gui/GuiSkillTree.java|4557|4563|button|param|com.example.craftmastery.gui.GuiSkillTree|isMouseOver|(Lnet/minecraft/client/gui/GuiButton;II)Z|button|0
+      @|com/example/craftmastery/gui/GuiSkillTree.java|4564|4565|y|field|net.minecraft.client.gui.GuiButton|y
+      @|com/example/craftmastery/gui/GuiSkillTree.java|4569|4575|mouseY|param|com.example.craftmastery.gui.GuiSkillTree|isMouseOver|(Lnet/minecraft/client/gui/GuiButton;II)Z|mouseY|2
+      @|com/example/craftmastery/gui/GuiSkillTree.java|4578|4584|button|param|com.example.craftmastery.gui.GuiSkillTree|isMouseOver|(Lnet/minecraft/client/gui/GuiButton;II)Z|button|0
+      @|com/example/craftmastery/gui/GuiSkillTree.java|4585|4586|y|field|net.minecraft.client.gui.GuiButton|y
+      @|com/example/craftmastery/gui/GuiSkillTree.java|4589|4595|button|param|com.example.craftmastery.gui.GuiSkillTree|isMouseOver|(Lnet/minecraft/client/gui/GuiButton;II)Z|button|0
+      @|com/example/craftmastery/gui/GuiSkillTree.java|4596|4602|height|field|net.minecraft.client.gui.GuiButton|height
    Method End: isMouseOver(Lnet/minecraft/client/gui/GuiButton;II)Z
    Method Start: doesGuiPauseGame()Z
-      @|com/example/craftmastery/gui/GuiSkillTree.java|4298|4306|Override|class|java.lang.Override|false
-      @|com/example/craftmastery/gui/GuiSkillTree.java|4327|4343|doesGuiPauseGame|method|net.minecraft.client.gui.GuiScreen|doesGuiPauseGame|()Z
+      @|com/example/craftmastery/gui/GuiSkillTree.java|4619|4627|Override|class|java.lang.Override|false
+      @|com/example/craftmastery/gui/GuiSkillTree.java|4648|4664|doesGuiPauseGame|method|net.minecraft.client.gui.GuiScreen|doesGuiPauseGame|()Z
    Method End: doesGuiPauseGame()Z
 Class End  : com.example.craftmastery.gui.GuiSkillTree
 endProcessing "com/example/craftmastery/gui/GuiSkillTree.java"
 
-startProcessing "com/example/craftmastery/player/PlayerProgress.java" md5: cffd988014d06e06ab6b5aad42bb5e7b
+startProcessing "com/example/craftmastery/keybinding/KeyBindings.java" md5: 059534681a1d0fd5a89d4cbdc7293a89
+@|com/example/craftmastery/keybinding/KeyBindings.java|8|43|com.example.craftmastery.keybinding|package|com.example.craftmastery.keybinding|(file)
+Class Start: com.example.craftmastery.keybinding.KeyBindings
+   @|com/example/craftmastery/keybinding/KeyBindings.java|388|410|Mod.EventBusSubscriber|class|net.minecraftforge.fml.common.Mod.EventBusSubscriber|false
+   @|com/example/craftmastery/keybinding/KeyBindings.java|411|415|Side|class|net.minecraftforge.fml.relauncher.Side|false
+   @|com/example/craftmastery/keybinding/KeyBindings.java|416|422|CLIENT|field|net.minecraftforge.fml.relauncher.Side|CLIENT
+   @|com/example/craftmastery/keybinding/KeyBindings.java|438|449|KeyBindings|class|com.example.craftmastery.keybinding.KeyBindings|false
+   @|com/example/craftmastery/keybinding/KeyBindings.java|473|483|KeyBinding|class|net.minecraft.client.settings.KeyBinding|false
+   @|com/example/craftmastery/keybinding/KeyBindings.java|473|483|KeyBinding|class|net.minecraft.client.settings.KeyBinding|false
+   @|com/example/craftmastery/keybinding/KeyBindings.java|484|500|openSkillTreeKey|field|com.example.craftmastery.keybinding.KeyBindings|openSkillTreeKey|
+   Method Start: init()V
+      @|com/example/craftmastery/keybinding/KeyBindings.java|510|518|SideOnly|class|net.minecraftforge.fml.relauncher.SideOnly|false
+      @|com/example/craftmastery/keybinding/KeyBindings.java|519|523|Side|class|net.minecraftforge.fml.relauncher.Side|false
+      @|com/example/craftmastery/keybinding/KeyBindings.java|524|530|CLIENT|field|net.minecraftforge.fml.relauncher.Side|CLIENT
+      @|com/example/craftmastery/keybinding/KeyBindings.java|556|560|init|method|com.example.craftmastery.keybinding.KeyBindings|init|()V
+      @|com/example/craftmastery/keybinding/KeyBindings.java|574|590|openSkillTreeKey|field|com.example.craftmastery.keybinding.KeyBindings|openSkillTreeKey
+      @|com/example/craftmastery/keybinding/KeyBindings.java|597|607|KeyBinding|class|net.minecraft.client.settings.KeyBinding|false
+      @|com/example/craftmastery/keybinding/KeyBindings.java|633|641|Keyboard|class|org.lwjgl.input.Keyboard|false
+      @|com/example/craftmastery/keybinding/KeyBindings.java|642|647|KEY_K|field|org.lwjgl.input.Keyboard|KEY_K
+      @|com/example/craftmastery/keybinding/KeyBindings.java|669|681|CraftMastery|class|com.example.craftmastery.CraftMastery|false
+      @|com/example/craftmastery/keybinding/KeyBindings.java|682|687|MODID|field|com.example.craftmastery.CraftMastery|MODID
+      @|com/example/craftmastery/keybinding/KeyBindings.java|699|713|ClientRegistry|class|net.minecraftforge.fml.client.registry.ClientRegistry|false
+      @|com/example/craftmastery/keybinding/KeyBindings.java|714|732|registerKeyBinding|method|net.minecraftforge.fml.client.registry.ClientRegistry|registerKeyBinding|(Lnet/minecraft/client/settings/KeyBinding;)V
+      @|com/example/craftmastery/keybinding/KeyBindings.java|733|749|openSkillTreeKey|field|com.example.craftmastery.keybinding.KeyBindings|openSkillTreeKey
+   Method End: init()V
+Class End  : com.example.craftmastery.keybinding.KeyBindings
+endProcessing "com/example/craftmastery/keybinding/KeyBindings.java"
+
+startProcessing "com/example/craftmastery/notification/NotificationManager.java" md5: 7f2b8d0c68d83b7e3186f84f711efff4
+@|com/example/craftmastery/notification/NotificationManager.java|8|45|com.example.craftmastery.notification|package|com.example.craftmastery.notification|(file)
+Class Start: com.example.craftmastery.notification.NotificationManager
+   @|com/example/craftmastery/notification/NotificationManager.java|691|713|Mod.EventBusSubscriber|class|net.minecraftforge.fml.common.Mod.EventBusSubscriber|false
+   @|com/example/craftmastery/notification/NotificationManager.java|714|718|Side|class|net.minecraftforge.fml.relauncher.Side|false
+   @|com/example/craftmastery/notification/NotificationManager.java|719|725|CLIENT|field|net.minecraftforge.fml.relauncher.Side|CLIENT
+   @|com/example/craftmastery/notification/NotificationManager.java|741|760|NotificationManager|class|com.example.craftmastery.notification.NotificationManager|false
+   @|com/example/craftmastery/notification/NotificationManager.java|789|805|ResourceLocation|class|net.minecraft.util.ResourceLocation|false
+   @|com/example/craftmastery/notification/NotificationManager.java|789|805|ResourceLocation|class|net.minecraft.util.ResourceLocation|false
+   @|com/example/craftmastery/notification/NotificationManager.java|806|826|NOTIFICATION_TEXTURE|field|com.example.craftmastery.notification.NotificationManager|NOTIFICATION_TEXTURE|
+   @|com/example/craftmastery/notification/NotificationManager.java|833|849|ResourceLocation|class|net.minecraft.util.ResourceLocation|false
+   @|com/example/craftmastery/notification/NotificationManager.java|850|862|CraftMastery|class|com.example.craftmastery.CraftMastery|false
+   @|com/example/craftmastery/notification/NotificationManager.java|863|868|MODID|field|com.example.craftmastery.CraftMastery|MODID
+   @|com/example/craftmastery/notification/NotificationManager.java|935|953|NOTIFICATION_WIDTH|field|com.example.craftmastery.notification.NotificationManager|NOTIFICATION_WIDTH|
+   @|com/example/craftmastery/notification/NotificationManager.java|991|1010|NOTIFICATION_HEIGHT|field|com.example.craftmastery.notification.NotificationManager|NOTIFICATION_HEIGHT|
+   @|com/example/craftmastery/notification/NotificationManager.java|1047|1059|DISPLAY_TIME|field|com.example.craftmastery.notification.NotificationManager|DISPLAY_TIME|
+   @|com/example/craftmastery/notification/NotificationManager.java|1109|1121|Notification|class|com.example.craftmastery.notification.NotificationManager.Notification|false
+   @|com/example/craftmastery/notification/NotificationManager.java|1104|1108|List|class|java.util.List|false
+   @|com/example/craftmastery/notification/NotificationManager.java|1104|1108|List|class|java.util.List|false
+   @|com/example/craftmastery/notification/NotificationManager.java|1109|1121|Notification|class|com.example.craftmastery.notification.NotificationManager.Notification|false
+   @|com/example/craftmastery/notification/NotificationManager.java|1123|1142|activeNotifications|field|com.example.craftmastery.notification.NotificationManager|activeNotifications|
+   @|com/example/craftmastery/notification/NotificationManager.java|1149|1158|ArrayList|class|java.util.ArrayList|false
+   Method Start: addNotification(Ljava/lang/String;)V
+      @|com/example/craftmastery/notification/NotificationManager.java|1213|1220|message|param|com.example.craftmastery.notification.NotificationManager|addNotification|(Ljava/lang/String;)V|message|0
+      @|com/example/craftmastery/notification/NotificationManager.java|1190|1205|addNotification|method|com.example.craftmastery.notification.NotificationManager|addNotification|(Ljava/lang/String;)V
+      @|com/example/craftmastery/notification/NotificationManager.java|1206|1212|String|class|java.lang.String|false
+      @|com/example/craftmastery/notification/NotificationManager.java|1233|1252|activeNotifications|field|com.example.craftmastery.notification.NotificationManager|activeNotifications
+      @|com/example/craftmastery/notification/NotificationManager.java|1253|1256|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|com/example/craftmastery/notification/NotificationManager.java|1261|1273|Notification|class|com.example.craftmastery.notification.NotificationManager.Notification|false
+      @|com/example/craftmastery/notification/NotificationManager.java|1274|1281|message|param|com.example.craftmastery.notification.NotificationManager|addNotification|(Ljava/lang/String;)V|message|0
+   Method End: addNotification(Ljava/lang/String;)V
+   Method Start: onRenderGameOverlay(Lnet/minecraftforge/client/event/RenderGameOverlayEvent$Post;)V
+      @|com/example/craftmastery/notification/NotificationManager.java|1415|1420|event|param|com.example.craftmastery.notification.NotificationManager|onRenderGameOverlay|(Lnet/minecraftforge/client/event/RenderGameOverlayEvent$Post;)V|event|0
+      @|com/example/craftmastery/notification/NotificationManager.java|1300|1314|SubscribeEvent|class|net.minecraftforge.fml.common.eventhandler.SubscribeEvent|false
+      @|com/example/craftmastery/notification/NotificationManager.java|1321|1329|SideOnly|class|net.minecraftforge.fml.relauncher.SideOnly|false
+      @|com/example/craftmastery/notification/NotificationManager.java|1330|1334|Side|class|net.minecraftforge.fml.relauncher.Side|false
+      @|com/example/craftmastery/notification/NotificationManager.java|1335|1341|CLIENT|field|net.minecraftforge.fml.relauncher.Side|CLIENT
+      @|com/example/craftmastery/notification/NotificationManager.java|1367|1386|onRenderGameOverlay|method|com.example.craftmastery.notification.NotificationManager|onRenderGameOverlay|(Lnet/minecraftforge/client/event/RenderGameOverlayEvent$Post;)V
+      @|com/example/craftmastery/notification/NotificationManager.java|1387|1414|RenderGameOverlayEvent.Post|class|net.minecraftforge.client.event.RenderGameOverlayEvent.Post|false
+      @|com/example/craftmastery/notification/NotificationManager.java|1437|1442|event|param|com.example.craftmastery.notification.NotificationManager|onRenderGameOverlay|(Lnet/minecraftforge/client/event/RenderGameOverlayEvent$Post;)V|event|0
+      @|com/example/craftmastery/notification/NotificationManager.java|1443|1450|getType|method|net.minecraftforge.client.event.RenderGameOverlayEvent|getType|()Lnet/minecraftforge/client/event/RenderGameOverlayEvent$ElementType;
+      @|com/example/craftmastery/notification/NotificationManager.java|1456|1490|RenderGameOverlayEvent.ElementType|class|net.minecraftforge.client.event.RenderGameOverlayEvent.ElementType|false
+      @|com/example/craftmastery/notification/NotificationManager.java|1491|1495|TEXT|field|net.minecraftforge.client.event.RenderGameOverlayEvent.ElementType|TEXT
+      @|com/example/craftmastery/notification/NotificationManager.java|1542|1551|Minecraft|class|net.minecraft.client.Minecraft|false
+      @|com/example/craftmastery/notification/NotificationManager.java|1557|1566|Minecraft|class|net.minecraft.client.Minecraft|false
+      @|com/example/craftmastery/notification/NotificationManager.java|1567|1579|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|com/example/craftmastery/notification/NotificationManager.java|1592|1608|ScaledResolution|class|net.minecraft.client.gui.ScaledResolution|false
+      @|com/example/craftmastery/notification/NotificationManager.java|1632|1648|ScaledResolution|class|net.minecraft.client.gui.ScaledResolution|false
+      @|com/example/craftmastery/notification/NotificationManager.java|1692|1706|getScaledWidth|method|net.minecraft.client.gui.ScaledResolution|getScaledWidth|()I
+      @|com/example/craftmastery/notification/NotificationManager.java|1749|1764|getScaledHeight|method|net.minecraft.client.gui.ScaledResolution|getScaledHeight|()I
+      @|com/example/craftmastery/notification/NotificationManager.java|1779|1793|GlStateManager|class|net.minecraft.client.renderer.GlStateManager|false
+      @|com/example/craftmastery/notification/NotificationManager.java|1794|1804|pushMatrix|method|net.minecraft.client.renderer.GlStateManager|pushMatrix|()V
+      @|com/example/craftmastery/notification/NotificationManager.java|1817|1831|GlStateManager|class|net.minecraft.client.renderer.GlStateManager|false
+      @|com/example/craftmastery/notification/NotificationManager.java|1832|1843|enableBlend|method|net.minecraft.client.renderer.GlStateManager|enableBlend|()V
+      @|com/example/craftmastery/notification/NotificationManager.java|1856|1870|GlStateManager|class|net.minecraft.client.renderer.GlStateManager|false
+      @|com/example/craftmastery/notification/NotificationManager.java|1871|1876|color|method|net.minecraft.client.renderer.GlStateManager|color|(FFFF)V
+      @|com/example/craftmastery/notification/NotificationManager.java|1916|1933|getTextureManager|method|net.minecraft.client.Minecraft|getTextureManager|()Lnet/minecraft/client/renderer/texture/TextureManager;
+      @|com/example/craftmastery/notification/NotificationManager.java|1936|1947|bindTexture|method|net.minecraft.client.renderer.texture.TextureManager|bindTexture|(Lnet/minecraft/util/ResourceLocation;)V
+      @|com/example/craftmastery/notification/NotificationManager.java|1948|1968|NOTIFICATION_TEXTURE|field|com.example.craftmastery.notification.NotificationManager|NOTIFICATION_TEXTURE
+      @|com/example/craftmastery/notification/NotificationManager.java|1982|1990|Iterator|class|java.util.Iterator|false
+      @|com/example/craftmastery/notification/NotificationManager.java|1991|2003|Notification|class|com.example.craftmastery.notification.NotificationManager.Notification|false
+      @|com/example/craftmastery/notification/NotificationManager.java|2016|2035|activeNotifications|field|com.example.craftmastery.notification.NotificationManager|activeNotifications
+      @|com/example/craftmastery/notification/NotificationManager.java|2036|2044|iterator|method|java.lang.Iterable|iterator|()Ljava/util/Iterator;
+      @|com/example/craftmastery/notification/NotificationManager.java|2100|2107|hasNext|method|java.util.Iterator|hasNext|()Z
+      @|com/example/craftmastery/notification/NotificationManager.java|2126|2138|Notification|class|com.example.craftmastery.notification.NotificationManager.Notification|false
+      @|com/example/craftmastery/notification/NotificationManager.java|2163|2167|next|method|java.util.Iterator|next|()Ljava/lang/Object;
+      @|com/example/craftmastery/notification/NotificationManager.java|2201|2207|render|method|com.example.craftmastery.notification.NotificationManager.Notification|render|(Lnet/minecraft/client/Minecraft;III)Z
+      @|com/example/craftmastery/notification/NotificationManager.java|2267|2286|NOTIFICATION_HEIGHT|field|com.example.craftmastery.notification.NotificationManager|NOTIFICATION_HEIGHT
+      @|com/example/craftmastery/notification/NotificationManager.java|2340|2346|remove|method|java.util.Iterator|remove|()V
+      @|com/example/craftmastery/notification/NotificationManager.java|2387|2401|GlStateManager|class|net.minecraft.client.renderer.GlStateManager|false
+      @|com/example/craftmastery/notification/NotificationManager.java|2402|2414|disableBlend|method|net.minecraft.client.renderer.GlStateManager|disableBlend|()V
+      @|com/example/craftmastery/notification/NotificationManager.java|2427|2441|GlStateManager|class|net.minecraft.client.renderer.GlStateManager|false
+      @|com/example/craftmastery/notification/NotificationManager.java|2442|2451|popMatrix|method|net.minecraft.client.renderer.GlStateManager|popMatrix|()V
+   Method End: onRenderGameOverlay(Lnet/minecraftforge/client/event/RenderGameOverlayEvent$Post;)V
+   Class Start: com.example.craftmastery.notification.NotificationManager.Notification
+      @|com/example/craftmastery/notification/NotificationManager.java|2490|2502|Notification|class|com.example.craftmastery.notification.NotificationManager.Notification|false
+      @|com/example/craftmastery/notification/NotificationManager.java|2528|2534|String|class|java.lang.String|false
+      @|com/example/craftmastery/notification/NotificationManager.java|2528|2534|String|class|java.lang.String|false
+      @|com/example/craftmastery/notification/NotificationManager.java|2535|2542|message|field|com.example.craftmastery.notification.NotificationManager.Notification|message|
+      @|com/example/craftmastery/notification/NotificationManager.java|2565|2574|ticksLeft|field|com.example.craftmastery.notification.NotificationManager.Notification|ticksLeft|
+      Method Start: Notification(Ljava/lang/String;)V
+         @|com/example/craftmastery/notification/NotificationManager.java|2614|2621|message|param|com.example.craftmastery.notification.NotificationManager.Notification|Notification|(Ljava/lang/String;)V|message|0
+         @|com/example/craftmastery/notification/NotificationManager.java|2594|2606|Notification|method|com.example.craftmastery.notification.NotificationManager.Notification|Notification|(Ljava/lang/String;)V
+         @|com/example/craftmastery/notification/NotificationManager.java|2607|2613|String|class|java.lang.String|false
+         @|com/example/craftmastery/notification/NotificationManager.java|2643|2650|message|field|com.example.craftmastery.notification.NotificationManager.Notification|message
+         @|com/example/craftmastery/notification/NotificationManager.java|2653|2660|message|param|com.example.craftmastery.notification.NotificationManager.Notification|Notification|(Ljava/lang/String;)V|message|0
+         @|com/example/craftmastery/notification/NotificationManager.java|2680|2689|ticksLeft|field|com.example.craftmastery.notification.NotificationManager.Notification|ticksLeft
+         @|com/example/craftmastery/notification/NotificationManager.java|2692|2704|DISPLAY_TIME|field|com.example.craftmastery.notification.NotificationManager|DISPLAY_TIME
+      Method End: Notification(Ljava/lang/String;)V
+      Method Start: render(Lnet/minecraft/client/Minecraft;III)Z
+         @|com/example/craftmastery/notification/NotificationManager.java|2760|2762|mc|param|com.example.craftmastery.notification.NotificationManager.Notification|render|(Lnet/minecraft/client/Minecraft;III)Z|mc|0
+         @|com/example/craftmastery/notification/NotificationManager.java|2768|2779|screenWidth|param|com.example.craftmastery.notification.NotificationManager.Notification|render|(Lnet/minecraft/client/Minecraft;III)Z|screenWidth|1
+         @|com/example/craftmastery/notification/NotificationManager.java|2785|2797|screenHeight|param|com.example.craftmastery.notification.NotificationManager.Notification|render|(Lnet/minecraft/client/Minecraft;III)Z|screenHeight|2
+         @|com/example/craftmastery/notification/NotificationManager.java|2803|2810|yOffset|param|com.example.craftmastery.notification.NotificationManager.Notification|render|(Lnet/minecraft/client/Minecraft;III)Z|yOffset|3
+         @|com/example/craftmastery/notification/NotificationManager.java|2743|2749|render|method|com.example.craftmastery.notification.NotificationManager.Notification|render|(Lnet/minecraft/client/Minecraft;III)Z
+         @|com/example/craftmastery/notification/NotificationManager.java|2750|2759|Minecraft|class|net.minecraft.client.Minecraft|false
+         @|com/example/craftmastery/notification/NotificationManager.java|2831|2840|ticksLeft|field|com.example.craftmastery.notification.NotificationManager.Notification|ticksLeft
+         @|com/example/craftmastery/notification/NotificationManager.java|2919|2930|screenWidth|param|com.example.craftmastery.notification.NotificationManager.Notification|render|(Lnet/minecraft/client/Minecraft;III)Z|screenWidth|1
+         @|com/example/craftmastery/notification/NotificationManager.java|2933|2951|NOTIFICATION_WIDTH|field|com.example.craftmastery.notification.NotificationManager|NOTIFICATION_WIDTH
+         @|com/example/craftmastery/notification/NotificationManager.java|2979|2991|screenHeight|param|com.example.craftmastery.notification.NotificationManager.Notification|render|(Lnet/minecraft/client/Minecraft;III)Z|screenHeight|2
+         @|com/example/craftmastery/notification/NotificationManager.java|2994|3013|NOTIFICATION_HEIGHT|field|com.example.craftmastery.notification.NotificationManager|NOTIFICATION_HEIGHT
+         @|com/example/craftmastery/notification/NotificationManager.java|3016|3023|yOffset|param|com.example.craftmastery.notification.NotificationManager.Notification|render|(Lnet/minecraft/client/Minecraft;III)Z|yOffset|3
+         @|com/example/craftmastery/notification/NotificationManager.java|3040|3049|GuiIngame|class|net.minecraft.client.gui.GuiIngame|false
+         @|com/example/craftmastery/notification/NotificationManager.java|3056|3058|mc|param|com.example.craftmastery.notification.NotificationManager.Notification|render|(Lnet/minecraft/client/Minecraft;III)Z|mc|0
+         @|com/example/craftmastery/notification/NotificationManager.java|3059|3068|ingameGUI|field|net.minecraft.client.Minecraft|ingameGUI
+         @|com/example/craftmastery/notification/NotificationManager.java|3087|3108|drawTexturedModalRect|method|net.minecraft.client.gui.Gui|drawTexturedModalRect|(IIIIII)V
+         @|com/example/craftmastery/notification/NotificationManager.java|3121|3139|NOTIFICATION_WIDTH|field|com.example.craftmastery.notification.NotificationManager|NOTIFICATION_WIDTH
+         @|com/example/craftmastery/notification/NotificationManager.java|3141|3160|NOTIFICATION_HEIGHT|field|com.example.craftmastery.notification.NotificationManager|NOTIFICATION_HEIGHT
+         @|com/example/craftmastery/notification/NotificationManager.java|3180|3198|drawCenteredString|method|net.minecraft.client.gui.Gui|drawCenteredString|(Lnet/minecraft/client/gui/FontRenderer;Ljava/lang/String;III)V
+         @|com/example/craftmastery/notification/NotificationManager.java|3199|3201|mc|param|com.example.craftmastery.notification.NotificationManager.Notification|render|(Lnet/minecraft/client/Minecraft;III)Z|mc|0
+         @|com/example/craftmastery/notification/NotificationManager.java|3202|3214|fontRenderer|field|net.minecraft.client.Minecraft|fontRenderer
+         @|com/example/craftmastery/notification/NotificationManager.java|3216|3223|message|field|com.example.craftmastery.notification.NotificationManager.Notification|message
+         @|com/example/craftmastery/notification/NotificationManager.java|3229|3247|NOTIFICATION_WIDTH|field|com.example.craftmastery.notification.NotificationManager|NOTIFICATION_WIDTH
+         @|com/example/craftmastery/notification/NotificationManager.java|3286|3295|ticksLeft|field|com.example.craftmastery.notification.NotificationManager.Notification|ticksLeft
+      Method End: render(Lnet/minecraft/client/Minecraft;III)Z
+   Class End  : com.example.craftmastery.notification.NotificationManager.Notification
+Class End  : com.example.craftmastery.notification.NotificationManager
+endProcessing "com/example/craftmastery/notification/NotificationManager.java"
+
+startProcessing "com/example/craftmastery/player/PlayerProgress.java" md5: e20d5404218bdbc65a7c4778d9782d47
 @|com/example/craftmastery/player/PlayerProgress.java|8|39|com.example.craftmastery.player|package|com.example.craftmastery.player|(file)
 Class Start: com.example.craftmastery.player.PlayerProgress
-   @|com/example/craftmastery/player/PlayerProgress.java|335|349|PlayerProgress|class|com.example.craftmastery.player.PlayerProgress|false
-   @|com/example/craftmastery/player/PlayerProgress.java|375|381|String|class|java.lang.String|false
-   @|com/example/craftmastery/player/PlayerProgress.java|371|374|Set|class|java.util.Set|false
-   @|com/example/craftmastery/player/PlayerProgress.java|371|374|Set|class|java.util.Set|false
-   @|com/example/craftmastery/player/PlayerProgress.java|375|381|String|class|java.lang.String|false
-   @|com/example/craftmastery/player/PlayerProgress.java|383|398|unlockedRecipes|field|com.example.craftmastery.player.PlayerProgress|unlockedRecipes|
-   @|com/example/craftmastery/player/PlayerProgress.java|417|428|craftPoints|field|com.example.craftmastery.player.PlayerProgress|craftPoints|
-   @|com/example/craftmastery/player/PlayerProgress.java|447|458|resetPoints|field|com.example.craftmastery.player.PlayerProgress|resetPoints|
-   @|com/example/craftmastery/player/PlayerProgress.java|477|489|cancelPoints|field|com.example.craftmastery.player.PlayerProgress|cancelPoints|
+   @|com/example/craftmastery/player/PlayerProgress.java|465|479|PlayerProgress|class|com.example.craftmastery.player.PlayerProgress|false
+   @|com/example/craftmastery/player/PlayerProgress.java|505|511|String|class|java.lang.String|false
+   @|com/example/craftmastery/player/PlayerProgress.java|501|504|Set|class|java.util.Set|false
+   @|com/example/craftmastery/player/PlayerProgress.java|501|504|Set|class|java.util.Set|false
+   @|com/example/craftmastery/player/PlayerProgress.java|505|511|String|class|java.lang.String|false
+   @|com/example/craftmastery/player/PlayerProgress.java|513|528|unlockedRecipes|field|com.example.craftmastery.player.PlayerProgress|unlockedRecipes|
+   @|com/example/craftmastery/player/PlayerProgress.java|547|558|craftPoints|field|com.example.craftmastery.player.PlayerProgress|craftPoints|
+   @|com/example/craftmastery/player/PlayerProgress.java|577|582|level|field|com.example.craftmastery.player.PlayerProgress|level|
+   @|com/example/craftmastery/player/PlayerProgress.java|601|611|experience|field|com.example.craftmastery.player.PlayerProgress|experience|
    Method Start: PlayerProgress()V
-      @|com/example/craftmastery/player/PlayerProgress.java|505|519|PlayerProgress|method|com.example.craftmastery.player.PlayerProgress|PlayerProgress|()V
-      @|com/example/craftmastery/player/PlayerProgress.java|538|553|unlockedRecipes|field|com.example.craftmastery.player.PlayerProgress|unlockedRecipes
-      @|com/example/craftmastery/player/PlayerProgress.java|560|567|HashSet|class|java.util.HashSet|false
-      @|com/example/craftmastery/player/PlayerProgress.java|587|598|craftPoints|field|com.example.craftmastery.player.PlayerProgress|craftPoints
-      @|com/example/craftmastery/player/PlayerProgress.java|618|629|resetPoints|field|com.example.craftmastery.player.PlayerProgress|resetPoints
-      @|com/example/craftmastery/player/PlayerProgress.java|649|661|cancelPoints|field|com.example.craftmastery.player.PlayerProgress|cancelPoints
+      @|com/example/craftmastery/player/PlayerProgress.java|627|641|PlayerProgress|method|com.example.craftmastery.player.PlayerProgress|PlayerProgress|()V
+      @|com/example/craftmastery/player/PlayerProgress.java|660|675|unlockedRecipes|field|com.example.craftmastery.player.PlayerProgress|unlockedRecipes
+      @|com/example/craftmastery/player/PlayerProgress.java|682|689|HashSet|class|java.util.HashSet|false
+      @|com/example/craftmastery/player/PlayerProgress.java|709|720|craftPoints|field|com.example.craftmastery.player.PlayerProgress|craftPoints
+      @|com/example/craftmastery/player/PlayerProgress.java|740|745|level|field|com.example.craftmastery.player.PlayerProgress|level
+      @|com/example/craftmastery/player/PlayerProgress.java|765|775|experience|field|com.example.craftmastery.player.PlayerProgress|experience
    Method End: PlayerProgress()V
    Method Start: isRecipeUnlocked(Lcom/example/craftmastery/recipe/CustomRecipe;)Z
-      @|com/example/craftmastery/player/PlayerProgress.java|726|732|recipe|param|com.example.craftmastery.player.PlayerProgress|isRecipeUnlocked|(Lcom/example/craftmastery/recipe/CustomRecipe;)Z|recipe|0
-      @|com/example/craftmastery/player/PlayerProgress.java|696|712|isRecipeUnlocked|method|com.example.craftmastery.player.PlayerProgress|isRecipeUnlocked|(Lcom/example/craftmastery/recipe/CustomRecipe;)Z
-      @|com/example/craftmastery/player/PlayerProgress.java|713|725|CustomRecipe|class|com.example.craftmastery.recipe.CustomRecipe|false
-      @|com/example/craftmastery/player/PlayerProgress.java|752|767|unlockedRecipes|field|com.example.craftmastery.player.PlayerProgress|unlockedRecipes
-      @|com/example/craftmastery/player/PlayerProgress.java|768|776|contains|method|java.util.Collection|contains|(Ljava/lang/Object;)Z
-      @|com/example/craftmastery/player/PlayerProgress.java|777|783|recipe|param|com.example.craftmastery.player.PlayerProgress|isRecipeUnlocked|(Lcom/example/craftmastery/recipe/CustomRecipe;)Z|recipe|0
-      @|com/example/craftmastery/player/PlayerProgress.java|784|791|getName|method|com.example.craftmastery.recipe.CustomRecipe|getName|()Ljava/lang/String;
+      @|com/example/craftmastery/player/PlayerProgress.java|840|846|recipe|param|com.example.craftmastery.player.PlayerProgress|isRecipeUnlocked|(Lcom/example/craftmastery/recipe/CustomRecipe;)Z|recipe|0
+      @|com/example/craftmastery/player/PlayerProgress.java|810|826|isRecipeUnlocked|method|com.example.craftmastery.player.PlayerProgress|isRecipeUnlocked|(Lcom/example/craftmastery/recipe/CustomRecipe;)Z
+      @|com/example/craftmastery/player/PlayerProgress.java|827|839|CustomRecipe|class|com.example.craftmastery.recipe.CustomRecipe|false
+      @|com/example/craftmastery/player/PlayerProgress.java|866|881|unlockedRecipes|field|com.example.craftmastery.player.PlayerProgress|unlockedRecipes
+      @|com/example/craftmastery/player/PlayerProgress.java|882|890|contains|method|java.util.Collection|contains|(Ljava/lang/Object;)Z
+      @|com/example/craftmastery/player/PlayerProgress.java|891|897|recipe|param|com.example.craftmastery.player.PlayerProgress|isRecipeUnlocked|(Lcom/example/craftmastery/recipe/CustomRecipe;)Z|recipe|0
+      @|com/example/craftmastery/player/PlayerProgress.java|898|905|getName|method|com.example.craftmastery.recipe.CustomRecipe|getName|()Ljava/lang/String;
    Method End: isRecipeUnlocked(Lcom/example/craftmastery/recipe/CustomRecipe;)Z
-   Method Start: unlockRecipe(Lcom/example/craftmastery/recipe/CustomRecipe;)V
-      @|com/example/craftmastery/player/PlayerProgress.java|848|854|recipe|param|com.example.craftmastery.player.PlayerProgress|unlockRecipe|(Lcom/example/craftmastery/recipe/CustomRecipe;)V|recipe|0
-      @|com/example/craftmastery/player/PlayerProgress.java|822|834|unlockRecipe|method|com.example.craftmastery.player.PlayerProgress|unlockRecipe|(Lcom/example/craftmastery/recipe/CustomRecipe;)V
-      @|com/example/craftmastery/player/PlayerProgress.java|835|847|CustomRecipe|class|com.example.craftmastery.recipe.CustomRecipe|false
-      @|com/example/craftmastery/player/PlayerProgress.java|867|882|unlockedRecipes|field|com.example.craftmastery.player.PlayerProgress|unlockedRecipes
-      @|com/example/craftmastery/player/PlayerProgress.java|883|886|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
-      @|com/example/craftmastery/player/PlayerProgress.java|887|893|recipe|param|com.example.craftmastery.player.PlayerProgress|unlockRecipe|(Lcom/example/craftmastery/recipe/CustomRecipe;)V|recipe|0
-      @|com/example/craftmastery/player/PlayerProgress.java|894|901|getName|method|com.example.craftmastery.recipe.CustomRecipe|getName|()Ljava/lang/String;
-   Method End: unlockRecipe(Lcom/example/craftmastery/recipe/CustomRecipe;)V
+   Method Start: unlockRecipe(Lcom/example/craftmastery/recipe/CustomRecipe;Lnet/minecraft/entity/player/EntityPlayer;)V
+      @|com/example/craftmastery/player/PlayerProgress.java|962|968|recipe|param|com.example.craftmastery.player.PlayerProgress|unlockRecipe|(Lcom/example/craftmastery/recipe/CustomRecipe;Lnet/minecraft/entity/player/EntityPlayer;)V|recipe|0
+      @|com/example/craftmastery/player/PlayerProgress.java|983|989|player|param|com.example.craftmastery.player.PlayerProgress|unlockRecipe|(Lcom/example/craftmastery/recipe/CustomRecipe;Lnet/minecraft/entity/player/EntityPlayer;)V|player|1
+      @|com/example/craftmastery/player/PlayerProgress.java|936|948|unlockRecipe|method|com.example.craftmastery.player.PlayerProgress|unlockRecipe|(Lcom/example/craftmastery/recipe/CustomRecipe;Lnet/minecraft/entity/player/EntityPlayer;)V
+      @|com/example/craftmastery/player/PlayerProgress.java|949|961|CustomRecipe|class|com.example.craftmastery.recipe.CustomRecipe|false
+      @|com/example/craftmastery/player/PlayerProgress.java|970|982|EntityPlayer|class|net.minecraft.entity.player.EntityPlayer|false
+      @|com/example/craftmastery/player/PlayerProgress.java|1006|1021|unlockedRecipes|field|com.example.craftmastery.player.PlayerProgress|unlockedRecipes
+      @|com/example/craftmastery/player/PlayerProgress.java|1022|1025|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|com/example/craftmastery/player/PlayerProgress.java|1026|1032|recipe|param|com.example.craftmastery.player.PlayerProgress|unlockRecipe|(Lcom/example/craftmastery/recipe/CustomRecipe;Lnet/minecraft/entity/player/EntityPlayer;)V|recipe|0
+      @|com/example/craftmastery/player/PlayerProgress.java|1033|1040|getName|method|com.example.craftmastery.recipe.CustomRecipe|getName|()Ljava/lang/String;
+      @|com/example/craftmastery/player/PlayerProgress.java|1060|1083|applyRecipeUnlockEffect|method|com.example.craftmastery.player.PlayerProgress|applyRecipeUnlockEffect|(Lnet/minecraft/entity/player/EntityPlayer;)V
+      @|com/example/craftmastery/player/PlayerProgress.java|1084|1090|player|param|com.example.craftmastery.player.PlayerProgress|unlockRecipe|(Lcom/example/craftmastery/recipe/CustomRecipe;Lnet/minecraft/entity/player/EntityPlayer;)V|player|1
+   Method End: unlockRecipe(Lcom/example/craftmastery/recipe/CustomRecipe;Lnet/minecraft/entity/player/EntityPlayer;)V
    Method Start: addCraftPoints(I)V
-      @|com/example/craftmastery/player/PlayerProgress.java|951|957|points|param|com.example.craftmastery.player.PlayerProgress|addCraftPoints|(I)V|points|0
-      @|com/example/craftmastery/player/PlayerProgress.java|932|946|addCraftPoints|method|com.example.craftmastery.player.PlayerProgress|addCraftPoints|(I)V
-      @|com/example/craftmastery/player/PlayerProgress.java|975|986|craftPoints|field|com.example.craftmastery.player.PlayerProgress|craftPoints
-      @|com/example/craftmastery/player/PlayerProgress.java|990|996|points|param|com.example.craftmastery.player.PlayerProgress|addCraftPoints|(I)V|points|0
+      @|com/example/craftmastery/player/PlayerProgress.java|1149|1155|points|param|com.example.craftmastery.player.PlayerProgress|addCraftPoints|(I)V|points|0
+      @|com/example/craftmastery/player/PlayerProgress.java|1130|1144|addCraftPoints|method|com.example.craftmastery.player.PlayerProgress|addCraftPoints|(I)V
+      @|com/example/craftmastery/player/PlayerProgress.java|1173|1184|craftPoints|field|com.example.craftmastery.player.PlayerProgress|craftPoints
+      @|com/example/craftmastery/player/PlayerProgress.java|1188|1194|points|param|com.example.craftmastery.player.PlayerProgress|addCraftPoints|(I)V|points|0
    Method End: addCraftPoints(I)V
-   Method Start: addResetPoints(I)V
-      @|com/example/craftmastery/player/PlayerProgress.java|1043|1049|points|param|com.example.craftmastery.player.PlayerProgress|addResetPoints|(I)V|points|0
-      @|com/example/craftmastery/player/PlayerProgress.java|1024|1038|addResetPoints|method|com.example.craftmastery.player.PlayerProgress|addResetPoints|(I)V
-      @|com/example/craftmastery/player/PlayerProgress.java|1067|1078|resetPoints|field|com.example.craftmastery.player.PlayerProgress|resetPoints
-      @|com/example/craftmastery/player/PlayerProgress.java|1082|1088|points|param|com.example.craftmastery.player.PlayerProgress|addResetPoints|(I)V|points|0
-   Method End: addResetPoints(I)V
-   Method Start: addCancelPoints(I)V
-      @|com/example/craftmastery/player/PlayerProgress.java|1136|1142|points|param|com.example.craftmastery.player.PlayerProgress|addCancelPoints|(I)V|points|0
-      @|com/example/craftmastery/player/PlayerProgress.java|1116|1131|addCancelPoints|method|com.example.craftmastery.player.PlayerProgress|addCancelPoints|(I)V
-      @|com/example/craftmastery/player/PlayerProgress.java|1160|1172|cancelPoints|field|com.example.craftmastery.player.PlayerProgress|cancelPoints
-      @|com/example/craftmastery/player/PlayerProgress.java|1176|1182|points|param|com.example.craftmastery.player.PlayerProgress|addCancelPoints|(I)V|points|0
-   Method End: addCancelPoints(I)V
    Method Start: spendCraftPoints(I)Z
-      @|com/example/craftmastery/player/PlayerProgress.java|1234|1240|points|param|com.example.craftmastery.player.PlayerProgress|spendCraftPoints|(I)Z|points|0
-      @|com/example/craftmastery/player/PlayerProgress.java|1213|1229|spendCraftPoints|method|com.example.craftmastery.player.PlayerProgress|spendCraftPoints|(I)Z
-      @|com/example/craftmastery/player/PlayerProgress.java|1257|1268|craftPoints|field|com.example.craftmastery.player.PlayerProgress|craftPoints
-      @|com/example/craftmastery/player/PlayerProgress.java|1272|1278|points|param|com.example.craftmastery.player.PlayerProgress|spendCraftPoints|(I)Z|points|0
-      @|com/example/craftmastery/player/PlayerProgress.java|1295|1306|craftPoints|field|com.example.craftmastery.player.PlayerProgress|craftPoints
-      @|com/example/craftmastery/player/PlayerProgress.java|1310|1316|points|param|com.example.craftmastery.player.PlayerProgress|spendCraftPoints|(I)Z|points|0
+      @|com/example/craftmastery/player/PlayerProgress.java|1246|1252|points|param|com.example.craftmastery.player.PlayerProgress|spendCraftPoints|(I)Z|points|0
+      @|com/example/craftmastery/player/PlayerProgress.java|1225|1241|spendCraftPoints|method|com.example.craftmastery.player.PlayerProgress|spendCraftPoints|(I)Z
+      @|com/example/craftmastery/player/PlayerProgress.java|1269|1280|craftPoints|field|com.example.craftmastery.player.PlayerProgress|craftPoints
+      @|com/example/craftmastery/player/PlayerProgress.java|1284|1290|points|param|com.example.craftmastery.player.PlayerProgress|spendCraftPoints|(I)Z|points|0
+      @|com/example/craftmastery/player/PlayerProgress.java|1307|1318|craftPoints|field|com.example.craftmastery.player.PlayerProgress|craftPoints
+      @|com/example/craftmastery/player/PlayerProgress.java|1322|1328|points|param|com.example.craftmastery.player.PlayerProgress|spendCraftPoints|(I)Z|points|0
    Method End: spendCraftPoints(I)Z
-   Method Start: spendResetPoints(I)Z
-      @|com/example/craftmastery/player/PlayerProgress.java|1428|1434|points|param|com.example.craftmastery.player.PlayerProgress|spendResetPoints|(I)Z|points|0
-      @|com/example/craftmastery/player/PlayerProgress.java|1407|1423|spendResetPoints|method|com.example.craftmastery.player.PlayerProgress|spendResetPoints|(I)Z
-      @|com/example/craftmastery/player/PlayerProgress.java|1451|1462|resetPoints|field|com.example.craftmastery.player.PlayerProgress|resetPoints
-      @|com/example/craftmastery/player/PlayerProgress.java|1466|1472|points|param|com.example.craftmastery.player.PlayerProgress|spendResetPoints|(I)Z|points|0
-      @|com/example/craftmastery/player/PlayerProgress.java|1489|1500|resetPoints|field|com.example.craftmastery.player.PlayerProgress|resetPoints
-      @|com/example/craftmastery/player/PlayerProgress.java|1504|1510|points|param|com.example.craftmastery.player.PlayerProgress|spendResetPoints|(I)Z|points|0
-   Method End: spendResetPoints(I)Z
-   Method Start: spendCancelPoints(I)Z
-      @|com/example/craftmastery/player/PlayerProgress.java|1623|1629|points|param|com.example.craftmastery.player.PlayerProgress|spendCancelPoints|(I)Z|points|0
-      @|com/example/craftmastery/player/PlayerProgress.java|1601|1618|spendCancelPoints|method|com.example.craftmastery.player.PlayerProgress|spendCancelPoints|(I)Z
-      @|com/example/craftmastery/player/PlayerProgress.java|1646|1658|cancelPoints|field|com.example.craftmastery.player.PlayerProgress|cancelPoints
-      @|com/example/craftmastery/player/PlayerProgress.java|1662|1668|points|param|com.example.craftmastery.player.PlayerProgress|spendCancelPoints|(I)Z|points|0
-      @|com/example/craftmastery/player/PlayerProgress.java|1685|1697|cancelPoints|field|com.example.craftmastery.player.PlayerProgress|cancelPoints
-      @|com/example/craftmastery/player/PlayerProgress.java|1701|1707|points|param|com.example.craftmastery.player.PlayerProgress|spendCancelPoints|(I)Z|points|0
-   Method End: spendCancelPoints(I)Z
+   Method Start: addExperience(ILnet/minecraft/entity/player/EntityPlayer;)V
+      @|com/example/craftmastery/player/PlayerProgress.java|1434|1437|exp|param|com.example.craftmastery.player.PlayerProgress|addExperience|(ILnet/minecraft/entity/player/EntityPlayer;)V|exp|0
+      @|com/example/craftmastery/player/PlayerProgress.java|1452|1458|player|param|com.example.craftmastery.player.PlayerProgress|addExperience|(ILnet/minecraft/entity/player/EntityPlayer;)V|player|1
+      @|com/example/craftmastery/player/PlayerProgress.java|1416|1429|addExperience|method|com.example.craftmastery.player.PlayerProgress|addExperience|(ILnet/minecraft/entity/player/EntityPlayer;)V
+      @|com/example/craftmastery/player/PlayerProgress.java|1439|1451|EntityPlayer|class|net.minecraft.entity.player.EntityPlayer|false
+      @|com/example/craftmastery/player/PlayerProgress.java|1476|1486|experience|field|com.example.craftmastery.player.PlayerProgress|experience
+      @|com/example/craftmastery/player/PlayerProgress.java|1490|1493|exp|param|com.example.craftmastery.player.PlayerProgress|addExperience|(ILnet/minecraft/entity/player/EntityPlayer;)V|exp|0
+      @|com/example/craftmastery/player/PlayerProgress.java|1504|1516|checkLevelUp|method|com.example.craftmastery.player.PlayerProgress|checkLevelUp|(Lnet/minecraft/entity/player/EntityPlayer;)V
+      @|com/example/craftmastery/player/PlayerProgress.java|1517|1523|player|param|com.example.craftmastery.player.PlayerProgress|addExperience|(ILnet/minecraft/entity/player/EntityPlayer;)V|player|1
+   Method End: addExperience(ILnet/minecraft/entity/player/EntityPlayer;)V
+   Method Start: checkLevelUp(Lnet/minecraft/entity/player/EntityPlayer;)V
+      @|com/example/craftmastery/player/PlayerProgress.java|1579|1585|player|param|com.example.craftmastery.player.PlayerProgress|checkLevelUp|(Lnet/minecraft/entity/player/EntityPlayer;)V|player|0
+      @|com/example/craftmastery/player/PlayerProgress.java|1553|1565|checkLevelUp|method|com.example.craftmastery.player.PlayerProgress|checkLevelUp|(Lnet/minecraft/entity/player/EntityPlayer;)V
+      @|com/example/craftmastery/player/PlayerProgress.java|1566|1578|EntityPlayer|class|net.minecraft.entity.player.EntityPlayer|false
+      @|com/example/craftmastery/player/PlayerProgress.java|1614|1638|getExpNeededForNextLevel|method|com.example.craftmastery.player.PlayerProgress|getExpNeededForNextLevel|()I
+      @|com/example/craftmastery/player/PlayerProgress.java|1658|1668|experience|field|com.example.craftmastery.player.PlayerProgress|experience
+      @|com/example/craftmastery/player/PlayerProgress.java|1698|1703|level|field|com.example.craftmastery.player.PlayerProgress|level
+      @|com/example/craftmastery/player/PlayerProgress.java|1720|1730|experience|field|com.example.craftmastery.player.PlayerProgress|experience
+      @|com/example/craftmastery/player/PlayerProgress.java|1770|1794|getExpNeededForNextLevel|method|com.example.craftmastery.player.PlayerProgress|getExpNeededForNextLevel|()I
+      @|com/example/craftmastery/player/PlayerProgress.java|1811|1820|onLevelUp|method|com.example.craftmastery.player.PlayerProgress|onLevelUp|(Lnet/minecraft/entity/player/EntityPlayer;)V
+      @|com/example/craftmastery/player/PlayerProgress.java|1821|1827|player|param|com.example.craftmastery.player.PlayerProgress|checkLevelUp|(Lnet/minecraft/entity/player/EntityPlayer;)V|player|0
+   Method End: checkLevelUp(Lnet/minecraft/entity/player/EntityPlayer;)V
+   Method Start: getExpNeededForNextLevel()I
+      @|com/example/craftmastery/player/PlayerProgress.java|1867|1891|getExpNeededForNextLevel|method|com.example.craftmastery.player.PlayerProgress|getExpNeededForNextLevel|()I
+      @|com/example/craftmastery/player/PlayerProgress.java|1912|1917|level|field|com.example.craftmastery.player.PlayerProgress|level
+   Method End: getExpNeededForNextLevel()I
+   Method Start: onLevelUp(Lnet/minecraft/entity/player/EntityPlayer;)V
+      @|com/example/craftmastery/player/PlayerProgress.java|2011|2017|player|param|com.example.craftmastery.player.PlayerProgress|onLevelUp|(Lnet/minecraft/entity/player/EntityPlayer;)V|player|0
+      @|com/example/craftmastery/player/PlayerProgress.java|1988|1997|onLevelUp|method|com.example.craftmastery.player.PlayerProgress|onLevelUp|(Lnet/minecraft/entity/player/EntityPlayer;)V
+      @|com/example/craftmastery/player/PlayerProgress.java|1998|2010|EntityPlayer|class|net.minecraft.entity.player.EntityPlayer|false
+      @|com/example/craftmastery/player/PlayerProgress.java|2030|2041|craftPoints|field|com.example.craftmastery.player.PlayerProgress|craftPoints
+      @|com/example/craftmastery/player/PlayerProgress.java|2088|2106|applyLevelUpEffect|method|com.example.craftmastery.player.PlayerProgress|applyLevelUpEffect|(Lnet/minecraft/entity/player/EntityPlayer;)V
+      @|com/example/craftmastery/player/PlayerProgress.java|2107|2113|player|param|com.example.craftmastery.player.PlayerProgress|onLevelUp|(Lnet/minecraft/entity/player/EntityPlayer;)V|player|0
+   Method End: onLevelUp(Lnet/minecraft/entity/player/EntityPlayer;)V
+   Method Start: applyLevelUpEffect(Lnet/minecraft/entity/player/EntityPlayer;)V
+      @|com/example/craftmastery/player/PlayerProgress.java|2175|2181|player|param|com.example.craftmastery.player.PlayerProgress|applyLevelUpEffect|(Lnet/minecraft/entity/player/EntityPlayer;)V|player|0
+      @|com/example/craftmastery/player/PlayerProgress.java|2143|2161|applyLevelUpEffect|method|com.example.craftmastery.player.PlayerProgress|applyLevelUpEffect|(Lnet/minecraft/entity/player/EntityPlayer;)V
+      @|com/example/craftmastery/player/PlayerProgress.java|2162|2174|EntityPlayer|class|net.minecraft.entity.player.EntityPlayer|false
+      @|com/example/craftmastery/player/PlayerProgress.java|2244|2250|player|param|com.example.craftmastery.player.PlayerProgress|applyLevelUpEffect|(Lnet/minecraft/entity/player/EntityPlayer;)V|player|0
+      @|com/example/craftmastery/player/PlayerProgress.java|2251|2266|addPotionEffect|method|net.minecraft.entity.EntityLivingBase|addPotionEffect|(Lnet/minecraft/potion/PotionEffect;)V
+      @|com/example/craftmastery/player/PlayerProgress.java|2271|2283|PotionEffect|class|net.minecraft.potion.PotionEffect|false
+      @|com/example/craftmastery/player/PlayerProgress.java|2284|2290|Potion|class|net.minecraft.potion.Potion|false
+      @|com/example/craftmastery/player/PlayerProgress.java|2291|2304|getPotionById|method|net.minecraft.potion.Potion|getPotionById|(I)Lnet/minecraft/potion/Potion;
+   Method End: applyLevelUpEffect(Lnet/minecraft/entity/player/EntityPlayer;)V
+   Method Start: applyRecipeUnlockEffect(Lnet/minecraft/entity/player/EntityPlayer;)V
+      @|com/example/craftmastery/player/PlayerProgress.java|2383|2389|player|param|com.example.craftmastery.player.PlayerProgress|applyRecipeUnlockEffect|(Lnet/minecraft/entity/player/EntityPlayer;)V|player|0
+      @|com/example/craftmastery/player/PlayerProgress.java|2346|2369|applyRecipeUnlockEffect|method|com.example.craftmastery.player.PlayerProgress|applyRecipeUnlockEffect|(Lnet/minecraft/entity/player/EntityPlayer;)V
+      @|com/example/craftmastery/player/PlayerProgress.java|2370|2382|EntityPlayer|class|net.minecraft.entity.player.EntityPlayer|false
+      @|com/example/craftmastery/player/PlayerProgress.java|2455|2461|player|param|com.example.craftmastery.player.PlayerProgress|applyRecipeUnlockEffect|(Lnet/minecraft/entity/player/EntityPlayer;)V|player|0
+      @|com/example/craftmastery/player/PlayerProgress.java|2462|2477|addPotionEffect|method|net.minecraft.entity.EntityLivingBase|addPotionEffect|(Lnet/minecraft/potion/PotionEffect;)V
+      @|com/example/craftmastery/player/PlayerProgress.java|2482|2494|PotionEffect|class|net.minecraft.potion.PotionEffect|false
+      @|com/example/craftmastery/player/PlayerProgress.java|2495|2501|Potion|class|net.minecraft.potion.Potion|false
+      @|com/example/craftmastery/player/PlayerProgress.java|2502|2515|getPotionById|method|net.minecraft.potion.Potion|getPotionById|(I)Lnet/minecraft/potion/Potion;
+   Method End: applyRecipeUnlockEffect(Lnet/minecraft/entity/player/EntityPlayer;)V
    Method Start: getCraftPoints()I
-      @|com/example/craftmastery/player/PlayerProgress.java|1794|1808|getCraftPoints|method|com.example.craftmastery.player.PlayerProgress|getCraftPoints|()I
-      @|com/example/craftmastery/player/PlayerProgress.java|1829|1840|craftPoints|field|com.example.craftmastery.player.PlayerProgress|craftPoints
+      @|com/example/craftmastery/player/PlayerProgress.java|2556|2570|getCraftPoints|method|com.example.craftmastery.player.PlayerProgress|getCraftPoints|()I
+      @|com/example/craftmastery/player/PlayerProgress.java|2591|2602|craftPoints|field|com.example.craftmastery.player.PlayerProgress|craftPoints
    Method End: getCraftPoints()I
-   Method Start: getResetPoints()I
-      @|com/example/craftmastery/player/PlayerProgress.java|1867|1881|getResetPoints|method|com.example.craftmastery.player.PlayerProgress|getResetPoints|()I
-      @|com/example/craftmastery/player/PlayerProgress.java|1902|1913|resetPoints|field|com.example.craftmastery.player.PlayerProgress|resetPoints
-   Method End: getResetPoints()I
-   Method Start: getCancelPoints()I
-      @|com/example/craftmastery/player/PlayerProgress.java|1940|1955|getCancelPoints|method|com.example.craftmastery.player.PlayerProgress|getCancelPoints|()I
-      @|com/example/craftmastery/player/PlayerProgress.java|1976|1988|cancelPoints|field|com.example.craftmastery.player.PlayerProgress|cancelPoints
-   Method End: getCancelPoints()I
-   Method Start: getUnlockedRecipes()Ljava/util/Set;
-      @|com/example/craftmastery/player/PlayerProgress.java|2011|2014|Set|class|java.util.Set|false
-      @|com/example/craftmastery/player/PlayerProgress.java|2015|2021|String|class|java.lang.String|false
-      @|com/example/craftmastery/player/PlayerProgress.java|2023|2041|getUnlockedRecipes|method|com.example.craftmastery.player.PlayerProgress|getUnlockedRecipes|()Ljava/util/Set;
-      @|com/example/craftmastery/player/PlayerProgress.java|2066|2073|HashSet|class|java.util.HashSet|false
-      @|com/example/craftmastery/player/PlayerProgress.java|2076|2091|unlockedRecipes|field|com.example.craftmastery.player.PlayerProgress|unlockedRecipes
-   Method End: getUnlockedRecipes()Ljava/util/Set;
-   Method Start: resetProgress()V
-      @|com/example/craftmastery/player/PlayerProgress.java|2120|2133|resetProgress|method|com.example.craftmastery.player.PlayerProgress|resetProgress|()V
-      @|com/example/craftmastery/player/PlayerProgress.java|2147|2162|unlockedRecipes|field|com.example.craftmastery.player.PlayerProgress|unlockedRecipes
-      @|com/example/craftmastery/player/PlayerProgress.java|2163|2168|clear|method|java.util.Collection|clear|()V
-      @|com/example/craftmastery/player/PlayerProgress.java|2181|2192|craftPoints|field|com.example.craftmastery.player.PlayerProgress|craftPoints
-      @|com/example/craftmastery/player/PlayerProgress.java|2207|2218|resetPoints|field|com.example.craftmastery.player.PlayerProgress|resetPoints
-      @|com/example/craftmastery/player/PlayerProgress.java|2233|2245|cancelPoints|field|com.example.craftmastery.player.PlayerProgress|cancelPoints
-   Method End: resetProgress()V
+   Method Start: getLevel()I
+      @|com/example/craftmastery/player/PlayerProgress.java|2629|2637|getLevel|method|com.example.craftmastery.player.PlayerProgress|getLevel|()I
+      @|com/example/craftmastery/player/PlayerProgress.java|2658|2663|level|field|com.example.craftmastery.player.PlayerProgress|level
+   Method End: getLevel()I
+   Method Start: getExperience()I
+      @|com/example/craftmastery/player/PlayerProgress.java|2690|2703|getExperience|method|com.example.craftmastery.player.PlayerProgress|getExperience|()I
+      @|com/example/craftmastery/player/PlayerProgress.java|2724|2734|experience|field|com.example.craftmastery.player.PlayerProgress|experience
+   Method End: getExperience()I
    Method Start: writeToNBT()Lnet/minecraft/nbt/NBTTagCompound;
-      @|com/example/craftmastery/player/PlayerProgress.java|2272|2286|NBTTagCompound|class|net.minecraft.nbt.NBTTagCompound|false
-      @|com/example/craftmastery/player/PlayerProgress.java|2287|2297|writeToNBT|method|com.example.craftmastery.player.PlayerProgress|writeToNBT|()Lnet/minecraft/nbt/NBTTagCompound;
-      @|com/example/craftmastery/player/PlayerProgress.java|2311|2325|NBTTagCompound|class|net.minecraft.nbt.NBTTagCompound|false
-      @|com/example/craftmastery/player/PlayerProgress.java|2336|2350|NBTTagCompound|class|net.minecraft.nbt.NBTTagCompound|false
-      @|com/example/craftmastery/player/PlayerProgress.java|2365|2375|NBTTagList|class|net.minecraft.nbt.NBTTagList|false
-      @|com/example/craftmastery/player/PlayerProgress.java|2393|2403|NBTTagList|class|net.minecraft.nbt.NBTTagList|false
-      @|com/example/craftmastery/player/PlayerProgress.java|2421|2427|String|class|java.lang.String|false
-      @|com/example/craftmastery/player/PlayerProgress.java|2437|2452|unlockedRecipes|field|com.example.craftmastery.player.PlayerProgress|unlockedRecipes
-      @|com/example/craftmastery/player/PlayerProgress.java|2480|2489|appendTag|method|net.minecraft.nbt.NBTTagList|appendTag|(Lnet/minecraft/nbt/NBTBase;)V
-      @|com/example/craftmastery/player/PlayerProgress.java|2494|2506|NBTTagString|class|net.minecraft.nbt.NBTTagString|false
-      @|com/example/craftmastery/player/PlayerProgress.java|2541|2547|setTag|method|net.minecraft.nbt.NBTTagCompound|setTag|(Ljava/lang/String;Lnet/minecraft/nbt/NBTBase;)V
-      @|com/example/craftmastery/player/PlayerProgress.java|2595|2605|setInteger|method|net.minecraft.nbt.NBTTagCompound|setInteger|(Ljava/lang/String;I)V
-      @|com/example/craftmastery/player/PlayerProgress.java|2621|2632|craftPoints|field|com.example.craftmastery.player.PlayerProgress|craftPoints
-      @|com/example/craftmastery/player/PlayerProgress.java|2648|2658|setInteger|method|net.minecraft.nbt.NBTTagCompound|setInteger|(Ljava/lang/String;I)V
-      @|com/example/craftmastery/player/PlayerProgress.java|2674|2685|resetPoints|field|com.example.craftmastery.player.PlayerProgress|resetPoints
-      @|com/example/craftmastery/player/PlayerProgress.java|2701|2711|setInteger|method|net.minecraft.nbt.NBTTagCompound|setInteger|(Ljava/lang/String;I)V
-      @|com/example/craftmastery/player/PlayerProgress.java|2728|2740|cancelPoints|field|com.example.craftmastery.player.PlayerProgress|cancelPoints
+      @|com/example/craftmastery/player/PlayerProgress.java|2757|2771|NBTTagCompound|class|net.minecraft.nbt.NBTTagCompound|false
+      @|com/example/craftmastery/player/PlayerProgress.java|2772|2782|writeToNBT|method|com.example.craftmastery.player.PlayerProgress|writeToNBT|()Lnet/minecraft/nbt/NBTTagCompound;
+      @|com/example/craftmastery/player/PlayerProgress.java|2796|2810|NBTTagCompound|class|net.minecraft.nbt.NBTTagCompound|false
+      @|com/example/craftmastery/player/PlayerProgress.java|2821|2835|NBTTagCompound|class|net.minecraft.nbt.NBTTagCompound|false
+      @|com/example/craftmastery/player/PlayerProgress.java|2848|2858|NBTTagList|class|net.minecraft.nbt.NBTTagList|false
+      @|com/example/craftmastery/player/PlayerProgress.java|2876|2886|NBTTagList|class|net.minecraft.nbt.NBTTagList|false
+      @|com/example/craftmastery/player/PlayerProgress.java|2904|2910|String|class|java.lang.String|false
+      @|com/example/craftmastery/player/PlayerProgress.java|2920|2935|unlockedRecipes|field|com.example.craftmastery.player.PlayerProgress|unlockedRecipes
+      @|com/example/craftmastery/player/PlayerProgress.java|2963|2972|appendTag|method|net.minecraft.nbt.NBTTagList|appendTag|(Lnet/minecraft/nbt/NBTBase;)V
+      @|com/example/craftmastery/player/PlayerProgress.java|2977|2989|NBTTagString|class|net.minecraft.nbt.NBTTagString|false
+      @|com/example/craftmastery/player/PlayerProgress.java|3024|3030|setTag|method|net.minecraft.nbt.NBTTagCompound|setTag|(Ljava/lang/String;Lnet/minecraft/nbt/NBTBase;)V
+      @|com/example/craftmastery/player/PlayerProgress.java|3076|3086|setInteger|method|net.minecraft.nbt.NBTTagCompound|setInteger|(Ljava/lang/String;I)V
+      @|com/example/craftmastery/player/PlayerProgress.java|3102|3113|craftPoints|field|com.example.craftmastery.player.PlayerProgress|craftPoints
+      @|com/example/craftmastery/player/PlayerProgress.java|3129|3139|setInteger|method|net.minecraft.nbt.NBTTagCompound|setInteger|(Ljava/lang/String;I)V
+      @|com/example/craftmastery/player/PlayerProgress.java|3149|3154|level|field|com.example.craftmastery.player.PlayerProgress|level
+      @|com/example/craftmastery/player/PlayerProgress.java|3170|3180|setInteger|method|net.minecraft.nbt.NBTTagCompound|setInteger|(Ljava/lang/String;I)V
+      @|com/example/craftmastery/player/PlayerProgress.java|3195|3205|experience|field|com.example.craftmastery.player.PlayerProgress|experience
    Method End: writeToNBT()Lnet/minecraft/nbt/NBTTagCompound;
    Method Start: readFromNBT(Lnet/minecraft/nbt/NBTTagCompound;)V
-      @|com/example/craftmastery/player/PlayerProgress.java|2819|2822|nbt|param|com.example.craftmastery.player.PlayerProgress|readFromNBT|(Lnet/minecraft/nbt/NBTTagCompound;)V|nbt|0
-      @|com/example/craftmastery/player/PlayerProgress.java|2792|2803|readFromNBT|method|com.example.craftmastery.player.PlayerProgress|readFromNBT|(Lnet/minecraft/nbt/NBTTagCompound;)V
-      @|com/example/craftmastery/player/PlayerProgress.java|2804|2818|NBTTagCompound|class|net.minecraft.nbt.NBTTagCompound|false
-      @|com/example/craftmastery/player/PlayerProgress.java|2835|2850|unlockedRecipes|field|com.example.craftmastery.player.PlayerProgress|unlockedRecipes
-      @|com/example/craftmastery/player/PlayerProgress.java|2851|2856|clear|method|java.util.Collection|clear|()V
-      @|com/example/craftmastery/player/PlayerProgress.java|2869|2879|NBTTagList|class|net.minecraft.nbt.NBTTagList|false
-      @|com/example/craftmastery/player/PlayerProgress.java|2893|2896|nbt|param|com.example.craftmastery.player.PlayerProgress|readFromNBT|(Lnet/minecraft/nbt/NBTTagCompound;)V|nbt|0
-      @|com/example/craftmastery/player/PlayerProgress.java|2897|2907|getTagList|method|net.minecraft.nbt.NBTTagCompound|getTagList|(Ljava/lang/String;I)Lnet/minecraft/nbt/NBTTagList;
-      @|com/example/craftmastery/player/PlayerProgress.java|2927|2940|Constants.NBT|class|net.minecraftforge.common.util.Constants.NBT|false
-      @|com/example/craftmastery/player/PlayerProgress.java|2941|2951|TAG_STRING|field|net.minecraftforge.common.util.Constants.NBT|TAG_STRING
-      @|com/example/craftmastery/player/PlayerProgress.java|2994|3002|tagCount|method|net.minecraft.nbt.NBTTagList|tagCount|()I
-      @|com/example/craftmastery/player/PlayerProgress.java|3026|3041|unlockedRecipes|field|com.example.craftmastery.player.PlayerProgress|unlockedRecipes
-      @|com/example/craftmastery/player/PlayerProgress.java|3042|3045|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
-      @|com/example/craftmastery/player/PlayerProgress.java|3057|3071|getStringTagAt|method|net.minecraft.nbt.NBTTagList|getStringTagAt|(I)Ljava/lang/String;
-      @|com/example/craftmastery/player/PlayerProgress.java|3099|3110|craftPoints|field|com.example.craftmastery.player.PlayerProgress|craftPoints
-      @|com/example/craftmastery/player/PlayerProgress.java|3113|3116|nbt|param|com.example.craftmastery.player.PlayerProgress|readFromNBT|(Lnet/minecraft/nbt/NBTTagCompound;)V|nbt|0
-      @|com/example/craftmastery/player/PlayerProgress.java|3117|3127|getInteger|method|net.minecraft.nbt.NBTTagCompound|getInteger|(Ljava/lang/String;)I
-      @|com/example/craftmastery/player/PlayerProgress.java|3153|3164|resetPoints|field|com.example.craftmastery.player.PlayerProgress|resetPoints
-      @|com/example/craftmastery/player/PlayerProgress.java|3167|3170|nbt|param|com.example.craftmastery.player.PlayerProgress|readFromNBT|(Lnet/minecraft/nbt/NBTTagCompound;)V|nbt|0
-      @|com/example/craftmastery/player/PlayerProgress.java|3171|3181|getInteger|method|net.minecraft.nbt.NBTTagCompound|getInteger|(Ljava/lang/String;)I
-      @|com/example/craftmastery/player/PlayerProgress.java|3207|3219|cancelPoints|field|com.example.craftmastery.player.PlayerProgress|cancelPoints
-      @|com/example/craftmastery/player/PlayerProgress.java|3222|3225|nbt|param|com.example.craftmastery.player.PlayerProgress|readFromNBT|(Lnet/minecraft/nbt/NBTTagCompound;)V|nbt|0
-      @|com/example/craftmastery/player/PlayerProgress.java|3226|3236|getInteger|method|net.minecraft.nbt.NBTTagCompound|getInteger|(Ljava/lang/String;)I
+      @|com/example/craftmastery/player/PlayerProgress.java|3282|3285|nbt|param|com.example.craftmastery.player.PlayerProgress|readFromNBT|(Lnet/minecraft/nbt/NBTTagCompound;)V|nbt|0
+      @|com/example/craftmastery/player/PlayerProgress.java|3255|3266|readFromNBT|method|com.example.craftmastery.player.PlayerProgress|readFromNBT|(Lnet/minecraft/nbt/NBTTagCompound;)V
+      @|com/example/craftmastery/player/PlayerProgress.java|3267|3281|NBTTagCompound|class|net.minecraft.nbt.NBTTagCompound|false
+      @|com/example/craftmastery/player/PlayerProgress.java|3298|3313|unlockedRecipes|field|com.example.craftmastery.player.PlayerProgress|unlockedRecipes
+      @|com/example/craftmastery/player/PlayerProgress.java|3314|3319|clear|method|java.util.Collection|clear|()V
+      @|com/example/craftmastery/player/PlayerProgress.java|3332|3342|NBTTagList|class|net.minecraft.nbt.NBTTagList|false
+      @|com/example/craftmastery/player/PlayerProgress.java|3356|3359|nbt|param|com.example.craftmastery.player.PlayerProgress|readFromNBT|(Lnet/minecraft/nbt/NBTTagCompound;)V|nbt|0
+      @|com/example/craftmastery/player/PlayerProgress.java|3360|3370|getTagList|method|net.minecraft.nbt.NBTTagCompound|getTagList|(Ljava/lang/String;I)Lnet/minecraft/nbt/NBTTagList;
+      @|com/example/craftmastery/player/PlayerProgress.java|3390|3403|Constants.NBT|class|net.minecraftforge.common.util.Constants.NBT|false
+      @|com/example/craftmastery/player/PlayerProgress.java|3404|3414|TAG_STRING|field|net.minecraftforge.common.util.Constants.NBT|TAG_STRING
+      @|com/example/craftmastery/player/PlayerProgress.java|3457|3465|tagCount|method|net.minecraft.nbt.NBTTagList|tagCount|()I
+      @|com/example/craftmastery/player/PlayerProgress.java|3489|3504|unlockedRecipes|field|com.example.craftmastery.player.PlayerProgress|unlockedRecipes
+      @|com/example/craftmastery/player/PlayerProgress.java|3505|3508|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|com/example/craftmastery/player/PlayerProgress.java|3520|3534|getStringTagAt|method|net.minecraft.nbt.NBTTagList|getStringTagAt|(I)Ljava/lang/String;
+      @|com/example/craftmastery/player/PlayerProgress.java|3560|3571|craftPoints|field|com.example.craftmastery.player.PlayerProgress|craftPoints
+      @|com/example/craftmastery/player/PlayerProgress.java|3574|3577|nbt|param|com.example.craftmastery.player.PlayerProgress|readFromNBT|(Lnet/minecraft/nbt/NBTTagCompound;)V|nbt|0
+      @|com/example/craftmastery/player/PlayerProgress.java|3578|3588|getInteger|method|net.minecraft.nbt.NBTTagCompound|getInteger|(Ljava/lang/String;)I
+      @|com/example/craftmastery/player/PlayerProgress.java|3614|3619|level|field|com.example.craftmastery.player.PlayerProgress|level
+      @|com/example/craftmastery/player/PlayerProgress.java|3622|3625|nbt|param|com.example.craftmastery.player.PlayerProgress|readFromNBT|(Lnet/minecraft/nbt/NBTTagCompound;)V|nbt|0
+      @|com/example/craftmastery/player/PlayerProgress.java|3626|3636|getInteger|method|net.minecraft.nbt.NBTTagCompound|getInteger|(Ljava/lang/String;)I
+      @|com/example/craftmastery/player/PlayerProgress.java|3656|3666|experience|field|com.example.craftmastery.player.PlayerProgress|experience
+      @|com/example/craftmastery/player/PlayerProgress.java|3669|3672|nbt|param|com.example.craftmastery.player.PlayerProgress|readFromNBT|(Lnet/minecraft/nbt/NBTTagCompound;)V|nbt|0
+      @|com/example/craftmastery/player/PlayerProgress.java|3673|3683|getInteger|method|net.minecraft.nbt.NBTTagCompound|getInteger|(Ljava/lang/String;)I
    Method End: readFromNBT(Lnet/minecraft/nbt/NBTTagCompound;)V
 Class End  : com.example.craftmastery.player.PlayerProgress
 endProcessing "com/example/craftmastery/player/PlayerProgress.java"
@@ -1159,7 +1362,7 @@ Class Start: com.example.craftmastery.points.PointsManager
 Class End  : com.example.craftmastery.points.PointsManager
 endProcessing "com/example/craftmastery/points/PointsManager.java"
 
-startProcessing "com/example/craftmastery/recipe/CustomRecipe.java" md5: c43d07ae9dd1413be61fcb415883dd8b
+startProcessing "com/example/craftmastery/recipe/CustomRecipe.java" md5: 9f35c339f2678c30d1e5bfc4e6728fb2
 @|com/example/craftmastery/recipe/CustomRecipe.java|8|39|com.example.craftmastery.recipe|package|com.example.craftmastery.recipe|(file)
 Class Start: com.example.craftmastery.recipe.CustomRecipe
    @|com/example/craftmastery/recipe/CustomRecipe.java|121|133|CustomRecipe|class|com.example.craftmastery.recipe.CustomRecipe|false
@@ -1176,71 +1379,79 @@ Class Start: com.example.craftmastery.recipe.CustomRecipe
    @|com/example/craftmastery/recipe/CustomRecipe.java|222|233|ingredients|field|com.example.craftmastery.recipe.CustomRecipe|ingredients|
    @|com/example/craftmastery/recipe/CustomRecipe.java|252|261|pointCost|field|com.example.craftmastery.recipe.CustomRecipe|pointCost|
    @|com/example/craftmastery/recipe/CustomRecipe.java|280|291|pointReward|field|com.example.craftmastery.recipe.CustomRecipe|pointReward|
-   @|com/example/craftmastery/recipe/CustomRecipe.java|306|312|String|class|java.lang.String|false
-   @|com/example/craftmastery/recipe/CustomRecipe.java|306|312|String|class|java.lang.String|false
-   @|com/example/craftmastery/recipe/CustomRecipe.java|313|321|category|field|com.example.craftmastery.recipe.CustomRecipe|category|
-   @|com/example/craftmastery/recipe/CustomRecipe.java|340|355|difficultyLevel|field|com.example.craftmastery.recipe.CustomRecipe|difficultyLevel|
-   Method Start: CustomRecipe(Ljava/lang/String;Lnet/minecraft/item/ItemStack;Ljava/util/List;IILjava/lang/String;I)V
-      @|com/example/craftmastery/recipe/CustomRecipe.java|391|395|name|param|com.example.craftmastery.recipe.CustomRecipe|CustomRecipe|(Ljava/lang/String;Lnet/minecraft/item/ItemStack;Ljava/util/List;IILjava/lang/String;I)V|name|0
-      @|com/example/craftmastery/recipe/CustomRecipe.java|407|413|output|param|com.example.craftmastery.recipe.CustomRecipe|CustomRecipe|(Ljava/lang/String;Lnet/minecraft/item/ItemStack;Ljava/util/List;IILjava/lang/String;I)V|output|1
-      @|com/example/craftmastery/recipe/CustomRecipe.java|431|442|ingredients|param|com.example.craftmastery.recipe.CustomRecipe|CustomRecipe|(Ljava/lang/String;Lnet/minecraft/item/ItemStack;Ljava/util/List;IILjava/lang/String;I)V|ingredients|2
-      @|com/example/craftmastery/recipe/CustomRecipe.java|448|457|pointCost|param|com.example.craftmastery.recipe.CustomRecipe|CustomRecipe|(Ljava/lang/String;Lnet/minecraft/item/ItemStack;Ljava/util/List;IILjava/lang/String;I)V|pointCost|3
-      @|com/example/craftmastery/recipe/CustomRecipe.java|463|474|pointReward|param|com.example.craftmastery.recipe.CustomRecipe|CustomRecipe|(Ljava/lang/String;Lnet/minecraft/item/ItemStack;Ljava/util/List;IILjava/lang/String;I)V|pointReward|4
-      @|com/example/craftmastery/recipe/CustomRecipe.java|483|491|category|param|com.example.craftmastery.recipe.CustomRecipe|CustomRecipe|(Ljava/lang/String;Lnet/minecraft/item/ItemStack;Ljava/util/List;IILjava/lang/String;I)V|category|5
-      @|com/example/craftmastery/recipe/CustomRecipe.java|497|512|difficultyLevel|param|com.example.craftmastery.recipe.CustomRecipe|CustomRecipe|(Ljava/lang/String;Lnet/minecraft/item/ItemStack;Ljava/util/List;IILjava/lang/String;I)V|difficultyLevel|6
-      @|com/example/craftmastery/recipe/CustomRecipe.java|371|383|CustomRecipe|method|com.example.craftmastery.recipe.CustomRecipe|CustomRecipe|(Ljava/lang/String;Lnet/minecraft/item/ItemStack;Ljava/util/List;IILjava/lang/String;I)V
-      @|com/example/craftmastery/recipe/CustomRecipe.java|384|390|String|class|java.lang.String|false
-      @|com/example/craftmastery/recipe/CustomRecipe.java|397|406|ItemStack|class|net.minecraft.item.ItemStack|false
-      @|com/example/craftmastery/recipe/CustomRecipe.java|415|419|List|class|java.util.List|false
-      @|com/example/craftmastery/recipe/CustomRecipe.java|420|429|ItemStack|class|net.minecraft.item.ItemStack|false
-      @|com/example/craftmastery/recipe/CustomRecipe.java|476|482|String|class|java.lang.String|false
-      @|com/example/craftmastery/recipe/CustomRecipe.java|530|534|name|field|com.example.craftmastery.recipe.CustomRecipe|name
-      @|com/example/craftmastery/recipe/CustomRecipe.java|537|541|name|param|com.example.craftmastery.recipe.CustomRecipe|CustomRecipe|(Ljava/lang/String;Lnet/minecraft/item/ItemStack;Ljava/util/List;IILjava/lang/String;I)V|name|0
-      @|com/example/craftmastery/recipe/CustomRecipe.java|557|563|output|field|com.example.craftmastery.recipe.CustomRecipe|output
-      @|com/example/craftmastery/recipe/CustomRecipe.java|566|572|output|param|com.example.craftmastery.recipe.CustomRecipe|CustomRecipe|(Ljava/lang/String;Lnet/minecraft/item/ItemStack;Ljava/util/List;IILjava/lang/String;I)V|output|1
-      @|com/example/craftmastery/recipe/CustomRecipe.java|588|599|ingredients|field|com.example.craftmastery.recipe.CustomRecipe|ingredients
-      @|com/example/craftmastery/recipe/CustomRecipe.java|602|613|ingredients|param|com.example.craftmastery.recipe.CustomRecipe|CustomRecipe|(Ljava/lang/String;Lnet/minecraft/item/ItemStack;Ljava/util/List;IILjava/lang/String;I)V|ingredients|2
-      @|com/example/craftmastery/recipe/CustomRecipe.java|629|638|pointCost|field|com.example.craftmastery.recipe.CustomRecipe|pointCost
-      @|com/example/craftmastery/recipe/CustomRecipe.java|641|650|pointCost|param|com.example.craftmastery.recipe.CustomRecipe|CustomRecipe|(Ljava/lang/String;Lnet/minecraft/item/ItemStack;Ljava/util/List;IILjava/lang/String;I)V|pointCost|3
-      @|com/example/craftmastery/recipe/CustomRecipe.java|666|677|pointReward|field|com.example.craftmastery.recipe.CustomRecipe|pointReward
-      @|com/example/craftmastery/recipe/CustomRecipe.java|680|691|pointReward|param|com.example.craftmastery.recipe.CustomRecipe|CustomRecipe|(Ljava/lang/String;Lnet/minecraft/item/ItemStack;Ljava/util/List;IILjava/lang/String;I)V|pointReward|4
-      @|com/example/craftmastery/recipe/CustomRecipe.java|707|715|category|field|com.example.craftmastery.recipe.CustomRecipe|category
-      @|com/example/craftmastery/recipe/CustomRecipe.java|718|726|category|param|com.example.craftmastery.recipe.CustomRecipe|CustomRecipe|(Ljava/lang/String;Lnet/minecraft/item/ItemStack;Ljava/util/List;IILjava/lang/String;I)V|category|5
-      @|com/example/craftmastery/recipe/CustomRecipe.java|742|757|difficultyLevel|field|com.example.craftmastery.recipe.CustomRecipe|difficultyLevel
-      @|com/example/craftmastery/recipe/CustomRecipe.java|760|775|difficultyLevel|param|com.example.craftmastery.recipe.CustomRecipe|CustomRecipe|(Ljava/lang/String;Lnet/minecraft/item/ItemStack;Ljava/util/List;IILjava/lang/String;I)V|difficultyLevel|6
-   Method End: CustomRecipe(Ljava/lang/String;Lnet/minecraft/item/ItemStack;Ljava/util/List;IILjava/lang/String;I)V
+   @|com/example/craftmastery/recipe/CustomRecipe.java|310|319|expReward|field|com.example.craftmastery.recipe.CustomRecipe|expReward|
+   @|com/example/craftmastery/recipe/CustomRecipe.java|334|340|String|class|java.lang.String|false
+   @|com/example/craftmastery/recipe/CustomRecipe.java|334|340|String|class|java.lang.String|false
+   @|com/example/craftmastery/recipe/CustomRecipe.java|341|349|category|field|com.example.craftmastery.recipe.CustomRecipe|category|
+   @|com/example/craftmastery/recipe/CustomRecipe.java|368|383|difficultyLevel|field|com.example.craftmastery.recipe.CustomRecipe|difficultyLevel|
+   Method Start: CustomRecipe(Ljava/lang/String;Lnet/minecraft/item/ItemStack;Ljava/util/List;IIILjava/lang/String;I)V
+      @|com/example/craftmastery/recipe/CustomRecipe.java|419|423|name|param|com.example.craftmastery.recipe.CustomRecipe|CustomRecipe|(Ljava/lang/String;Lnet/minecraft/item/ItemStack;Ljava/util/List;IIILjava/lang/String;I)V|name|0
+      @|com/example/craftmastery/recipe/CustomRecipe.java|435|441|output|param|com.example.craftmastery.recipe.CustomRecipe|CustomRecipe|(Ljava/lang/String;Lnet/minecraft/item/ItemStack;Ljava/util/List;IIILjava/lang/String;I)V|output|1
+      @|com/example/craftmastery/recipe/CustomRecipe.java|459|470|ingredients|param|com.example.craftmastery.recipe.CustomRecipe|CustomRecipe|(Ljava/lang/String;Lnet/minecraft/item/ItemStack;Ljava/util/List;IIILjava/lang/String;I)V|ingredients|2
+      @|com/example/craftmastery/recipe/CustomRecipe.java|476|485|pointCost|param|com.example.craftmastery.recipe.CustomRecipe|CustomRecipe|(Ljava/lang/String;Lnet/minecraft/item/ItemStack;Ljava/util/List;IIILjava/lang/String;I)V|pointCost|3
+      @|com/example/craftmastery/recipe/CustomRecipe.java|491|502|pointReward|param|com.example.craftmastery.recipe.CustomRecipe|CustomRecipe|(Ljava/lang/String;Lnet/minecraft/item/ItemStack;Ljava/util/List;IIILjava/lang/String;I)V|pointReward|4
+      @|com/example/craftmastery/recipe/CustomRecipe.java|508|517|expReward|param|com.example.craftmastery.recipe.CustomRecipe|CustomRecipe|(Ljava/lang/String;Lnet/minecraft/item/ItemStack;Ljava/util/List;IIILjava/lang/String;I)V|expReward|5
+      @|com/example/craftmastery/recipe/CustomRecipe.java|526|534|category|param|com.example.craftmastery.recipe.CustomRecipe|CustomRecipe|(Ljava/lang/String;Lnet/minecraft/item/ItemStack;Ljava/util/List;IIILjava/lang/String;I)V|category|6
+      @|com/example/craftmastery/recipe/CustomRecipe.java|540|555|difficultyLevel|param|com.example.craftmastery.recipe.CustomRecipe|CustomRecipe|(Ljava/lang/String;Lnet/minecraft/item/ItemStack;Ljava/util/List;IIILjava/lang/String;I)V|difficultyLevel|7
+      @|com/example/craftmastery/recipe/CustomRecipe.java|399|411|CustomRecipe|method|com.example.craftmastery.recipe.CustomRecipe|CustomRecipe|(Ljava/lang/String;Lnet/minecraft/item/ItemStack;Ljava/util/List;IIILjava/lang/String;I)V
+      @|com/example/craftmastery/recipe/CustomRecipe.java|412|418|String|class|java.lang.String|false
+      @|com/example/craftmastery/recipe/CustomRecipe.java|425|434|ItemStack|class|net.minecraft.item.ItemStack|false
+      @|com/example/craftmastery/recipe/CustomRecipe.java|443|447|List|class|java.util.List|false
+      @|com/example/craftmastery/recipe/CustomRecipe.java|448|457|ItemStack|class|net.minecraft.item.ItemStack|false
+      @|com/example/craftmastery/recipe/CustomRecipe.java|519|525|String|class|java.lang.String|false
+      @|com/example/craftmastery/recipe/CustomRecipe.java|573|577|name|field|com.example.craftmastery.recipe.CustomRecipe|name
+      @|com/example/craftmastery/recipe/CustomRecipe.java|580|584|name|param|com.example.craftmastery.recipe.CustomRecipe|CustomRecipe|(Ljava/lang/String;Lnet/minecraft/item/ItemStack;Ljava/util/List;IIILjava/lang/String;I)V|name|0
+      @|com/example/craftmastery/recipe/CustomRecipe.java|600|606|output|field|com.example.craftmastery.recipe.CustomRecipe|output
+      @|com/example/craftmastery/recipe/CustomRecipe.java|609|615|output|param|com.example.craftmastery.recipe.CustomRecipe|CustomRecipe|(Ljava/lang/String;Lnet/minecraft/item/ItemStack;Ljava/util/List;IIILjava/lang/String;I)V|output|1
+      @|com/example/craftmastery/recipe/CustomRecipe.java|631|642|ingredients|field|com.example.craftmastery.recipe.CustomRecipe|ingredients
+      @|com/example/craftmastery/recipe/CustomRecipe.java|645|656|ingredients|param|com.example.craftmastery.recipe.CustomRecipe|CustomRecipe|(Ljava/lang/String;Lnet/minecraft/item/ItemStack;Ljava/util/List;IIILjava/lang/String;I)V|ingredients|2
+      @|com/example/craftmastery/recipe/CustomRecipe.java|672|681|pointCost|field|com.example.craftmastery.recipe.CustomRecipe|pointCost
+      @|com/example/craftmastery/recipe/CustomRecipe.java|684|693|pointCost|param|com.example.craftmastery.recipe.CustomRecipe|CustomRecipe|(Ljava/lang/String;Lnet/minecraft/item/ItemStack;Ljava/util/List;IIILjava/lang/String;I)V|pointCost|3
+      @|com/example/craftmastery/recipe/CustomRecipe.java|709|720|pointReward|field|com.example.craftmastery.recipe.CustomRecipe|pointReward
+      @|com/example/craftmastery/recipe/CustomRecipe.java|723|734|pointReward|param|com.example.craftmastery.recipe.CustomRecipe|CustomRecipe|(Ljava/lang/String;Lnet/minecraft/item/ItemStack;Ljava/util/List;IIILjava/lang/String;I)V|pointReward|4
+      @|com/example/craftmastery/recipe/CustomRecipe.java|750|759|expReward|field|com.example.craftmastery.recipe.CustomRecipe|expReward
+      @|com/example/craftmastery/recipe/CustomRecipe.java|762|771|expReward|param|com.example.craftmastery.recipe.CustomRecipe|CustomRecipe|(Ljava/lang/String;Lnet/minecraft/item/ItemStack;Ljava/util/List;IIILjava/lang/String;I)V|expReward|5
+      @|com/example/craftmastery/recipe/CustomRecipe.java|787|795|category|field|com.example.craftmastery.recipe.CustomRecipe|category
+      @|com/example/craftmastery/recipe/CustomRecipe.java|798|806|category|param|com.example.craftmastery.recipe.CustomRecipe|CustomRecipe|(Ljava/lang/String;Lnet/minecraft/item/ItemStack;Ljava/util/List;IIILjava/lang/String;I)V|category|6
+      @|com/example/craftmastery/recipe/CustomRecipe.java|822|837|difficultyLevel|field|com.example.craftmastery.recipe.CustomRecipe|difficultyLevel
+      @|com/example/craftmastery/recipe/CustomRecipe.java|840|855|difficultyLevel|param|com.example.craftmastery.recipe.CustomRecipe|CustomRecipe|(Ljava/lang/String;Lnet/minecraft/item/ItemStack;Ljava/util/List;IIILjava/lang/String;I)V|difficultyLevel|7
+   Method End: CustomRecipe(Ljava/lang/String;Lnet/minecraft/item/ItemStack;Ljava/util/List;IIILjava/lang/String;I)V
    Method Start: getName()Ljava/lang/String;
-      @|com/example/craftmastery/recipe/CustomRecipe.java|798|804|String|class|java.lang.String|false
-      @|com/example/craftmastery/recipe/CustomRecipe.java|805|812|getName|method|com.example.craftmastery.recipe.CustomRecipe|getName|()Ljava/lang/String;
-      @|com/example/craftmastery/recipe/CustomRecipe.java|833|837|name|field|com.example.craftmastery.recipe.CustomRecipe|name
+      @|com/example/craftmastery/recipe/CustomRecipe.java|878|884|String|class|java.lang.String|false
+      @|com/example/craftmastery/recipe/CustomRecipe.java|885|892|getName|method|com.example.craftmastery.recipe.CustomRecipe|getName|()Ljava/lang/String;
+      @|com/example/craftmastery/recipe/CustomRecipe.java|913|917|name|field|com.example.craftmastery.recipe.CustomRecipe|name
    Method End: getName()Ljava/lang/String;
    Method Start: getOutput()Lnet/minecraft/item/ItemStack;
-      @|com/example/craftmastery/recipe/CustomRecipe.java|860|869|ItemStack|class|net.minecraft.item.ItemStack|false
-      @|com/example/craftmastery/recipe/CustomRecipe.java|870|879|getOutput|method|com.example.craftmastery.recipe.CustomRecipe|getOutput|()Lnet/minecraft/item/ItemStack;
-      @|com/example/craftmastery/recipe/CustomRecipe.java|900|906|output|field|com.example.craftmastery.recipe.CustomRecipe|output
+      @|com/example/craftmastery/recipe/CustomRecipe.java|940|949|ItemStack|class|net.minecraft.item.ItemStack|false
+      @|com/example/craftmastery/recipe/CustomRecipe.java|950|959|getOutput|method|com.example.craftmastery.recipe.CustomRecipe|getOutput|()Lnet/minecraft/item/ItemStack;
+      @|com/example/craftmastery/recipe/CustomRecipe.java|980|986|output|field|com.example.craftmastery.recipe.CustomRecipe|output
    Method End: getOutput()Lnet/minecraft/item/ItemStack;
    Method Start: getIngredients()Ljava/util/List;
-      @|com/example/craftmastery/recipe/CustomRecipe.java|929|933|List|class|java.util.List|false
-      @|com/example/craftmastery/recipe/CustomRecipe.java|934|943|ItemStack|class|net.minecraft.item.ItemStack|false
-      @|com/example/craftmastery/recipe/CustomRecipe.java|945|959|getIngredients|method|com.example.craftmastery.recipe.CustomRecipe|getIngredients|()Ljava/util/List;
-      @|com/example/craftmastery/recipe/CustomRecipe.java|980|991|ingredients|field|com.example.craftmastery.recipe.CustomRecipe|ingredients
+      @|com/example/craftmastery/recipe/CustomRecipe.java|1009|1013|List|class|java.util.List|false
+      @|com/example/craftmastery/recipe/CustomRecipe.java|1014|1023|ItemStack|class|net.minecraft.item.ItemStack|false
+      @|com/example/craftmastery/recipe/CustomRecipe.java|1025|1039|getIngredients|method|com.example.craftmastery.recipe.CustomRecipe|getIngredients|()Ljava/util/List;
+      @|com/example/craftmastery/recipe/CustomRecipe.java|1060|1071|ingredients|field|com.example.craftmastery.recipe.CustomRecipe|ingredients
    Method End: getIngredients()Ljava/util/List;
    Method Start: getPointCost()I
-      @|com/example/craftmastery/recipe/CustomRecipe.java|1018|1030|getPointCost|method|com.example.craftmastery.recipe.CustomRecipe|getPointCost|()I
-      @|com/example/craftmastery/recipe/CustomRecipe.java|1051|1060|pointCost|field|com.example.craftmastery.recipe.CustomRecipe|pointCost
+      @|com/example/craftmastery/recipe/CustomRecipe.java|1098|1110|getPointCost|method|com.example.craftmastery.recipe.CustomRecipe|getPointCost|()I
+      @|com/example/craftmastery/recipe/CustomRecipe.java|1131|1140|pointCost|field|com.example.craftmastery.recipe.CustomRecipe|pointCost
    Method End: getPointCost()I
    Method Start: getPointReward()I
-      @|com/example/craftmastery/recipe/CustomRecipe.java|1087|1101|getPointReward|method|com.example.craftmastery.recipe.CustomRecipe|getPointReward|()I
-      @|com/example/craftmastery/recipe/CustomRecipe.java|1122|1133|pointReward|field|com.example.craftmastery.recipe.CustomRecipe|pointReward
+      @|com/example/craftmastery/recipe/CustomRecipe.java|1167|1181|getPointReward|method|com.example.craftmastery.recipe.CustomRecipe|getPointReward|()I
+      @|com/example/craftmastery/recipe/CustomRecipe.java|1202|1213|pointReward|field|com.example.craftmastery.recipe.CustomRecipe|pointReward
    Method End: getPointReward()I
+   Method Start: getExpReward()I
+      @|com/example/craftmastery/recipe/CustomRecipe.java|1240|1252|getExpReward|method|com.example.craftmastery.recipe.CustomRecipe|getExpReward|()I
+      @|com/example/craftmastery/recipe/CustomRecipe.java|1273|1282|expReward|field|com.example.craftmastery.recipe.CustomRecipe|expReward
+   Method End: getExpReward()I
    Method Start: getCategory()Ljava/lang/String;
-      @|com/example/craftmastery/recipe/CustomRecipe.java|1156|1162|String|class|java.lang.String|false
-      @|com/example/craftmastery/recipe/CustomRecipe.java|1163|1174|getCategory|method|com.example.craftmastery.recipe.CustomRecipe|getCategory|()Ljava/lang/String;
-      @|com/example/craftmastery/recipe/CustomRecipe.java|1195|1203|category|field|com.example.craftmastery.recipe.CustomRecipe|category
+      @|com/example/craftmastery/recipe/CustomRecipe.java|1305|1311|String|class|java.lang.String|false
+      @|com/example/craftmastery/recipe/CustomRecipe.java|1312|1323|getCategory|method|com.example.craftmastery.recipe.CustomRecipe|getCategory|()Ljava/lang/String;
+      @|com/example/craftmastery/recipe/CustomRecipe.java|1344|1352|category|field|com.example.craftmastery.recipe.CustomRecipe|category
    Method End: getCategory()Ljava/lang/String;
    Method Start: getDifficultyLevel()I
-      @|com/example/craftmastery/recipe/CustomRecipe.java|1230|1248|getDifficultyLevel|method|com.example.craftmastery.recipe.CustomRecipe|getDifficultyLevel|()I
-      @|com/example/craftmastery/recipe/CustomRecipe.java|1269|1284|difficultyLevel|field|com.example.craftmastery.recipe.CustomRecipe|difficultyLevel
+      @|com/example/craftmastery/recipe/CustomRecipe.java|1379|1397|getDifficultyLevel|method|com.example.craftmastery.recipe.CustomRecipe|getDifficultyLevel|()I
+      @|com/example/craftmastery/recipe/CustomRecipe.java|1418|1433|difficultyLevel|field|com.example.craftmastery.recipe.CustomRecipe|difficultyLevel
    Method End: getDifficultyLevel()I
 Class End  : com.example.craftmastery.recipe.CustomRecipe
 endProcessing "com/example/craftmastery/recipe/CustomRecipe.java"

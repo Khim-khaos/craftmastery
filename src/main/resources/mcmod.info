@@ -1,19 +1,16 @@
 [
   {
-    "modid": "CraftMastery",
-    "name": "craftmastery",
-    "description": "A mod that integrates territory claiming, rent systems, taxes, and faction banks with GrandEconomy.",
-    "version": "1.0.0",
-    "mcversion": "1.12.2",
-    "url": "https://example.com/craftmastery",
-    "updateUrl": "https://example.com/craftmastery/update",
-    "authorList": ["Khim_Khaosow"],
-    "credits": "Thanks to the Minecraft Forge and GrandEconomy communities",
-    "logoFile": "assets/craftmastery/textures/logo.png",
+    "modid": "craftmastery",
+    "name": "Craft Mastery",
+    "description": "A mod that adds a skill tree and custom recipes to Minecraft.",
+    "version": "${version}",
+    "mcversion": "${mcversion}",
+    "url": "",
+    "updateUrl": "",
+    "authorList": ["YourName"],
+    "credits": "",
+    "logoFile": "",
     "screenshots": [],
-    "dependencies": [
-      "required-after:forge@[14.23.5.2859,)",
-      "required-after:grandeconomy@[2.1.2,)"
-    ]
+    "dependencies": []
   }
 ]

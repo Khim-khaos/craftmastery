@@ -4,6 +4,7 @@ import com.example.craftmastery.player.PlayerProgress;
 import com.example.craftmastery.player.PlayerProgressManager;
 import com.example.craftmastery.recipe.CustomRecipe;
 import com.example.craftmastery.recipe.RecipeManager;
+import com.example.craftmastery.notification.NotificationManager;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.Mod;
@@ -25,12 +26,15 @@ public class CraftingEventHandler {
                 PlayerProgress progress = PlayerProgressManager.get(player).getPlayerProgress(player);
 
                 if (progress.isRecipeUnlocked(customRecipe)) {
-                    // Рецепт разблокирован, позволяем крафт и даем очки
-                    progress.addCraftPoints(customRecipe.getPointReward());
+                    int pointsEarned = customRecipe.getPointReward();
+                    progress.addCraftPoints(pointsEarned);
+                    progress.addExperience(customRecipe.getExpReward(), player);
                     PlayerProgressManager.get(player).markDirty();
+
+                    NotificationManager.addNotification("Earned " + pointsEarned + " craft points and " + customRecipe.getExpReward() + " XP!");
                 } else {
-                    // Рецепт не разблокирован, отменяем крафт
                     event.setCanceled(true);
+                    NotificationManager.addNotification("Recipe not unlocked yet!");
                 }
             }
         }

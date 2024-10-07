@@ -1,9 +1,12 @@
 package com.example.craftmastery.player;
 
 import com.example.craftmastery.recipe.CustomRecipe;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.nbt.NBTTagList;
 import net.minecraft.nbt.NBTTagString;
+import net.minecraft.potion.Potion;
+import net.minecraft.potion.PotionEffect;
 import net.minecraftforge.common.util.Constants;
 
 import java.util.HashSet;
@@ -12,34 +15,28 @@ import java.util.Set;
 public class PlayerProgress {
     private final Set<String> unlockedRecipes;
     private int craftPoints;
-    private int resetPoints;
-    private int cancelPoints;
+    private int level;
+    private int experience;
 
     public PlayerProgress() {
         this.unlockedRecipes = new HashSet<>();
         this.craftPoints = 0;
-        this.resetPoints = 0;
-        this.cancelPoints = 0;
+        this.level = 1;
+        this.experience = 0;
     }
 
     public boolean isRecipeUnlocked(CustomRecipe recipe) {
         return unlockedRecipes.contains(recipe.getName());
     }
 
-    public void unlockRecipe(CustomRecipe recipe) {
-        unlockedRecipes.add(recipe.getName());
+    public void unlockRecipe(CustomRecipe recipe, EntityPlayer player) {
+        if (unlockedRecipes.add(recipe.getName())) {
+            applyRecipeUnlockEffect(player);
+        }
     }
 
     public void addCraftPoints(int points) {
         this.craftPoints += points;
-    }
-
-    public void addResetPoints(int points) {
-        this.resetPoints += points;
-    }
-
-    public void addCancelPoints(int points) {
-        this.cancelPoints += points;
     }
 
     public boolean spendCraftPoints(int points) {
@@ -50,58 +47,62 @@ public class PlayerProgress {
         return false;
     }
 
-    public boolean spendResetPoints(int points) {
-        if (resetPoints >= points) {
-            resetPoints -= points;
-            return true;
-        }
-        return false;
+    public void addExperience(int exp, EntityPlayer player) {
+        this.experience += exp;
+        checkLevelUp(player);
     }
 
-    public boolean spendCancelPoints(int points) {
-        if (cancelPoints >= points) {
-            cancelPoints -= points;
-            return true;
+    private void checkLevelUp(EntityPlayer player) {
+        int expNeeded = getExpNeededForNextLevel();
+        while (experience >= expNeeded) {
+            level++;
+            experience -= expNeeded;
+            expNeeded = getExpNeededForNextLevel();
+            onLevelUp(player);
         }
-        return false;
+    }
+
+    private int getExpNeededForNextLevel() {
+        return level * 100; // Простая формула, можно усложнить
+    }
+
+    private void onLevelUp(EntityPlayer player) {
+        craftPoints += 5; // Награда за повышение уровня
+        applyLevelUpEffect(player);
+    }
+
+    private void applyLevelUpEffect(EntityPlayer player) {
+        // Пример эффекта: Скорость на 30 секунд
+        player.addPotionEffect(new PotionEffect(Potion.getPotionById(1), 600, 1));
+    }
+
+    private void applyRecipeUnlockEffect(EntityPlayer player) {
+        // Пример эффекта: Регенерация на 10 секунд
+        player.addPotionEffect(new PotionEffect(Potion.getPotionById(10), 200, 0));
     }
 
     public int getCraftPoints() {
         return craftPoints;
     }
 
-    public int getResetPoints() {
-        return resetPoints;
+    public int getLevel() {
+        return level;
     }
 
-    public int getCancelPoints() {
-        return cancelPoints;
-    }
-
-    public Set<String> getUnlockedRecipes() {
-        return new HashSet<>(unlockedRecipes);
-    }
-
-    public void resetProgress() {
-        unlockedRecipes.clear();
-        craftPoints = 0;
-        resetPoints = 0;
-        cancelPoints = 0;
+    public int getExperience() {
+        return experience;
     }
 
     public NBTTagCompound writeToNBT() {
         NBTTagCompound nbt = new NBTTagCompound();
-
         NBTTagList recipeList = new NBTTagList();
         for (String recipe : unlockedRecipes) {
             recipeList.appendTag(new NBTTagString(recipe));
         }
         nbt.setTag("UnlockedRecipes", recipeList);
-
         nbt.setInteger("CraftPoints", craftPoints);
-        nbt.setInteger("ResetPoints", resetPoints);
-        nbt.setInteger("CancelPoints", cancelPoints);
-
+        nbt.setInteger("Level", level);
+        nbt.setInteger("Experience", experience);
         return nbt;
     }
 
@@ -111,9 +112,8 @@ public class PlayerProgress {
         for (int i = 0; i < recipeList.tagCount(); i++) {
             unlockedRecipes.add(recipeList.getStringTagAt(i));
         }
-
         craftPoints = nbt.getInteger("CraftPoints");
-        resetPoints = nbt.getInteger("ResetPoints");
-        cancelPoints = nbt.getInteger("CancelPoints");
+        level = nbt.getInteger("Level");
+        experience = nbt.getInteger("Experience");
     }
 }

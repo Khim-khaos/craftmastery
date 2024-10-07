@@ -9,15 +9,17 @@ public class CustomRecipe {
     private List<ItemStack> ingredients;
     private int pointCost;
     private int pointReward;
+    private int expReward;
     private String category;
     private int difficultyLevel;
 
-    public CustomRecipe(String name, ItemStack output, List<ItemStack> ingredients, int pointCost, int pointReward, String category, int difficultyLevel) {
+    public CustomRecipe(String name, ItemStack output, List<ItemStack> ingredients, int pointCost, int pointReward, int expReward, String category, int difficultyLevel) {
         this.name = name;
         this.output = output;
         this.ingredients = ingredients;
         this.pointCost = pointCost;
         this.pointReward = pointReward;
+        this.expReward = expReward;
         this.category = category;
         this.difficultyLevel = difficultyLevel;
     }
@@ -40,6 +42,10 @@ public class CustomRecipe {
 
     public int getPointReward() {
         return pointReward;
+    }
+
+    public int getExpReward() {
+        return expReward;
     }
 
     public String getCategory() {
