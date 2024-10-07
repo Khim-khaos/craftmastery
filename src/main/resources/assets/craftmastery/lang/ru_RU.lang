@@ -1,3 +1,23 @@
-Invalid number of arguments= Invalid number of arguments.
-key.openskillgui.desc=Open Skill Tree
-key.categories.craftmastery=Craft Mastery
+# Команды
+commands.craftmastery.usage=Использование: /craftmastery <give_points|give_reset_points|give_undo_points> <игрок> <количество>
+commands.craftmastery.give_points.success=Выдано %d очков игроку %s
+commands.craftmastery.give_reset_points.success=Выдано %d очков сброса игроку %s
+commands.craftmastery.give_undo_points.success=Выдано %d очков отмены игроку %s
+commands.craftmastery.unknown_subcommand=Неизвестная подкоманда
+
+# Клавиши
+key.categories.craftmastery=CraftMastery
+key.craftmastery.opengui=Открыть интерфейс CraftMastery
+
+# GUI
+gui.craftmastery.title=CraftMastery
+gui.craftmastery.add_category=Добавить категорию
+gui.craftmastery.category_name=Название категории
+gui.craftmastery.add=Добавить
+gui.craftmastery.cancel=Отмена
+gui.craftmastery.no_categories=Нет категорий
+# Сообщения
+message.craftmastery.cannot_craft=Вы не можете создать этот предмет
+message.craftmastery.cannot_use=Вы не можете использовать этот предмет
+message.craftmastery.recipe_unlocked=Рецепт разблокирован!
+message.craftmastery.not_enough_points=Недостаточно очков для разблокировки рецепта
