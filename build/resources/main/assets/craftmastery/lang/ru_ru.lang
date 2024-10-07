@@ -1,3 +1,37 @@
-Invalid number of arguments= Invalid number of arguments.
-key.openskillgui.desc=Open Skill Tree
-key.categories.craftmastery=Craft Mastery
+# GUI
+gui.craftmastery.title=CraftMastery
+gui.craftmastery.add_category=Добавить категорию
+gui.craftmastery.category_name=Название категории
+gui.craftmastery.add=Добавить
+gui.craftmastery.cancel=Отмена
+gui.craftmastery.no_categories=Нет категорий
+gui.craftmastery.locked=Заблокировано
+gui.craftmastery.unlocked=Разблокировано
+gui.craftmastery.cost=Стоимость: %d очков
+gui.craftmastery.filter.basic=Базовые
+gui.craftmastery.filter.technical=Технические
+gui.craftmastery.filter.magical=Магические
+gui.craftmastery.dependencies=Зависимости:
+
+# Commands
+commands.craftmastery.usage=/craftmastery <unlock_all|lock_all|unlock_recipe|give_points|give_reset_points|give_undo_points> <игрок> [id_рецепта|количество]
+commands.craftmastery.unlock_all.success=Разблокированы все рецепты для %s
+commands.craftmastery.lock_all.success=Заблокированы все рецепты для %s
+commands.craftmastery.unlock_recipe.usage=/craftmastery unlock_recipe <игрок> <id_рецепта>
+commands.craftmastery.unlock_recipe.success=Разблокирован рецепт %s для %s
+commands.craftmastery.unlock_recipe.not_found=Рецепт %s не найден
+commands.craftmastery.give_points.usage=/craftmastery give_points <игрок> <количество>
+commands.craftmastery.give_points.success=Выдано %d очков игроку %s
+commands.craftmastery.give_reset_points.usage=/craftmastery give_reset_points <игрок> <количество>
+commands.craftmastery.give_reset_points.success=Выдано %d очков сброса игроку %s
+commands.craftmastery.give_undo_points.usage=/craftmastery give_undo_points <игрок> <количество>
+commands.craftmastery.give_undo_points.success=Выдано %d очков отмены игроку %s
+commands.craftmastery.unknown_subcommand=Неизвестная подкоманда
+
+# Messages
+message.craftmastery.cannot_craft=Вы не можете создать этот предмет
+message.craftmastery.cannot_use=Вы не можете использовать этот предмет
+message.craftmastery.recipe_unlocked=Рецепт разблокирован!
+message.craftmastery.not_enough_points=Недостаточно очков для разблокировки рецепта
+gui.craftmastery.add=Добавить
+gui.craftmastery.add_category=Добавить категорию

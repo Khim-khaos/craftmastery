@@ -33,3 +33,5 @@ message.craftmastery.cannot_craft=Вы не можете создать этот
 message.craftmastery.cannot_use=Вы не можете использовать этот предмет
 message.craftmastery.recipe_unlocked=Рецепт разблокирован!
 message.craftmastery.not_enough_points=Недостаточно очков для разблокировки рецепта
+gui.craftmastery.add=Добавить
+gui.craftmastery.add_category=Добавить категорию

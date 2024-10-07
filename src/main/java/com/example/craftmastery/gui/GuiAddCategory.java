@@ -3,11 +3,13 @@ package com.example.craftmastery.gui;
 import net.minecraft.client.gui.GuiButton;
 import net.minecraft.client.gui.GuiScreen;
 import net.minecraft.client.gui.GuiTextField;
+import net.minecraft.client.resources.I18n;
+import org.lwjgl.input.Keyboard;
 
 import java.io.IOException;
 
 public class GuiAddCategory extends GuiScreen {
-    private GuiCraftMastery parentScreen;
+    private final GuiCraftMastery parentScreen;
     private GuiTextField categoryNameField;
     private GuiButton addButton;
     private GuiButton cancelButton;
@@ -18,35 +20,15 @@ public class GuiAddCategory extends GuiScreen {
 
     @Override
     public void initGui() {
-        this.buttonList.clear();
+        Keyboard.enableRepeatEvents(true);
+        buttonList.clear();
 
-        categoryNameField = new GuiTextField(0, this.fontRenderer, this.width / 2 - 100, this.height / 2 - 20, 200, 20);
+        categoryNameField = new GuiTextField(0, fontRenderer, width / 2 - 100, height / 2 - 20, 200, 20);
         categoryNameField.setFocused(true);
+        categoryNameField.setMaxStringLength(50);
 
-        addButton = this.addButton(new GuiButton(1, this.width / 2 - 100, this.height / 2 + 10, 95, 20, "Add"));
-        cancelButton = this.addButton(new GuiButton(2, this.width / 2 + 5, this.height / 2 + 10, 95, 20, "Cancel"));
-    }
-
-    @Override
-    public void drawScreen(int mouseX, int mouseY, float partialTicks) {
-        this.drawDefaultBackground();
-        this.drawCenteredString(this.fontRenderer, "Add New Category", this.width / 2, this.height / 2 - 40, 0xFFFFFF);
-        categoryNameField.drawTextBox();
-        super.drawScreen(mouseX, mouseY, partialTicks);
-    }
-
-    @Override
-    protected void keyTyped(char typedChar, int keyCode) throws IOException {
-        if (categoryNameField.textboxKeyTyped(typedChar, keyCode)) {
-            return;
-        }
-        super.keyTyped(typedChar, keyCode);
-    }
-
-    @Override
-    protected void mouseClicked(int mouseX, int mouseY, int mouseButton) throws IOException {
-        super.mouseClicked(mouseX, mouseY, mouseButton);
-        categoryNameField.mouseClicked(mouseX, mouseY, mouseButton);
+        addButton = addButton(new GuiButton(1, width / 2 - 100, height / 2 + 10, 98, 20, I18n.format("gui.craftmastery.add")));
+        cancelButton = addButton(new GuiButton(2, width / 2 + 2, height / 2 + 10, 98, 20, I18n.format("gui.cancel")));
     }
 
     @Override
@@ -60,5 +42,33 @@ public class GuiAddCategory extends GuiScreen {
         } else if (button == cancelButton) {
             mc.displayGuiScreen(parentScreen);
         }
+    }
+
+    @Override
+    protected void keyTyped(char typedChar, int keyCode) throws IOException {
+        if (keyCode == Keyboard.KEY_ESCAPE) {
+            mc.displayGuiScreen(parentScreen);
+        } else {
+            categoryNameField.textboxKeyTyped(typedChar, keyCode);
+            addButton.enabled = !categoryNameField.getText().trim().isEmpty();
+        }
+    }
+
+    @Override
+    public void drawScreen(int mouseX, int mouseY, float partialTicks) {
+        drawDefaultBackground();
+        drawCenteredString(fontRenderer, I18n.format("gui.craftmastery.add_category"), width / 2, height / 2 - 40, 0xFFFFFF);
+        categoryNameField.drawTextBox();
+        super.drawScreen(mouseX, mouseY, partialTicks);
+    }
+
+    @Override
+    public void updateScreen() {
+        categoryNameField.updateCursorCounter();
+    }
+
+    @Override
+    public void onGuiClosed() {
+        Keyboard.enableRepeatEvents(false);
     }
 }

@@ -1,3 +1,40 @@
-Invalid number of arguments= Invalid number of arguments.
-key.openskillgui.desc=Open Skill Tree
-key.categories.craftmastery=Craft Mastery
+# GUI
+gui.craftmastery.title=CraftMastery
+gui.craftmastery.add_category=Add Category
+gui.craftmastery.category_name=Category Name
+gui.craftmastery.add=Add
+gui.craftmastery.cancel=Cancel
+gui.craftmastery.no_categories=No Categories
+gui.craftmastery.locked=Locked
+gui.craftmastery.unlocked=Unlocked
+gui.craftmastery.cost=Cost: %d points
+gui.craftmastery.filter.basic=Basic
+gui.craftmastery.filter.technical=Technical
+gui.craftmastery.filter.magical=Magical
+gui.craftmastery.dependencies=Dependencies:
+
+# Commands
+commands.craftmastery.usage=/craftmastery <unlock_all|lock_all|unlock_recipe|give_points|give_reset_points|give_undo_points> <player> [recipe_id|amount]
+commands.craftmastery.unlock_all.success=Unlocked all recipes for %s
+commands.craftmastery.lock_all.success=Locked all recipes for %s
+commands.craftmastery.unlock_recipe.usage=/craftmastery unlock_recipe <player> <recipe_id>
+commands.craftmastery.unlock_recipe.success=Unlocked recipe %s for %s
+commands.craftmastery.unlock_recipe.not_found=Recipe %s not found
+commands.craftmastery.give_points.usage=/craftmastery give_points <player> <amount>
+commands.craftmastery.give_points.success=Given %d points to %s
+commands.craftmastery.give_reset_points.usage=/craftmastery give_reset_points <player> <amount>
+commands.craftmastery.give_reset_points.success=Given %d reset points to %s
+commands.craftmastery.give_undo_points.usage=/craftmastery give_undo_points <player> <amount>
+commands.craftmastery.give_undo_points.success=Given %d undo points to %s
+commands.craftmastery.unknown_subcommand=Unknown subcommand
+
+# Messages
+message.craftmastery.cannot_craft=You can't craft this item
+message.craftmastery.cannot_use=You can't use this item
+message.craftmastery.recipe_unlocked=Recipe unlocked!
+message.craftmastery.not_enough_points=Not enough points to unlock the recipe
+gui.craftmastery.add=Add
+gui.craftmastery.add_category=Add Category
+
+
+

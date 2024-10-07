@@ -33,24 +33,29 @@ public class GuiCraftMastery extends GuiScreen {
     private GuiButton filterBasicButton;
     private GuiButton filterTechnicalButton;
     private GuiButton filterMagicalButton;
+    private GuiButton addCategoryButton;
 
     private String currentFilter = "all";
 
+    public GuiCraftMastery() {
+        this.categories = CraftingManager.getInstance().getCategories();
+        this.playerData = PlayerDataManager.getPlayerData(mc.player);
+    }
+
     @Override
     public void initGui() {
-        super.initGui();
         int guiLeft = (this.width - GUI_WIDTH) / 2;
         int guiTop = (this.height - GUI_HEIGHT) / 2;
 
+        buttonList.clear();
         prevCategoryButton = addButton(new GuiButton(0, guiLeft + 10, guiTop + 5, 20, 20, "<"));
         nextCategoryButton = addButton(new GuiButton(1, guiLeft + GUI_WIDTH - 30, guiTop + 5, 20, 20, ">"));
 
         filterBasicButton = addButton(new GuiButton(2, guiLeft + 10, guiTop + GUI_HEIGHT + 5, 60, 20, I18n.format("gui.craftmastery.filter.basic")));
         filterTechnicalButton = addButton(new GuiButton(3, guiLeft + 75, guiTop + GUI_HEIGHT + 5, 60, 20, I18n.format("gui.craftmastery.filter.technical")));
         filterMagicalButton = addButton(new GuiButton(4, guiLeft + 140, guiTop + GUI_HEIGHT + 5, 60, 20, I18n.format("gui.craftmastery.filter.magical")));
+        addCategoryButton = addButton(new GuiButton(5, guiLeft + GUI_WIDTH - 70, guiTop + GUI_HEIGHT + 5, 60, 20, I18n.format("gui.craftmastery.add_category")));
 
-        categories = CraftingManager.getInstance().getCategories();
-        playerData = PlayerDataManager.getPlayerData(mc.player);
         updateVisibleRecipes();
     }
 
@@ -88,16 +93,15 @@ public class GuiCraftMastery extends GuiScreen {
             GlStateManager.translate(x, y, 0);
             GlStateManager.scale(2.0F, 2.0F, 2.0F);
 
-            if (playerData.isRecipeUnlocked(recipe) || CraftRecipe.isItemAllowed(recipe.getOutput().getItem())) {
+            if (playerData.isRecipeUnlocked(recipe) || CraftRecipe.isItemAllowed(recipe.getOutput())) {
                 mc.getRenderItem().renderItemAndEffectIntoGUI(recipe.getOutput(), 0, 0);
             } else {
                 mc.getTextureManager().bindTexture(TEXTURE);
-                drawTexturedModalRect(0, 0, 0, 200, 16, 16); // Предполагается, что иконка заблокированного рецепта находится в текстуре по координатам (0, 200)
+                drawTexturedModalRect(0, 0, 0, 200, 16, 16);
             }
 
             GlStateManager.popMatrix();
 
-            // Отрисовка фона при наведении
             if (mouseX >= x && mouseX < x + 32 && mouseY >= y && mouseY < y + 32) {
                 drawRect(x, y, x + 32, y + 32, 0x80FFFFFF);
             }
@@ -120,7 +124,7 @@ public class GuiCraftMastery extends GuiScreen {
 
                 tooltip.add(recipe.getOutput().getDisplayName());
 
-                if (!playerData.isRecipeUnlocked(recipe) && !CraftRecipe.isItemAllowed(recipe.getOutput().getItem())) {
+                if (!playerData.isRecipeUnlocked(recipe) && !CraftRecipe.isItemAllowed(recipe.getOutput())) {
                     tooltip.add(TextFormatting.RED + I18n.format("gui.craftmastery.locked"));
                     tooltip.add(TextFormatting.GRAY + I18n.format("gui.craftmastery.cost", recipe.getPointCost()));
 
@@ -136,7 +140,7 @@ public class GuiCraftMastery extends GuiScreen {
                     tooltip.add(TextFormatting.GREEN + I18n.format("gui.craftmastery.unlocked"));
                 }
 
-                drawHoveringText(tooltip, mouseX, mouseY);
+                this.drawHoveringText(tooltip, mouseX, mouseY);
                 break;
             }
         }
@@ -154,6 +158,8 @@ public class GuiCraftMastery extends GuiScreen {
             currentFilter = "technical";
         } else if (button == filterMagicalButton) {
             currentFilter = "magical";
+        } else if (button == addCategoryButton) {
+            mc.displayGuiScreen(new GuiAddCategory(this));
         }
         updateVisibleRecipes();
     }
@@ -184,9 +190,9 @@ public class GuiCraftMastery extends GuiScreen {
 
             if (mouseX >= x && mouseX < x + recipeSize && mouseY >= y && mouseY < y + recipeSize) {
                 CraftRecipe recipe = visibleRecipes.get(i);
-                if (!playerData.isRecipeUnlocked(recipe) && !CraftRecipe.isItemAllowed(recipe.getOutput().getItem())) {
+                if (!playerData.isRecipeUnlocked(recipe) && !CraftRecipe.isItemAllowed(recipe.getOutput())) {
                     if (playerData.unlockRecipe(recipe)) {
-                        mc.player.sendMessage(new TextComponentTranslation("message.craftmastery.recipe_unlocked"));
+                        mc.player.sendMessage(new TextComponentTranslation("message.craftmastery.recipe_unlocked", recipe.getOutput().getDisplayName()));
                     } else {
                         mc.player.sendMessage(new TextComponentTranslation("message.craftmastery.not_enough_points"));
                     }
@@ -212,5 +218,11 @@ public class GuiCraftMastery extends GuiScreen {
     public void onGuiClosed() {
         super.onGuiClosed();
         PlayerDataManager.savePlayerData(mc.player);
+    }
+
+    public void addCategory(String categoryName) {
+        CraftingManager.getInstance().addCategory(categoryName);
+        categories = CraftingManager.getInstance().getCategories();
+        updateVisibleRecipes();
     }
 }

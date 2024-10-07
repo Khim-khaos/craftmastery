@@ -21,10 +21,33 @@ public class CraftingManager {
         }
         return instance;
     }
+    public CraftRecipe findRecipeByOutput(ItemStack output) {
+        for (CraftRecipe recipe : recipesById.values()) {
+            if (ItemStack.areItemsEqual(recipe.getOutput(), output)) {
+                return recipe;
+            }
+        }
+        return null;
+    }
 
     public void addCategory(String category) {
         if (!recipesByCategory.containsKey(category)) {
             recipesByCategory.put(category, new ArrayList<>());
+        }
+    }
+    public List<CraftRecipe> getAllRecipes() {
+        List<CraftRecipe> allRecipes = new ArrayList<>();
+        for (List<CraftRecipe> categoryRecipes : recipesByCategory.values()) {
+            allRecipes.addAll(categoryRecipes);
+        }
+        return allRecipes;
+    }
+
+    public void setRecipes(List<CraftRecipe> recipes) {
+        recipesByCategory.clear();
+        recipesById.clear();
+        for (CraftRecipe recipe : recipes) {
+            addRecipe(recipe.getType(), recipe);
         }
     }
 

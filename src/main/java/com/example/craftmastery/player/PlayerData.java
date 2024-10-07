@@ -4,6 +4,7 @@ import com.example.craftmastery.crafting.CraftRecipe;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.nbt.NBTTagList;
 import net.minecraft.nbt.NBTTagString;
+import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.common.util.Constants;
 
 import java.util.HashSet;
@@ -13,14 +14,13 @@ public class PlayerData {
     private int points;
     private int resetPoints;
     private int undoPoints;
-    private Set<String> unlockedRecipes;
+    private Set<ResourceLocation> unlockedRecipes;
 
     public PlayerData() {
+        this.points = 0;
+        this.resetPoints = 0;
+        this.undoPoints = 0;
         this.unlockedRecipes = new HashSet<>();
-    }
-
-    public void lockAllRecipes() {
-        unlockedRecipes.clear();
     }
 
     public void addPoints(int amount) {
@@ -36,16 +36,20 @@ public class PlayerData {
     }
 
     public boolean isRecipeUnlocked(CraftRecipe recipe) {
-        return unlockedRecipes.contains(recipe.getOutput().getItem().getRegistryName().toString());
+        return unlockedRecipes.contains(recipe.getId());
     }
 
     public boolean unlockRecipe(CraftRecipe recipe) {
         if (points >= recipe.getPointCost() && recipe.canBeUnlocked(this)) {
             points -= recipe.getPointCost();
-            unlockedRecipes.add(recipe.getOutput().getItem().getRegistryName().toString());
+            unlockedRecipes.add(recipe.getId());
             return true;
         }
         return false;
+    }
+
+    public void lockAllRecipes() {
+        unlockedRecipes.clear();
     }
 
     public void saveNBTData(NBTTagCompound compound) {
@@ -53,8 +57,8 @@ public class PlayerData {
         compound.setInteger("resetPoints", resetPoints);
         compound.setInteger("undoPoints", undoPoints);
         NBTTagList unlockedList = new NBTTagList();
-        for (String recipe : unlockedRecipes) {
-            unlockedList.appendTag(new NBTTagString(recipe));
+        for (ResourceLocation recipeId : unlockedRecipes) {
+            unlockedList.appendTag(new NBTTagString(recipeId.toString()));
         }
         compound.setTag("UnlockedRecipes", unlockedList);
     }
@@ -66,7 +70,7 @@ public class PlayerData {
         unlockedRecipes.clear();
         NBTTagList unlockedList = compound.getTagList("UnlockedRecipes", Constants.NBT.TAG_STRING);
         for (int i = 0; i < unlockedList.tagCount(); i++) {
-            unlockedRecipes.add(unlockedList.getStringTagAt(i));
+            unlockedRecipes.add(new ResourceLocation(unlockedList.getStringTagAt(i)));
         }
     }
 
