@@ -2,11 +2,14 @@ package com.example.craftmastery.crafting;
 
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.util.ResourceLocation;
 
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 public class CraftRecipe {
+    private ResourceLocation id;
     private ItemStack output;
     private ItemStack[] ingredients;
     private int pointCost;
@@ -14,7 +17,8 @@ public class CraftRecipe {
     private boolean unlocked;
     private static final Set<Item> ALLOWED_ITEMS = new HashSet<>();
 
-    public CraftRecipe(ItemStack output, ItemStack[] ingredients, int pointCost, String type) {
+    public CraftRecipe(ResourceLocation id, ItemStack output, ItemStack[] ingredients, int pointCost, String type) {
+        this.id = id;
         this.output = output;
         this.ingredients = ingredients;
         this.pointCost = pointCost;
@@ -22,35 +26,30 @@ public class CraftRecipe {
         this.unlocked = false;
     }
 
-    public boolean isUnlocked() {
-        return unlocked;
+    public ResourceLocation getId() {
+        return id;
     }
 
-    public void setUnlocked(boolean unlocked) {
-        this.unlocked = unlocked;
-    }
+    // ... существующие методы ...
 
-    public ItemStack getOutput() {
-        return output;
-    }
+    public boolean matches(List<ItemStack> craftingGrid) {
+        if (craftingGrid.size() != ingredients.length) {
+            return false;
+        }
 
-    public ItemStack[] getIngredients() {
-        return ingredients;
-    }
+        for (int i = 0; i < ingredients.length; i++) {
+            ItemStack ingredient = ingredients[i];
+            ItemStack gridItem = craftingGrid.get(i);
 
-    public int getPointCost() {
-        return pointCost;
-    }
+            if (ingredient == null && !gridItem.isEmpty()) {
+                return false;
+            }
 
-    public String getType() {
-        return type;
-    }
+            if (ingredient != null && (gridItem.isEmpty() || !ItemStack.areItemsEqual(ingredient, gridItem))) {
+                return false;
+            }
+        }
 
-    public static void addAllowedItem(Item item) {
-        ALLOWED_ITEMS.add(item);
-    }
-
-    public static boolean isItemAllowed(Item item) {
-        return ALLOWED_ITEMS.contains(item);
+        return true;
     }
 }
