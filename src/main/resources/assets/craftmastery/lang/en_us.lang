@@ -35,6 +35,6 @@ message.craftmastery.recipe_unlocked=Recipe unlocked!
 message.craftmastery.not_enough_points=Not enough points to unlock the recipe
 gui.craftmastery.add=Add
 gui.craftmastery.add_category=Add Category
-
+message.craftmastery.points_gained=You gained %d crafting points!
 
 

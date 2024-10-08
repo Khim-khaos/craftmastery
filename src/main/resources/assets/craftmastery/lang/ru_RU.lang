@@ -35,3 +35,4 @@ message.craftmastery.recipe_unlocked=Рецепт разблокирован!
 message.craftmastery.not_enough_points=Недостаточно очков для разблокировки рецепта
 gui.craftmastery.add=Добавить
 gui.craftmastery.add_category=Добавить категорию
+message.craftmastery.points_gained=Вы получили %d очков крафта!

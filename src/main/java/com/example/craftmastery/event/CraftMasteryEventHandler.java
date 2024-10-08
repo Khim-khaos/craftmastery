@@ -1,52 +1,69 @@
 package com.example.craftmastery.event;
 
-import com.example.craftmastery.crafting.CraftRecipe;
-import com.example.craftmastery.crafting.CraftingManager;
+import com.example.craftmastery.CraftMastery;
 import com.example.craftmastery.player.PlayerData;
 import com.example.craftmastery.player.PlayerDataManager;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.item.ItemStack;
 import net.minecraft.util.text.TextComponentTranslation;
-import net.minecraftforge.event.entity.player.EntityItemPickupEvent;
+import net.minecraftforge.event.entity.player.PlayerEvent;
+import net.minecraftforge.event.world.BlockEvent;
+import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
-import net.minecraftforge.fml.common.gameevent.PlayerEvent;
+import net.minecraftforge.fml.common.gameevent.PlayerEvent.ItemCraftedEvent;
+import net.minecraftforge.fml.common.gameevent.PlayerEvent.PlayerLoggedInEvent;
+import net.minecraftforge.fml.common.gameevent.PlayerEvent.PlayerLoggedOutEvent;
 
+@Mod.EventBusSubscriber(modid = CraftMastery.MODID)
 public class CraftMasteryEventHandler {
 
     @SubscribeEvent
-    public void onItemCrafted(PlayerEvent.ItemCraftedEvent event) {
+    public static void onPlayerLogin(PlayerLoggedInEvent event) {
         EntityPlayer player = event.player;
-        ItemStack craftedItem = event.crafting;
-
-        if (player.world.isRemote) {
-            return;
-        }
-
         PlayerData playerData = PlayerDataManager.getPlayerData(player);
-        CraftRecipe recipe = CraftingManager.getInstance().findRecipeByOutput(craftedItem);
+        if (playerData == null) {
+            playerData = new PlayerData();
+            PlayerDataManager.setPlayerData(player, playerData);
+        }
+        CraftMastery.logger.info("Player " + player.getName() + " logged in. Loaded player data.");
+    }
 
-        if (recipe != null && !playerData.isRecipeUnlocked(recipe) && !CraftRecipe.isItemAllowed(craftedItem)) {
-            // Нельзя отменить крафт напрямую, поэтому мы удалим предмет из инвентаря игрока
-            player.inventory.deleteStack(craftedItem);
-            player.sendMessage(new TextComponentTranslation("message.craftmastery.cannot_craft"));
+    @SubscribeEvent
+    public static void onPlayerLogout(PlayerLoggedOutEvent event) {
+        EntityPlayer player = event.player;
+        PlayerDataManager.savePlayerData(player);
+        PlayerDataManager.removePlayerData(player);
+        CraftMastery.logger.info("Player " + player.getName() + " logged out. Saved and removed player data.");
+    }
+
+    @SubscribeEvent
+    public static void onPlayerClone(PlayerEvent.Clone event) {
+        if (event.isWasDeath()) {
+            PlayerData oldData = PlayerDataManager.getPlayerData(event.getOriginal());
+            PlayerData newData = new PlayerData();
+            newData.deserializeNBT(oldData.serializeNBT());
+            PlayerDataManager.setPlayerData(event.getEntityPlayer(), newData);
         }
     }
 
     @SubscribeEvent
-    public void onItemPickup(EntityItemPickupEvent event) {
-        EntityPlayer player = event.getEntityPlayer();
-        ItemStack pickedUpItem = event.getItem().getItem();
-
-        if (player.world.isRemote) {
-            return;
+    public static void onBlockBreak(BlockEvent.BreakEvent event) {
+        EntityPlayer player = event.getPlayer();
+        if (!player.world.isRemote) {
+            PlayerData playerData = PlayerDataManager.getPlayerData(player);
+            int pointsToAdd = 1; // Можно настроить количество очков в зависимости от блока
+            playerData.addPoints(pointsToAdd);
+            player.sendMessage(new TextComponentTranslation("message.craftmastery.points_gained", pointsToAdd));
         }
+    }
 
-        PlayerData playerData = PlayerDataManager.getPlayerData(player);
-        CraftRecipe recipe = CraftingManager.getInstance().findRecipeByOutput(pickedUpItem);
-
-        if (recipe != null && !playerData.isRecipeUnlocked(recipe) && !CraftRecipe.isItemAllowed(pickedUpItem)) {
-            event.setCanceled(true);
-            player.sendMessage(new TextComponentTranslation("message.craftmastery.cannot_use"));
+    @SubscribeEvent
+    public static void onItemCrafted(ItemCraftedEvent event) {
+        EntityPlayer player = event.player;
+        if (!player.world.isRemote) {
+            PlayerData playerData = PlayerDataManager.getPlayerData(player);
+            int pointsToAdd = 2; // Можно настроить количество очков в зависимости от предмета
+            playerData.addPoints(pointsToAdd);
+            player.sendMessage(new TextComponentTranslation("message.craftmastery.points_gained", pointsToAdd));
         }
     }
 }

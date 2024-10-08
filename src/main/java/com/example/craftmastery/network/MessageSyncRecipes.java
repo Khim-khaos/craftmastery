@@ -25,20 +25,7 @@ public class MessageSyncRecipes implements IMessage {
         this.recipes = recipes;
     }
 
-    @Override
-    public void toBytes(ByteBuf buf) {
-        buf.writeInt(recipes.size());
-        for (CraftRecipe recipe : recipes) {
-            ByteBufUtils.writeUTF8String(buf, recipe.getId().toString());
-            ByteBufUtils.writeItemStack(buf, recipe.getOutput());
-            buf.writeInt(recipe.getIngredients().length);
-            for (ItemStack ingredient : recipe.getIngredients()) {
-                ByteBufUtils.writeItemStack(buf, ingredient);
-            }
-            buf.writeInt(recipe.getPointCost());
-            ByteBufUtils.writeUTF8String(buf, recipe.getType());
-        }
-    }
+
 
     @Override
     public void fromBytes(ByteBuf buf) {
