@@ -2,6 +2,10 @@ package com.craftmastery.specialization;
 
 import com.craftmastery.config.ConfigHandler;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.nbt.NBTTagCompound;
+import net.minecraft.nbt.NBTTagList;
+import net.minecraft.nbt.NBTTagString;
+import net.minecraftforge.common.util.Constants;
 
 import java.util.*;
 
@@ -89,18 +93,37 @@ public class SpecializationManager {
         return new ArrayList<>(specializations.values());
     }
 
-    public void savePlayerSpecializations(EntityPlayer player) {
-        // Implement saving player specializations to NBT or database
+    public void savePlayerSpecializations(EntityPlayer player, NBTTagCompound compound) {
+        UUID playerId = player.getUniqueID();
+        Set<String> playerSpecs = playerSpecializations.get(playerId);
+        if (playerSpecs != null) {
+            NBTTagList specList = new NBTTagList();
+            for (String spec : playerSpecs) {
+                specList.appendTag(new NBTTagString(spec));
+            }
+            compound.setTag("Specializations", specList);
+        }
     }
 
-    public void loadPlayerSpecializations(EntityPlayer player) {
-        // Implement loading player specializations from NBT or database
+    public void loadPlayerSpecializations(EntityPlayer player, NBTTagCompound compound) {
+        UUID playerId = player.getUniqueID();
+        Set<String> playerSpecs = new HashSet<>();
+        if (compound.hasKey("Specializations", Constants.NBT.TAG_LIST)) {
+            NBTTagList specList = compound.getTagList("Specializations", Constants.NBT.TAG_STRING);
+            for (int i = 0; i < specList.tagCount(); i++) {
+                playerSpecs.add(specList.getStringTagAt(i));
+            }
+        }
+        playerSpecializations.put(playerId, playerSpecs);
     }
 
     public boolean canPlayerChooseSpecialization(EntityPlayer player, String specializationId) {
-        // Implement logic to check if a player can choose a specialization
-        // For example, check if the player has met certain requirements
-        return true;
+        int playerLevel = player.experienceLevel; // You might want to use your own leveling system here
+        Specialization spec = specializations.get(specializationId);
+        if (spec != null) {
+            return playerLevel >= spec.getRequiredLevel() && !playerHasSpecialization(player, specializationId);
+        }
+        return false;
     }
 
     public void resetPlayerSpecializations(EntityPlayer player) {
@@ -115,9 +138,30 @@ public class SpecializationManager {
     }
 
     public boolean canPlayerLearnMoreSpecializations(EntityPlayer player) {
-        // Implement logic to check if a player can learn more specializations
-        // For example, check against a maximum number of specializations
         int maxSpecializations = ConfigHandler.getMaxSpecializations();
         return getPlayerSpecializationCount(player) < maxSpecializations;
+    }
+
+    public void saveAllSpecializations(NBTTagCompound compound) {
+        NBTTagList specializationList = new NBTTagList();
+        for (Specialization spec : specializations.values()) {
+            NBTTagCompound specCompound = new NBTTagCompound();
+            spec.writeToNBT(specCompound);
+            specializationList.appendTag(specCompound);
+        }
+        compound.setTag("AllSpecializations", specializationList);
+    }
+
+    public void loadAllSpecializations(NBTTagCompound compound) {
+        specializations.clear();
+        if (compound.hasKey("AllSpecializations", Constants.NBT.TAG_LIST)) {
+            NBTTagList specializationList = compound.getTagList("AllSpecializations", Constants.NBT.TAG_COMPOUND);
+            for (int i = 0; i < specializationList.tagCount(); i++) {
+                NBTTagCompound specCompound = specializationList.getCompoundTagAt(i);
+                Specialization spec = new Specialization();
+                spec.readFromNBT(specCompound);
+                specializations.put(spec.getId(), spec);
+            }
+        }
     }
 }

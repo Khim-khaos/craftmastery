@@ -3,12 +3,14 @@ package com.craftmastery.config;
 import com.craftmastery.CraftMastery;
 import net.minecraftforge.common.config.Configuration;
 import net.minecraftforge.fml.client.event.ConfigChangedEvent;
+import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
 import java.io.File;
 import java.util.HashMap;
 import java.util.Map;
 
+@Mod.EventBusSubscriber(modid = CraftMastery.MODID)
 public class ConfigHandler {
     public static Configuration config;
 
@@ -16,6 +18,7 @@ public class ConfigHandler {
     private static int maxSpecializations;
     private static int baseExperiencePerAction;
     private static int baseLearningPointsPerLevel;
+    private static int maxLevel;
 
     // Specializations
     private static Map<String, String> specializations;
@@ -37,6 +40,7 @@ public class ConfigHandler {
         maxSpecializations = config.getInt("maxSpecializations", "general", 3, 1, 10, "Maximum number of specializations a player can have");
         baseExperiencePerAction = config.getInt("baseExperiencePerAction", "general", 1, 1, 100, "Base experience gained per action (breaking blocks, crafting, etc.)");
         baseLearningPointsPerLevel = config.getInt("baseLearningPointsPerLevel", "general", 1, 1, 10, "Base learning points gained per level");
+        maxLevel = config.getInt("maxLevel", "general", 100, 1, 1000, "Maximum level a player can reach");
 
         // Load specializations
         String[] specializationArray = config.getStringList("specializations", "specializations",
@@ -55,7 +59,7 @@ public class ConfigHandler {
 
         // Load recipe types
         recipeTypes = config.getStringList("recipeTypes", "recipes",
-                new String[]{"normal", "magic", "tech", "magitech"},
+                new String[]{"normal", "magic", "tech"},
                 "List of recipe types");
 
         if (config.hasChanged()) {
@@ -64,7 +68,7 @@ public class ConfigHandler {
     }
 
     @SubscribeEvent
-    public void onConfigChanged(ConfigChangedEvent.OnConfigChangedEvent event) {
+    public static void onConfigChanged(ConfigChangedEvent.OnConfigChangedEvent event) {
         if (event.getModID().equals(CraftMastery.MODID)) {
             loadConfig();
         }
@@ -82,15 +86,17 @@ public class ConfigHandler {
         return baseLearningPointsPerLevel;
     }
 
+    public static int getMaxLevel() {
+        return maxLevel;
+    }
+
     public static Map<String, String> getSpecializations() {
-        return specializations;
+        return new HashMap<>(specializations);
     }
 
     public static String[] getRecipeTypes() {
-        return recipeTypes;
+        return recipeTypes.clone();
     }
-
-    // Add more getter methods for other config options as needed
 
     public static void setRecipeLearningCost(String recipeId, int cost) {
         config.get("recipeCosts", recipeId, cost).set(cost);
@@ -103,15 +109,15 @@ public class ConfigHandler {
 
     public static void addSpecialization(String id, String name, String description) {
         specializations.put(id, name + "|" + description);
-        String[] updatedSpecs = specializations.entrySet().stream()
-                .map(entry -> entry.getKey() + "|" + entry.getValue())
-                .toArray(String[]::new);
-        config.get("specializations", "specializations", new String[]{}, "List of specializations").set(updatedSpecs);
-        config.save();
+        saveSpecializations();
     }
 
     public static void removeSpecialization(String id) {
         specializations.remove(id);
+        saveSpecializations();
+    }
+
+    private static void saveSpecializations() {
         String[] updatedSpecs = specializations.entrySet().stream()
                 .map(entry -> entry.getKey() + "|" + entry.getValue())
                 .toArray(String[]::new);

@@ -9,4 +9,11 @@ key.craftmastery.category=CraftMastery
 gui.craftmastery.level=Level: %d
 gui.craftmastery.experience=Experience: %d / %d
 gui.craftmastery.learningpoints=Learning Points: %d
+gui.craftmastery.specializations=Specializations
+gui.craftmastery.recipebook.normal=Normal Recipes
+gui.craftmastery.cost=Cost: %d LP
+item.craftmastery.recipe_book_normal.name=Normal Recipe Book
+item.craftmastery.recipe_book_magic.name=Magic Recipe Book
+item.craftmastery.recipe_book_tech.name=Tech Recipe Book
+
 

@@ -6,6 +6,12 @@ item.recipe_book_magitech.name=Магитехническая книга рец�
 key.opengui.desc=Открыть интерфейс CraftMastery
 key.craftmastery.category=CraftMastery
 
-gui.craftmastery.level=Уровень: %d
-gui.craftmastery.experience=Опыт: %d / %d
-gui.craftmastery.learningpoints=Очки обучения: %d
+gui.craftmastery.level=Level: %d
+gui.craftmastery.experience=Experience: %d / %d
+gui.craftmastery.learningpoints=Learning Points: %d
+gui.craftmastery.specializations=Specializations
+gui.craftmastery.recipebook.normal=Normal Recipes
+gui.craftmastery.cost=Cost: %d LP
+item.craftmastery.recipe_book_normal.name=Normal Recipe Book
+item.craftmastery.recipe_book_magic.name=Magic Recipe Book
+item.craftmastery.recipe_book_tech.name=Tech Recipe Book

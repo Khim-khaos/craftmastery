@@ -1,6 +1,7 @@
 package com.craftmastery.player;
 
 import com.craftmastery.config.ConfigHandler;
+import com.craftmastery.specialization.Specialization;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.nbt.NBTTagList;
 import net.minecraft.nbt.NBTTagString;
@@ -8,6 +9,8 @@ import net.minecraftforge.common.util.Constants;
 
 import java.util.HashSet;
 import java.util.Set;
+import java.util.EnumMap;
+import java.util.Map;
 
 public class PlayerData {
     private int level;
@@ -15,6 +18,7 @@ public class PlayerData {
     private int learningPoints;
     private int craftResetPoints;
     private Set<String> unlockedRecipes;
+    private Map<Specialization, Integer> specializations;
 
     public PlayerData() {
         this.level = 1;
@@ -22,6 +26,7 @@ public class PlayerData {
         this.learningPoints = 0;
         this.craftResetPoints = 0;
         this.unlockedRecipes = new HashSet<>();
+        this.specializations = new EnumMap<>(Specialization.class);
     }
 
     public int getLevel() {
@@ -101,6 +106,18 @@ public class PlayerData {
         return craftResetPoints;
     }
 
+    public void addSpecializationLevel(Specialization specialization, int levels) {
+        specializations.put(specialization, specializations.getOrDefault(specialization, 0) + levels);
+    }
+
+    public int getSpecializationLevel(Specialization specialization) {
+        return specializations.getOrDefault(specialization, 0);
+    }
+
+    public Map<Specialization, Integer> getSpecializations() {
+        return new EnumMap<>(specializations);
+    }
+
     public void saveNBTData(NBTTagCompound compound) {
         compound.setInteger("Level", level);
         compound.setInteger("Experience", experience);
@@ -112,6 +129,12 @@ public class PlayerData {
             recipeList.appendTag(new NBTTagString(recipe));
         }
         compound.setTag("UnlockedRecipes", recipeList);
+
+        NBTTagCompound specializationsNBT = new NBTTagCompound();
+        for (Map.Entry<Specialization, Integer> entry : specializations.entrySet()) {
+            specializationsNBT.setInteger(entry.getKey().name(), entry.getValue());
+        }
+        compound.setTag("Specializations", specializationsNBT);
     }
 
     public void loadNBTData(NBTTagCompound compound) {
@@ -124,6 +147,14 @@ public class PlayerData {
         NBTTagList recipeList = compound.getTagList("UnlockedRecipes", Constants.NBT.TAG_STRING);
         for (int i = 0; i < recipeList.tagCount(); i++) {
             unlockedRecipes.add(recipeList.getStringTagAt(i));
+        }
+
+        specializations.clear();
+        NBTTagCompound specializationsNBT = compound.getCompoundTag("Specializations");
+        for (Specialization spec : Specialization.values()) {
+            if (specializationsNBT.hasKey(spec.name())) {
+                specializations.put(spec, specializationsNBT.getInteger(spec.name()));
+            }
         }
     }
 }

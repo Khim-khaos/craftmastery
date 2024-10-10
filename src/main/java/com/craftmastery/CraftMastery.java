@@ -5,9 +5,9 @@ import com.craftmastery.config.ConfigHandler;
 import com.craftmastery.crafting.CraftManager;
 import com.craftmastery.gui.GuiHandler;
 import com.craftmastery.handler.KeyHandler;
+import com.craftmastery.item.ModItems;
 import com.craftmastery.network.NetworkHandler;
 import com.craftmastery.player.PlayerDataManager;
-import com.craftmastery.progression.ExperienceManager;
 import com.craftmastery.proxy.CommonProxy;
 import com.craftmastery.specialization.SpecializationManager;
 import net.minecraftforge.common.MinecraftForge;
@@ -15,6 +15,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.*;
 import net.minecraftforge.fml.common.network.NetworkRegistry;
+import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 @Mod(modid = CraftMastery.MODID, name = CraftMastery.NAME, version = CraftMastery.VERSION)
@@ -29,47 +30,53 @@ public class CraftMastery {
     @SidedProxy(clientSide = "com.craftmastery.proxy.ClientProxy", serverSide = "com.craftmastery.proxy.ServerProxy")
     public static CommonProxy proxy;
 
-    public static Logger logger;
+    public static final Logger LOGGER = LogManager.getLogger(MODID);
 
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event) {
-        logger = event.getModLog();
+        LOGGER.info("Pre-initialization started");
         ConfigHandler.init(event.getSuggestedConfigurationFile());
         MinecraftForge.EVENT_BUS.register(new ConfigHandler());
         proxy.preInit(event);
         NetworkHandler.registerMessages();
+        ModItems.init();
 
         if (event.getSide().isClient()) {
             KeyHandler.registerKeyBindings();
         }
+        LOGGER.info("Pre-initialization completed");
     }
 
     @Mod.EventHandler
     public void init(FMLInitializationEvent event) {
+        LOGGER.info("Initialization started");
         proxy.init(event);
         NetworkRegistry.INSTANCE.registerGuiHandler(this, new GuiHandler());
         CraftManager.getInstance().initializeRecipes();
         SpecializationManager.getInstance().initializeSpecializations();
 
-        MinecraftForge.EVENT_BUS.register(ExperienceManager.getInstance());
-        MinecraftForge.EVENT_BUS.register(PlayerDataManager.getInstance());
         if (event.getSide().isClient()) {
             MinecraftForge.EVENT_BUS.register(new KeyHandler());
         }
+        LOGGER.info("Initialization completed");
     }
 
     @Mod.EventHandler
     public void postInit(FMLPostInitializationEvent event) {
+        LOGGER.info("Post-initialization started");
         proxy.postInit(event);
+        LOGGER.info("Post-initialization completed");
     }
 
     @Mod.EventHandler
     public void serverStarting(FMLServerStartingEvent event) {
+        LOGGER.info("Server starting, registering commands");
         event.registerServerCommand(new CommandCreateRecipeBook());
     }
 
     @Mod.EventHandler
     public void serverStopping(FMLServerStoppingEvent event) {
+        LOGGER.info("Server stopping, saving player data");
         PlayerDataManager.getInstance().saveAllPlayerData();
     }
 }
