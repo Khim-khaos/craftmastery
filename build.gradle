@@ -18,9 +18,9 @@ apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 apply plugin: 'net.minecraftforge.gradle.forge'
 
-group = 'com.example.civilization'
+group = 'com.craftmastery'
 version = '1.0'
-archivesBaseName = 'civilization'
+archivesBaseName = ''
 
 ext {
     mod_version = version
@@ -60,8 +60,8 @@ processResources {
         include 'mcmod.info'
         // Замена переменных в файлах ресурсов
         expand 'version': project.version,
-                'mod_id': 'civilization',
-                'mod_name': 'Civilization Mod',
+                'mod_id': 'craftmastery',
+                'mod_name': 'Craft Mastery',
                 'mod_author': 'Khim_Khaosow',
                 'mod_description': mod_description,
                 'mc_version': '1.12.2'
