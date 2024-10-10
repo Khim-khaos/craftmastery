@@ -1,18 +1,20 @@
 package com.craftmastery;
 
+import com.craftmastery.command.CommandCreateRecipeBook;
 import com.craftmastery.config.ConfigHandler;
 import com.craftmastery.crafting.CraftManager;
+import com.craftmastery.gui.GuiHandler;
+import com.craftmastery.handler.KeyHandler;
 import com.craftmastery.network.NetworkHandler;
 import com.craftmastery.player.PlayerDataManager;
-import com.craftmastery.progression.LevelManager;
+import com.craftmastery.progression.ExperienceManager;
 import com.craftmastery.proxy.CommonProxy;
 import com.craftmastery.specialization.SpecializationManager;
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
-import net.minecraftforge.fml.common.event.FMLInitializationEvent;
-import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
-import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
-import net.minecraftforge.fml.common.event.FMLServerStartingEvent;
+import net.minecraftforge.fml.common.event.*;
+import net.minecraftforge.fml.common.network.NetworkRegistry;
 import org.apache.logging.log4j.Logger;
 
 @Mod(modid = CraftMastery.MODID, name = CraftMastery.NAME, version = CraftMastery.VERSION)
@@ -32,16 +34,26 @@ public class CraftMastery {
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event) {
         logger = event.getModLog();
-        ConfigHandler.init(event);
+        ConfigHandler.init(event.getSuggestedConfigurationFile());
         proxy.preInit(event);
         NetworkHandler.registerMessages();
+
+        if (event.getSide().isClient()) {
+            KeyHandler.registerKeyBindings();
+        }
     }
 
     @Mod.EventHandler
     public void init(FMLInitializationEvent event) {
         proxy.init(event);
-        CraftManager.getInstance().initializeBlockedRecipes();
+        NetworkRegistry.INSTANCE.registerGuiHandler(this, new GuiHandler());
+        CraftManager.getInstance().initializeRecipes();
         SpecializationManager.getInstance().initializeSpecializations();
+
+        MinecraftForge.EVENT_BUS.register(new ExperienceManager());
+        if (event.getSide().isClient()) {
+            MinecraftForge.EVENT_BUS.register(new KeyHandler());
+        }
     }
 
     @Mod.EventHandler
@@ -51,18 +63,11 @@ public class CraftMastery {
 
     @Mod.EventHandler
     public void serverStarting(FMLServerStartingEvent event) {
-        // Регистрация серверных команд, если они есть
+        event.registerServerCommand(new CommandCreateRecipeBook());
     }
 
-    public static void log(String message) {
-        logger.info(message);
-    }
-
-    public static void logError(String message) {
-        logger.error(message);
-    }
-
-    public static void logWarn(String message) {
-        logger.warn(message);
+    @Mod.EventHandler
+    public void serverStopping(FMLServerStoppingEvent event) {
+        PlayerDataManager.getInstance().saveAllPlayerData();
     }
 }

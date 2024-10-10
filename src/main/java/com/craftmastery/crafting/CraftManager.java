@@ -10,12 +10,12 @@ import java.util.*;
 
 public class CraftManager {
     private static CraftManager instance;
-    private Set<String> blockedRecipes;
     private Map<String, Integer> recipeLearningCosts;
+    private Map<String, List<IRecipe>> recipesByType;
 
     private CraftManager() {
-        blockedRecipes = new HashSet<>();
         recipeLearningCosts = new HashMap<>();
+        recipesByType = new HashMap<>();
     }
 
     public static CraftManager getInstance() {
@@ -25,17 +25,23 @@ public class CraftManager {
         return instance;
     }
 
-    public void initializeBlockedRecipes() {
+    public void initializeRecipes() {
         for (IRecipe recipe : ForgeRegistries.RECIPES) {
             String recipeId = recipe.getRegistryName().toString();
-            blockedRecipes.add(recipeId);
+            String recipeType = getRecipeType(recipe);
+            recipesByType.computeIfAbsent(recipeType, k -> new ArrayList<>()).add(recipe);
             recipeLearningCosts.put(recipeId, 1); // Default cost
         }
     }
 
+    private String getRecipeType(IRecipe recipe) {
+        // Implement logic to determine recipe type
+        // This is a placeholder implementation
+        return "normal";
+    }
+
     public boolean isRecipeUnlocked(EntityPlayer player, String recipeId) {
-        return !blockedRecipes.contains(recipeId) ||
-                PlayerDataManager.getInstance().getPlayerData(player).hasUnlockedRecipe(recipeId);
+        return PlayerDataManager.getInstance().getPlayerData(player).hasUnlockedRecipe(recipeId);
     }
 
     public void unlockRecipeForPlayer(EntityPlayer player, String recipeId) {
@@ -68,5 +74,13 @@ public class CraftManager {
 
     public void setRecipeLearningCost(String recipeId, int cost) {
         recipeLearningCosts.put(recipeId, cost);
+    }
+
+    public List<IRecipe> getRecipesByType(String type) {
+        return recipesByType.getOrDefault(type, new ArrayList<>());
+    }
+
+    public IRecipe getRecipeById(String recipeId) {
+        return ForgeRegistries.RECIPES.getValue(new ResourceLocation(recipeId));
     }
 }
