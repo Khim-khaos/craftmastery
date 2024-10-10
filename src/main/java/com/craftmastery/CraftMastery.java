@@ -35,6 +35,7 @@ public class CraftMastery {
     public void preInit(FMLPreInitializationEvent event) {
         logger = event.getModLog();
         ConfigHandler.init(event.getSuggestedConfigurationFile());
+        MinecraftForge.EVENT_BUS.register(new ConfigHandler());
         proxy.preInit(event);
         NetworkHandler.registerMessages();
 
@@ -50,7 +51,8 @@ public class CraftMastery {
         CraftManager.getInstance().initializeRecipes();
         SpecializationManager.getInstance().initializeSpecializations();
 
-        MinecraftForge.EVENT_BUS.register(new ExperienceManager());
+        MinecraftForge.EVENT_BUS.register(ExperienceManager.getInstance());
+        MinecraftForge.EVENT_BUS.register(PlayerDataManager.getInstance());
         if (event.getSide().isClient()) {
             MinecraftForge.EVENT_BUS.register(new KeyHandler());
         }

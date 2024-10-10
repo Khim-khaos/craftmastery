@@ -1,19 +1,13 @@
 package com.craftmastery.crafting;
 
-import com.craftmastery.player.PlayerData;
 import com.craftmastery.player.PlayerDataManager;
+import com.craftmastery.player.PlayerData;
 import net.minecraft.entity.player.EntityPlayer;
-
-import java.util.HashMap;
-import java.util.Map;
 
 public class CraftUnlockManager {
     private static CraftUnlockManager instance;
-    private Map<String, Integer> craftUnlockCosts;
 
-    private CraftUnlockManager() {
-        craftUnlockCosts = new HashMap<>();
-    }
+    private CraftUnlockManager() {}
 
     public static CraftUnlockManager getInstance() {
         if (instance == null) {
@@ -22,20 +16,11 @@ public class CraftUnlockManager {
         return instance;
     }
 
-    public void setCraftUnlockCost(String recipeId, int cost) {
-        craftUnlockCosts.put(recipeId, cost);
-    }
-
-    public boolean canUnlockCraft(EntityPlayer player, String recipeId) {
+    public boolean unlockRecipe(EntityPlayer player, String recipeId) {
         PlayerData playerData = PlayerDataManager.getInstance().getPlayerData(player);
-        int cost = craftUnlockCosts.getOrDefault(recipeId, 1);
-        return playerData.getLearningPoints() >= cost;
-    }
+        int cost = CraftManager.getInstance().getRecipeLearningCost(recipeId);
 
-    public boolean unlockCraft(EntityPlayer player, String recipeId) {
-        if (canUnlockCraft(player, recipeId)) {
-            PlayerData playerData = PlayerDataManager.getInstance().getPlayerData(player);
-            int cost = craftUnlockCosts.getOrDefault(recipeId, 1);
+        if (playerData.getLearningPoints() >= cost) {
             if (playerData.useLearningPoints(cost)) {
                 CraftManager.getInstance().unlockRecipeForPlayer(player, recipeId);
                 return true;
@@ -44,12 +29,20 @@ public class CraftUnlockManager {
         return false;
     }
 
-    public boolean resetCraft(EntityPlayer player, String recipeId) {
+    public boolean resetRecipe(EntityPlayer player, String recipeId) {
         PlayerData playerData = PlayerDataManager.getInstance().getPlayerData(player);
-        if (playerData.useCraftResetPoints(1)) {
+        int resetCost = 1; // You might want to make this configurable
+
+        if (playerData.useCraftResetPoints(resetCost)) {
             CraftManager.getInstance().lockRecipeForPlayer(player, recipeId);
+            int refundPoints = CraftManager.getInstance().getRecipeLearningCost(recipeId) / 2; // Refund half the cost
+            playerData.addLearningPoints(refundPoints);
             return true;
         }
         return false;
+    }
+
+    public void grantCraftResetPoints(EntityPlayer player, int amount) {
+        PlayerDataManager.getInstance().getPlayerData(player).addCraftResetPoints(amount);
     }
 }

@@ -1,5 +1,6 @@
 package com.craftmastery.player;
 
+import com.craftmastery.config.ConfigHandler;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.nbt.NBTTagList;
 import net.minecraft.nbt.NBTTagString;
@@ -12,12 +13,14 @@ public class PlayerData {
     private int level;
     private int experience;
     private int learningPoints;
+    private int craftResetPoints;
     private Set<String> unlockedRecipes;
 
     public PlayerData() {
         this.level = 1;
         this.experience = 0;
         this.learningPoints = 0;
+        this.craftResetPoints = 0;
         this.unlockedRecipes = new HashSet<>();
     }
 
@@ -27,6 +30,10 @@ public class PlayerData {
 
     public int getExperience() {
         return experience;
+    }
+
+    public int getLearningPoints() {
+        return learningPoints;
     }
 
     public void addExperience(int amount) {
@@ -45,15 +52,13 @@ public class PlayerData {
 
     private void levelUp() {
         this.level++;
-        this.learningPoints += 1; // You can adjust this value
+        this.learningPoints += ConfigHandler.getBaseLearningPointsPerLevel();
+        // Здесь можно добавить дополнительную логику при повышении уровня
     }
 
     public int getExpForNextLevel() {
-        return this.level * 100; // Simple linear progression
-    }
-
-    public int getLearningPoints() {
-        return learningPoints;
+        // Простая формула для расчета опыта, необходимого для следующего уровня
+        return this.level * 100;
     }
 
     public boolean useLearningPoints(int amount) {
@@ -62,6 +67,10 @@ public class PlayerData {
             return true;
         }
         return false;
+    }
+
+    public void addLearningPoints(int amount) {
+        this.learningPoints += amount;
     }
 
     public void unlockRecipe(String recipeId) {
@@ -76,10 +85,27 @@ public class PlayerData {
         return new HashSet<>(unlockedRecipes);
     }
 
+    public boolean useCraftResetPoints(int amount) {
+        if (this.craftResetPoints >= amount) {
+            this.craftResetPoints -= amount;
+            return true;
+        }
+        return false;
+    }
+
+    public void addCraftResetPoints(int amount) {
+        this.craftResetPoints += amount;
+    }
+
+    public int getCraftResetPoints() {
+        return craftResetPoints;
+    }
+
     public void saveNBTData(NBTTagCompound compound) {
         compound.setInteger("Level", level);
         compound.setInteger("Experience", experience);
         compound.setInteger("LearningPoints", learningPoints);
+        compound.setInteger("CraftResetPoints", craftResetPoints);
 
         NBTTagList recipeList = new NBTTagList();
         for (String recipe : unlockedRecipes) {
@@ -92,6 +118,7 @@ public class PlayerData {
         level = compound.getInteger("Level");
         experience = compound.getInteger("Experience");
         learningPoints = compound.getInteger("LearningPoints");
+        craftResetPoints = compound.getInteger("CraftResetPoints");
 
         unlockedRecipes.clear();
         NBTTagList recipeList = compound.getTagList("UnlockedRecipes", Constants.NBT.TAG_STRING);

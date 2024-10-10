@@ -48,6 +48,10 @@ public class CraftManager {
         PlayerDataManager.getInstance().getPlayerData(player).unlockRecipe(recipeId);
     }
 
+    public void lockRecipeForPlayer(EntityPlayer player, String recipeId) {
+        PlayerDataManager.getInstance().getPlayerData(player).getUnlockedRecipes().remove(recipeId);
+    }
+
     public boolean canPlayerLearnRecipe(EntityPlayer player, String recipeId) {
         if (isRecipeUnlocked(player, recipeId)) {
             return false; // Player already knows this recipe
@@ -82,5 +86,9 @@ public class CraftManager {
 
     public IRecipe getRecipeById(String recipeId) {
         return ForgeRegistries.RECIPES.getValue(new ResourceLocation(recipeId));
+    }
+
+    public List<String> getUnlockedRecipesForPlayer(EntityPlayer player) {
+        return new ArrayList<>(PlayerDataManager.getInstance().getPlayerData(player).getUnlockedRecipes());
     }
 }

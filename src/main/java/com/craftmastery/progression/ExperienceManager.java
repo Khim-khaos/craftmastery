@@ -1,32 +1,33 @@
 package com.craftmastery.progression;
 
 import com.craftmastery.player.PlayerDataManager;
+import com.craftmastery.config.ConfigHandler;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.item.ItemStack;
 import net.minecraftforge.event.world.BlockEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
 public class ExperienceManager {
+    private static ExperienceManager instance;
+
+    private ExperienceManager() {}
+
+    public static ExperienceManager getInstance() {
+        if (instance == null) {
+            instance = new ExperienceManager();
+        }
+        return instance;
+    }
+
+    public void addExperience(EntityPlayer player, int amount) {
+        PlayerDataManager.getInstance().getPlayerData(player).addExperience(amount);
+    }
+
     @SubscribeEvent
     public void onBlockBreak(BlockEvent.BreakEvent event) {
         EntityPlayer player = event.getPlayer();
-        // Add experience for breaking blocks
-        addExperience(player, 1);
+        int expGain = ConfigHandler.getBaseExperiencePerAction();
+        addExperience(player, expGain);
     }
 
-    @SubscribeEvent
-    public void onBlockPlace(BlockEvent.PlaceEvent event) {
-        EntityPlayer player = event.getPlayer();
-        // Add experience for placing blocks
-        addExperience(player, 1);
-    }
-
-    public void onItemCrafted(EntityPlayer player, ItemStack crafted) {
-        // Add experience for crafting items
-        addExperience(player, crafted.getCount());
-    }
-
-    private void addExperience(EntityPlayer player, int amount) {
-        PlayerDataManager.getInstance().getPlayerData(player).addExperience(amount);
-    }
+    // Добавьте здесь другие методы для начисления опыта за различные действия
 }
