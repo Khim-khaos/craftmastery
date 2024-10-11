@@ -1,9 +1,9 @@
-item.recipe_book_normal.name=Обычная книга рецептов
-item.recipe_book_magic.name=Магическая книга рецептов
-item.recipe_book_tech.name=Техническая книга рецептов
-item.recipe_book_magitech.name=Магитехническая книга рецептов
+item.recipe_book_normal.name=Normal Recipe Book
+item.recipe_book_magic.name=Magic Recipe Book
+item.recipe_book_tech.name=Tech Recipe Book
+item.recipe_book_magitech.name=Magitech Recipe Book
 
-key.opengui.desc=Открыть интерфейс CraftMastery
+key.opengui.desc=Open CraftMastery GUI
 key.craftmastery.category=CraftMastery
 
 gui.craftmastery.level=Level: %d
@@ -15,3 +15,15 @@ gui.craftmastery.cost=Cost: %d LP
 item.craftmastery.recipe_book_normal.name=Normal Recipe Book
 item.craftmastery.recipe_book_magic.name=Magic Recipe Book
 item.craftmastery.recipe_book_tech.name=Tech Recipe Book
+
+gui.addrecipe.title=Add Recipe
+gui.addrecipe.recipeid=Recipe ID:
+gui.addrecipe.specialization=Specialization:
+gui.addrecipe.learningcost=Learning Cost:
+gui.addrecipe.add=Add Recipe
+
+gui.playerstats.level=Level: %d
+gui.playerstats.experience=Experience: %d / %d
+gui.playerstats.learningpoints=Learning Points: %d
+gui.playerstats.resetpoints=Specialization Reset Points: %d
+gui.playerstats.specializations=Specializations

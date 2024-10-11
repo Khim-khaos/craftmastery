@@ -164,4 +164,8 @@ public class SpecializationManager {
             }
         }
     }
+
+    public boolean hasSpecialization(String specializationId) {
+        return specializations.containsKey(specializationId);
+    }
 }

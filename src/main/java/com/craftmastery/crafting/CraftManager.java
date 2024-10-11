@@ -1,14 +1,18 @@
 package com.craftmastery.crafting;
 
 import com.craftmastery.player.PlayerDataManager;
+import com.craftmastery.specialization.SpecializationManager;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.crafting.IRecipe;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fml.common.registry.ForgeRegistries;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.util.*;
 
 public class CraftManager {
+    private static final Logger LOGGER = LogManager.getLogger();
     private static CraftManager instance;
     private Map<String, Integer> recipeLearningCosts;
     private Map<String, List<IRecipe>> recipesByType;
@@ -90,5 +94,23 @@ public class CraftManager {
 
     public List<String> getUnlockedRecipesForPlayer(EntityPlayer player) {
         return new ArrayList<>(PlayerDataManager.getInstance().getPlayerData(player).getUnlockedRecipes());
+    }
+
+    public void addRecipeToSpecialization(String recipeId, String specializationId, int learningCost) {
+        IRecipe recipe = ForgeRegistries.RECIPES.getValue(new ResourceLocation(recipeId));
+        if (recipe == null) {
+            LOGGER.error("Attempted to add non-existent recipe: " + recipeId);
+            return;
+        }
+
+        if (!SpecializationManager.getInstance().hasSpecialization(specializationId)) {
+            LOGGER.error("Attempted to add recipe to non-existent specialization: " + specializationId);
+            return;
+        }
+
+        recipesByType.computeIfAbsent(specializationId, k -> new ArrayList<>()).add(recipe);
+        setRecipeLearningCost(recipeId, learningCost);
+
+        LOGGER.info("Added recipe " + recipeId + " to specialization " + specializationId + " with learning cost " + learningCost);
     }
 }

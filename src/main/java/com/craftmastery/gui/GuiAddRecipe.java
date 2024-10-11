@@ -1,84 +1,111 @@
 package com.craftmastery.gui;
 
-import com.craftmastery.CraftMastery;
 import com.craftmastery.crafting.CraftManager;
-import com.craftmastery.specialization.Specialization;
 import net.minecraft.client.gui.GuiButton;
 import net.minecraft.client.gui.GuiScreen;
 import net.minecraft.client.gui.GuiTextField;
-import net.minecraft.client.renderer.GlStateManager;
-import net.minecraft.util.ResourceLocation;
+import net.minecraft.client.resources.I18n;
+import org.lwjgl.input.Keyboard;
 
 import java.io.IOException;
 
 public class GuiAddRecipe extends GuiScreen {
-    private static final ResourceLocation TEXTURE = new ResourceLocation(CraftMastery.MODID, "textures/gui/add_recipe.png");
-    private Specialization specialization;
     private GuiTextField recipeIdField;
-
-    public GuiAddRecipe(Specialization specialization) {
-        this.specialization = specialization;
-    }
+    private GuiTextField specializationField;
+    private GuiTextField learningCostField;
+    private GuiButton addButton;
 
     @Override
     public void initGui() {
-        super.initGui();
-        int i = (this.width - 248) / 2;
-        int j = (this.height - 166) / 2;
+        Keyboard.enableRepeatEvents(true);
+        int centerX = width / 2;
+        int centerY = height / 2;
 
-        recipeIdField = new GuiTextField(0, this.fontRenderer, i + 10, j + 50, 228, 20);
+        recipeIdField = new GuiTextField(0, fontRenderer, centerX - 100, centerY - 40, 200, 20);
         recipeIdField.setFocused(true);
+        recipeIdField.setCanLoseFocus(true);
+        recipeIdField.setMaxStringLength(100);
 
-        this.buttonList.add(new GuiButton(0, i + 10, j + 80, 100, 20, "Add Recipe"));
-        this.buttonList.add(new GuiButton(1, i + 138, j + 80, 100, 20, "Cancel"));
+        specializationField = new GuiTextField(1, fontRenderer, centerX - 100, centerY, 200, 20);
+        specializationField.setCanLoseFocus(true);
+        specializationField.setMaxStringLength(50);
+
+        learningCostField = new GuiTextField(2, fontRenderer, centerX - 100, centerY + 40, 200, 20);
+        learningCostField.setCanLoseFocus(true);
+        learningCostField.setMaxStringLength(10);
+
+        addButton = new GuiButton(0, centerX - 50, centerY + 80, 100, 20, I18n.format("gui.addrecipe.add"));
+        buttonList.add(addButton);
     }
 
     @Override
-    protected void actionPerformed(GuiButton button) throws IOException {
-        if (button.id == 0) {
-            String recipeId = recipeIdField.getText().trim();
-            if (!recipeId.isEmpty()) {
-                CraftManager.getInstance().addRecipeToSpecialization(recipeId, specialization.getId());
-                mc.displayGuiScreen(new GuiSpecializationDetails(specialization));
-            }
-        } else if (button.id == 1) {
-            mc.displayGuiScreen(new GuiSpecializationDetails(specialization));
-        }
+    public void onGuiClosed() {
+        Keyboard.enableRepeatEvents(false);
+    }
+
+    @Override
+    public void updateScreen() {
+        recipeIdField.updateCursorCounter();
+        specializationField.updateCursorCounter();
+        learningCostField.updateCursorCounter();
     }
 
     @Override
     protected void keyTyped(char typedChar, int keyCode) throws IOException {
-        super.keyTyped(typedChar, keyCode);
+        if (keyCode == Keyboard.KEY_ESCAPE) {
+            mc.displayGuiScreen(null);
+            return;
+        }
+
         recipeIdField.textboxKeyTyped(typedChar, keyCode);
+        specializationField.textboxKeyTyped(typedChar, keyCode);
+        learningCostField.textboxKeyTyped(typedChar, keyCode);
+
+        if (keyCode == Keyboard.KEY_RETURN) {
+            actionPerformed(addButton);
+        }
     }
 
     @Override
     protected void mouseClicked(int mouseX, int mouseY, int mouseButton) throws IOException {
         super.mouseClicked(mouseX, mouseY, mouseButton);
         recipeIdField.mouseClicked(mouseX, mouseY, mouseButton);
+        specializationField.mouseClicked(mouseX, mouseY, mouseButton);
+        learningCostField.mouseClicked(mouseX, mouseY, mouseButton);
     }
 
     @Override
     public void drawScreen(int mouseX, int mouseY, float partialTicks) {
-        this.drawDefaultBackground();
-        GlStateManager.color(1.0F, 1.0F, 1.0F, 1.0F);
-        this.mc.getTextureManager().bindTexture(TEXTURE);
-        int i = (this.width - 248) / 2;
-        int j = (this.height - 166) / 2;
-        this.drawTexturedModalRect(i, j, 0, 0, 248, 166);
-
-        super.drawScreen(mouseX, mouseY, partialTicks);
-
-        this.fontRenderer.drawString("Add Recipe to " + specialization.getName(), i + 10, j + 10, 0x404040);
-        this.fontRenderer.drawString("Recipe ID:", i + 10, j + 40, 0x404040);
+        drawDefaultBackground();
+        drawCenteredString(fontRenderer, I18n.format("gui.addrecipe.title"), width / 2, 20, 0xFFFFFF);
 
         recipeIdField.drawTextBox();
+        specializationField.drawTextBox();
+        learningCostField.drawTextBox();
+
+        drawString(fontRenderer, I18n.format("gui.addrecipe.recipeid"), recipeIdField.x, recipeIdField.y - 15, 0xFFFFFF);
+        drawString(fontRenderer, I18n.format("gui.addrecipe.specialization"), specializationField.x, specializationField.y - 15, 0xFFFFFF);
+        drawString(fontRenderer, I18n.format("gui.addrecipe.learningcost"), learningCostField.x, learningCostField.y - 15, 0xFFFFFF);
+
+        super.drawScreen(mouseX, mouseY, partialTicks);
     }
 
     @Override
-    public void updateScreen() {
-        super.updateScreen();
-        recipeIdField.updateCursorCounter();
+    protected void actionPerformed(GuiButton button) throws IOException {
+        if (button.id == 0) {
+            String recipeId = recipeIdField.getText();
+            String specializationId = specializationField.getText();
+            int learningCost;
+            try {
+                learningCost = Integer.parseInt(learningCostField.getText());
+            } catch (NumberFormatException e) {
+                // Handle error if not a number
+                return;
+            }
+
+            CraftManager.getInstance().addRecipeToSpecialization(recipeId, specializationId, learningCost);
+            this.mc.displayGuiScreen(null);
+        }
     }
 
     @Override

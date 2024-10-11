@@ -16,4 +16,14 @@ item.craftmastery.recipe_book_normal.name=Normal Recipe Book
 item.craftmastery.recipe_book_magic.name=Magic Recipe Book
 item.craftmastery.recipe_book_tech.name=Tech Recipe Book
 
+gui.addrecipe.title=Add Recipe
+gui.addrecipe.recipeid=Recipe ID:
+gui.addrecipe.specialization=Specialization:
+gui.addrecipe.learningcost=Learning Cost:
+gui.addrecipe.add=Add Recipe
 
+gui.playerstats.level=Level: %d
+gui.playerstats.experience=Experience: %d / %d
+gui.playerstats.learningpoints=Learning Points: %d
+gui.playerstats.resetpoints=Specialization Reset Points: %d
+gui.playerstats.specializations=Specializations
