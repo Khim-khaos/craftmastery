@@ -1,30 +1,27 @@
 package com.craftmastery.player;
 
-import com.craftmastery.config.ConfigHandler;
+import com.craftmastery.specialization.Specialization;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.nbt.NBTTagList;
 import net.minecraft.nbt.NBTTagString;
 import net.minecraftforge.common.util.Constants;
 
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 public class PlayerData {
     private int level;
     private int experience;
     private int learningPoints;
-    private int specializationResetPoints;
-    private Map<String, Integer> specializations;
+    private int craftResetPoints;
+    private Map<String, Integer> specializationLevels;
     private Set<String> unlockedRecipes;
 
     public PlayerData() {
         this.level = 1;
         this.experience = 0;
         this.learningPoints = 0;
-        this.specializationResetPoints = 0;
-        this.specializations = new HashMap<>();
+        this.craftResetPoints = 0;
+        this.specializationLevels = new HashMap<>();
         this.unlockedRecipes = new HashSet<>();
     }
 
@@ -32,39 +29,32 @@ public class PlayerData {
         return level;
     }
 
+    public void setLevel(int level) {
+        this.level = level;
+    }
+
     public int getExperience() {
         return experience;
+    }
+
+    public void setExperience(int experience) {
+        this.experience = experience;
+    }
+
+    public void addExperience(int amount) {
+        this.experience += amount;
     }
 
     public int getLearningPoints() {
         return learningPoints;
     }
 
-    public Map<String, Integer> getSpecializations() {
-        return new HashMap<>(specializations);
+    public void setLearningPoints(int learningPoints) {
+        this.learningPoints = learningPoints;
     }
 
-    public void addExperience(int amount) {
-        this.experience += amount;
-        checkLevelUp();
-    }
-
-    private void checkLevelUp() {
-        int expForNextLevel = getExpForNextLevel();
-        while (this.experience >= expForNextLevel) {
-            this.experience -= expForNextLevel;
-            levelUp();
-            expForNextLevel = getExpForNextLevel();
-        }
-    }
-
-    private void levelUp() {
-        this.level++;
-        this.learningPoints += ConfigHandler.getBaseLearningPointsPerLevel();
-    }
-
-    public int getExpForNextLevel() {
-        return this.level * 100;
+    public void addLearningPoints(int amount) {
+        this.learningPoints += amount;
     }
 
     public boolean useLearningPoints(int amount) {
@@ -75,85 +65,85 @@ public class PlayerData {
         return false;
     }
 
-    public void addLearningPoints(int amount) {
-        this.learningPoints += amount;
+    public int getCraftResetPoints() {
+        return craftResetPoints;
     }
 
-    public int getSpecializationResetPoints() {
-        return specializationResetPoints;
-    }
-
-    public void setSpecializationResetPoints(int points) {
-        this.specializationResetPoints = points;
-    }
-
-    public void addSpecializationResetPoints(int points) {
-        this.specializationResetPoints += points;
-    }
-
-    public boolean useSpecializationResetPoints(int points) {
-        if (this.specializationResetPoints >= points) {
-            this.specializationResetPoints -= points;
+    public boolean useCraftResetPoints(int points) {
+        if (craftResetPoints >= points) {
+            craftResetPoints -= points;
             return true;
         }
         return false;
     }
 
-    public void addSpecializationPoints(String specializationId, int points) {
-        specializations.put(specializationId, specializations.getOrDefault(specializationId, 0) + points);
+    public void addCraftResetPoints(int points) {
+        craftResetPoints += points;
     }
 
-    public int getSpecializationPoints(String specializationId) {
-        return specializations.getOrDefault(specializationId, 0);
+    public Map<String, Integer> getSpecializationLevels() {
+        return specializationLevels;
     }
 
-    public void unlockRecipe(String recipeId) {
-        unlockedRecipes.add(recipeId);
+    public int getSpecializationLevel(String specializationId) {
+        return specializationLevels.getOrDefault(specializationId, 0);
+    }
+
+    public void setSpecializationLevel(String specializationId, int level) {
+        specializationLevels.put(specializationId, level);
+    }
+
+    public void incrementSpecializationLevel(String specializationId) {
+        specializationLevels.put(specializationId, getSpecializationLevel(specializationId) + 1);
+    }
+
+    public Set<String> getUnlockedRecipes() {
+        return unlockedRecipes;
     }
 
     public boolean hasUnlockedRecipe(String recipeId) {
         return unlockedRecipes.contains(recipeId);
     }
 
-    public Set<String> getUnlockedRecipes() {
-        return new HashSet<>(unlockedRecipes);
+    public void unlockRecipe(String recipeId) {
+        unlockedRecipes.add(recipeId);
     }
 
     public void saveNBTData(NBTTagCompound compound) {
         compound.setInteger("Level", level);
         compound.setInteger("Experience", experience);
         compound.setInteger("LearningPoints", learningPoints);
-        compound.setInteger("SpecializationResetPoints", specializationResetPoints);
+        compound.setInteger("CraftResetPoints", craftResetPoints);
 
         NBTTagCompound specializationsNBT = new NBTTagCompound();
-        for (Map.Entry<String, Integer> entry : specializations.entrySet()) {
+        for (Map.Entry<String, Integer> entry : specializationLevels.entrySet()) {
             specializationsNBT.setInteger(entry.getKey(), entry.getValue());
         }
         compound.setTag("Specializations", specializationsNBT);
 
-        NBTTagList recipeList = new NBTTagList();
-        for (String recipe : unlockedRecipes) {
-            recipeList.appendTag(new NBTTagString(recipe));
+        NBTTagList recipesList = new NBTTagList();
+        for (String recipeId : unlockedRecipes) {
+            recipesList.appendTag(new NBTTagString(recipeId));
         }
-        compound.setTag("UnlockedRecipes", recipeList);
+        compound.setTag("UnlockedRecipes", recipesList);
     }
 
     public void loadNBTData(NBTTagCompound compound) {
         level = compound.getInteger("Level");
         experience = compound.getInteger("Experience");
         learningPoints = compound.getInteger("LearningPoints");
-        specializationResetPoints = compound.getInteger("SpecializationResetPoints");
+        craftResetPoints = compound.getInteger("CraftResetPoints");
 
-        specializations.clear();
+        specializationLevels.clear();
         NBTTagCompound specializationsNBT = compound.getCompoundTag("Specializations");
         for (String key : specializationsNBT.getKeySet()) {
-            specializations.put(key, specializationsNBT.getInteger(key));
+            specializationLevels.put(key, specializationsNBT.getInteger(key));
         }
 
         unlockedRecipes.clear();
-        NBTTagList recipeList = compound.getTagList("UnlockedRecipes", Constants.NBT.TAG_STRING);
-        for (int i = 0; i < recipeList.tagCount(); i++) {
-            unlockedRecipes.add(recipeList.getStringTagAt(i));
+        NBTTagList recipesList = compound.getTagList("UnlockedRecipes", Constants.NBT.TAG_STRING);
+        for (int i = 0; i < recipesList.tagCount(); i++) {
+            unlockedRecipes.add(recipesList.getStringTagAt(i));
         }
     }
 }

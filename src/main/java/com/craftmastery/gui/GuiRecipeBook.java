@@ -2,7 +2,6 @@ package com.craftmastery.gui;
 
 import com.craftmastery.CraftMastery;
 import com.craftmastery.crafting.CraftManager;
-import com.craftmastery.crafting.CraftUnlockManager;
 import com.craftmastery.item.ItemRecipeBook;
 import com.craftmastery.player.PlayerDataManager;
 import com.craftmastery.specialization.SpecializationManager;
@@ -20,14 +19,11 @@ import java.util.List;
 
 public class GuiRecipeBook extends GuiScreen {
     private static final ResourceLocation TEXTURE = new ResourceLocation(CraftMastery.MODID, "textures/gui/recipe_book.png");
-    private static final int GUI_WIDTH = 176;
-    private static final int GUI_HEIGHT = 166;
-    private static final int RECIPES_PER_PAGE = 5;
-
-    private final EntityPlayer player;
-    private final List<IRecipe> availableRecipes;
+    private EntityPlayer player;
+    private List<IRecipe> availableRecipes;
     private int currentPage = 0;
-    private final String recipeType;
+    private static final int RECIPES_PER_PAGE = 5;
+    private String recipeType;
 
     public GuiRecipeBook(EntityPlayer player, ItemStack recipeBook) {
         this.player = player;
@@ -49,24 +45,22 @@ public class GuiRecipeBook extends GuiScreen {
     @Override
     public void initGui() {
         super.initGui();
-        int guiLeft = (this.width - GUI_WIDTH) / 2;
-        int guiTop = (this.height - GUI_HEIGHT) / 2;
+        int i = (this.width - 176) / 2;
+        int j = (this.height - 166) / 2;
 
-        this.buttonList.clear();
-
-        for (int i = 0; i < RECIPES_PER_PAGE; i++) {
-            int recipeIndex = currentPage * RECIPES_PER_PAGE + i;
+        for (int index = 0; index < RECIPES_PER_PAGE; index++) {
+            int recipeIndex = currentPage * RECIPES_PER_PAGE + index;
             if (recipeIndex < availableRecipes.size()) {
                 IRecipe recipe = availableRecipes.get(recipeIndex);
                 String recipeId = recipe.getRegistryName().toString();
                 int cost = CraftManager.getInstance().getRecipeLearningCost(recipeId);
-                this.buttonList.add(new GuiButton(i, guiLeft + 10, guiTop + 20 + i * 30, 156, 20,
+                this.buttonList.add(new GuiButton(index, i + 10, j + 20 + index * 30, 156, 20,
                         recipe.getRecipeOutput().getDisplayName() + " (" + I18n.format("gui.craftmastery.cost", cost) + ")"));
             }
         }
 
-        this.buttonList.add(new GuiButton(100, guiLeft + 10, guiTop + 140, 20, 20, "<"));
-        this.buttonList.add(new GuiButton(101, guiLeft + 146, guiTop + 140, 20, 20, ">"));
+        this.buttonList.add(new GuiButton(100, i + 10, j + 140, 20, 20, "<"));
+        this.buttonList.add(new GuiButton(101, i + 146, j + 140, 20, 20, ">"));
     }
 
     @Override
@@ -76,7 +70,7 @@ public class GuiRecipeBook extends GuiScreen {
             if (recipeIndex < availableRecipes.size()) {
                 IRecipe recipe = availableRecipes.get(recipeIndex);
                 String recipeId = recipe.getRegistryName().toString();
-                if (CraftUnlockManager.getInstance().unlockRecipe(player, recipeId)) {
+                if (CraftManager.getInstance().learnRecipe(player, recipeId)) {
                     button.enabled = false;
                 }
             }
@@ -91,32 +85,17 @@ public class GuiRecipeBook extends GuiScreen {
 
     @Override
     public void drawScreen(int mouseX, int mouseY, float partialTicks) {
-        this.drawDefaultBackground();
         this.mc.getTextureManager().bindTexture(TEXTURE);
-        int guiLeft = (this.width - GUI_WIDTH) / 2;
-        int guiTop = (this.height - GUI_HEIGHT) / 2;
-        this.drawTexturedModalRect(guiLeft, guiTop, 0, 0, GUI_WIDTH, GUI_HEIGHT);
+        int i = (this.width - 176) / 2;
+        int j = (this.height - 166) / 2;
+        this.drawTexturedModalRect(i, j, 0, 0, 176, 166);
 
         super.drawScreen(mouseX, mouseY, partialTicks);
 
-        String title = I18n.format("gui.craftmastery.recipebook." + recipeType);
-        this.fontRenderer.drawString(title, guiLeft + (GUI_WIDTH - this.fontRenderer.getStringWidth(title)) / 2, guiTop + 6, 4210752);
-
-        String learningPoints = I18n.format("gui.craftmastery.learningpoints",
-                PlayerDataManager.getInstance().getPlayerData(player).getLearningPoints());
-        this.fontRenderer.drawString(learningPoints, guiLeft + 8, guiTop + 154, 4210752);
-
-        for (GuiButton button : this.buttonList) {
-            if (button.id >= 0 && button.id < RECIPES_PER_PAGE) {
-                int recipeIndex = currentPage * RECIPES_PER_PAGE + button.id;
-                if (recipeIndex < availableRecipes.size()) {
-                    IRecipe recipe = availableRecipes.get(recipeIndex);
-                    String recipeId = recipe.getRegistryName().toString();
-                    int cost = CraftManager.getInstance().getRecipeLearningCost(recipeId);
-                    button.enabled = PlayerDataManager.getInstance().getPlayerData(player).getLearningPoints() >= cost;
-                }
-            }
-        }
+        this.fontRenderer.drawString(I18n.format("gui.craftmastery.recipebook." + recipeType), i + 8, j + 6, 4210752);
+        this.fontRenderer.drawString(I18n.format("gui.craftmastery.learningpoints",
+                        PlayerDataManager.getInstance().getPlayerData(player).getLearningPoints()),
+                i + 8, j + 154, 4210752);
     }
 
     @Override
