@@ -48,11 +48,6 @@ dependencies {
     runtimeOnly 'net.minecraftforge:forge:1.12.2-14.23.5.2815' // Forge для 1.12.2
     implementation 'curse.maven:had-enough-items-557549:5726160' // Had Enough Items
     implementation 'curse.maven:crafttweaker-239197:5486112' // CraftTweaker
-    implementation 'curse.maven:thermal-expansion-69163:2926431' // Thermal Expansion
-    implementation 'curse.maven:tinkers-construct-74072:2902483' // Tinkers Construct
-    implementation 'curse.maven:cofh-core-69162:2920433' // CoFH Core
-    implementation 'curse.maven:thermal-foundation-222880:2926428'  // Thermal Foundation
-    implementation 'curse.maven:redstone-flux-270789:2920436' // Redstone Flux
 }
 
 processResources {
